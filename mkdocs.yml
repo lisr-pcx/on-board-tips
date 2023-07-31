@@ -1,0 +1,6 @@
+site_name: OnBoardCpp
+site_url: https://lisr-pcx.github.io/on-board-cpp
+nav:
+  - Welcome: index.md
+  - About: about.md
+theme: readthedocs
