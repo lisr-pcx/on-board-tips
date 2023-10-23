@@ -24,3 +24,28 @@ An introduction to markdown syntax is available [here](https://www.markdownguide
 
 Any kind of help to build a better documentation is welcome.  
 Thanks!
+
+## TODO
+
+Full site index will be:
+Welcome
+Basic concepts
+    basics
+    pointers
+    memory
+    focus on ...
+    data structure
+    STL
+    Lambda Expression
+Threads
+Sockets
+Regex
+OOP basics
+OOP design
+GIT basics
+    workflow
+    code reviews
+Tips for junior dev
+Tips for team leader
+FreeRTOS/SafeRTOS
+About

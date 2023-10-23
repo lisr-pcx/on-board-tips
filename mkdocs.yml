@@ -1,6 +1,18 @@
 site_name: OnBoardCpp
 site_url: https://lisr-pcx.github.io/on-board-cpp
+
 nav:
   - Welcome: index.md
+  - 'General':
+    - Regular Expressions: regular_expressions.md
+  - 'Tips':
+    - Tips for Junior Devs: tips_for_junior_devs.md
+    - Tips for Team Leaders: tips_for_team_leaders.md
   - About: about.md
-theme: readthedocs
+
+theme: 
+  name: terminal
+  palette: sans
+
+extra_css:
+  - style.css
