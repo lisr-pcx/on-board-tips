@@ -9,7 +9,7 @@
      
      
     
-    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/about/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/regular_expressions/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
 <link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
@@ -19,7 +19,7 @@
 
     
  
-<title>About - OnBoardCpp</title>
+<title>Regular Expressions - OnBoardCpp</title>
 
 
 <link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -105,7 +105,7 @@
                 
                 
                 <li property="itemListElement" typeof="ListItem">
-                    <a href="./" class="menu-item active" property="item" typeof="WebPage">
+                    <a href="../about/" class="menu-item " property="item" typeof="WebPage">
                         <span property="name">About</span>
                     </a>
                     <meta property="position" content="1">
@@ -166,15 +166,11 @@
             
     
         
-        
-            
-            
-            <span class="
+        <span class="
         
     
 
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">General</span>
-        
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">General</span>
     
     
         
@@ -189,11 +185,9 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        
-            <a class="
+        <span class="
 
-    terminal-mkdocs-side-nav-item" href="../regular_expressions/">Regular Expressions</a>
-        
+    terminal-mkdocs-side-nav-item--active">Regular Expressions</span>
     
     </li>
             
@@ -279,9 +273,11 @@
     
     
         
-        <span class="
+        
+            <a class="
 
-    terminal-mkdocs-side-nav-item--active">About</span>
+    terminal-mkdocs-side-nav-item" href="../about/">About</a>
+        
     
     
     
@@ -292,24 +288,93 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#about">About</a></li>
-        
+        <li><a href="#regular-expressions">Regular Expressions</a></li>
+        <li><a href="#overview">Overview</a></li><li><a href="#syntax">Syntax</a></li><li><a href="#use-case-scenario">Use case scenario</a></li><li><a href="#links-and-resources">Links and resources</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="about">About</h1>
-<p>This site is a collection of notes and tips found during my last years as embedded software developer.</p>
-<p>Some information on these pages are older than six years now. I kept them for reference but probably do not reflect my current knowledge and beliefs.</p>
-<p>Reviews and feedbacks are welcome.</p>
-<p>Thanks to: <br />
-M.T.<br />
-F.L.<br />
-B.D.<br />
-S.T.<br />
-G.I.<br />
-L.M.  </p>
+    <h1 id="regular-expressions">Regular Expressions</h1>
+<p>Mastering regex can take a lot of your time, especially at the beginning, but you only need to practice.<br />
+Use them in your C/C++ code but also inside scripts (Python) or directly in your editor (vi or notepad++).</p>
+<h2 id="overview">Overview</h2>
+<p>A <strong>regular expression</strong> (shortened as <strong>regex</strong> or <strong>regexp</strong>) is a sequence of characters that specifies a search pattern in text.<br />
+Usually such patterns are used by string-search algorithms for: </p>
+<ul>
+<li>find and find-replace operations</li>
+<li>input validation</li>
+<li>log analysis</li>
+</ul>
+<p>Most programming languages support regex either natively or via libraries.</p>
+<p>A regex <em>pattern</em> matches a target <em>string</em>.<br />
+The pattern is composed by a sequence of <em>atoms</em>. An atom is a single point within the regex pattern which it tries to match to the target string.</p>
+<p>A match is made, not when all the atoms of the string are matched, but rather when all the pattern atoms in the regex have matched. The idea is to make a small pattern of characters stand for a large number of possible strings, rather than compiling a large list of all the literal possibilities.</p>
+<h2 id="syntax">Syntax</h2>
+<p>Depending on the regex processor there are about fourteen metacharacters, characters that may or may not have their literal character meaning, depending on context, or whether they are "escaped", i.e. preceded by an escape sequence, in this case, the backslash <code>\</code>.</p>
+<p><img alt="Regex table" src="../meta/regex_table.png" /></p>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><code>.at</code> matches any three-character string ending with "at", including "hat", "cat", "bat", "4at", "#at" and " at" (starting with a space).</li>
+<li><code>[hc]at</code> matches "hat" and "cat".</li>
+<li><code>[^b]at</code> matches all strings matched by <code>.at</code> except "bat".</li>
+<li><code>[^hc]at</code> matches all strings matched by <code>.at</code> other than "hat" and "cat".</li>
+<li><code>^[hc]at</code> matches "hat" and "cat", but only at the beginning of the string or line.</li>
+<li><code>[hc]at$</code> matches "hat" and "cat", but only at the end of the string or line.</li>
+<li><code>\[.\]</code> matches any single character surrounded by "[" and "]" since the brackets are escaped, for example: "[a]", "[b]", "[7]", "[@]", "[]]", and "[ ]" (bracket space bracket).</li>
+<li><code>s.*</code> matches s followed by zero or more characters, for example: "s", "saw", "seed", "s3w96.7".</li>
+</ul>
+<h2 id="use-case-scenario">Use case scenario</h2>
+<p>Create a C++ program in order to validate a given email address (string).</p>
+<pre><code>mario.rossi@mail.com           --&gt; OK
+antonio@mail.com               --&gt; INVALID
+mario.rossi73@mail.com         --&gt; OK
+mario1.rossi@mail.com          --&gt; INVALID
+mario.giuseppe.rossi@mail.com  --&gt; INVALID
+mario.rossi@.com               --&gt; INVALID
+mario.rossi@casella            --&gt; INVALID
+mario.rossi@mail.a             --&gt; INVALID
+mario.rossi@posta.it           --&gt; OK
+</code></pre>
+<p>These address are composed by different parts:</p>
+<ol>
+<li>any lowercase or UPPERCASE letter repeated one or more times</li>
+<li>a single dot</li>
+<li>any lowercase, UPPERCASE letter or number repeated one or more times</li>
+<li>the symbol @</li>
+<li>any lowercase, UPPERCASE letter or number repeated one or more times</li>
+<li>a single dot</li>
+<li>any lowercase or UPPERCASE letter repeated two or three times</li>
+</ol>
+<p>Regex:
+^ [a-zA-Z]+ . [a-zA-Z0-9]+ @ [a-zA-Z0-9]+ . [a-zA-Z]{2,3} $</p>
+<p>Regex in a shorter way:
+^ [a-zA-Z]+ . \w+ @ \w+ . [a-zA-Z]{2,3} $</p>
+<p><img alt="Regex example" src="../meta/regex_example.png" /></p>
+<p>Then put the regex into C++ code (be care to escape char <code>\</code> ):</p>
+<pre><code class="language-cpp">#include &lt;string&gt;
+#include &lt;regex&gt;
+
+bool ValidateFunction(std::string sample)
+{
+  bool ret = false;
+  std::string regex_pattern = &quot;^[a-zA-Z]+\\.\\w+@\\w+\\.[a-zA-Z]{2,3}$&quot;;
+  std::regex regex_rule(regex_pattern);
+
+  ret = std::regex_match(sample, regex_rule);
+
+  return(ret);
+}
+</code></pre>
+<h2 id="links-and-resources">Links and resources</h2>
+<p>For a quick overview <a href="https://youtu.be/sa-TUpSx1JA">Regex by Corey Schafer</a></p>
+<p>Alternative tutorial <a href="https://youtu.be/IOxKjqC1Ozo">C++ weekly regex</a> and <a href="https://youtu.be/7hfSyxNxFfo">C++ weekly regex optimization</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Regular_expression">Regex on Wikipedia</a></p>
+<p><a href="https://regex101.com/">Online checker for regex</a></p>
+<p><strong>Book</strong><br />
+Mastering Regular Expressions<br />
+Jeffrey E F Friedl<br />
+O’Really  </p>
 </section>
 
             </main>

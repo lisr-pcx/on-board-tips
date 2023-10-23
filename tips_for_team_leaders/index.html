@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.5.1, mkdocs-terminal-4.4.0">
+     
+     
+    
+    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/tips_for_team_leaders/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Tips for Team Leaders - OnBoardCpp</title>
+
+
+<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/terminal.css" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../css/theme.footer.css" rel="stylesheet">
+<!-- sans color palette -->
+<link href="../css/palettes/sans.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../style.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "..",
+    shortcuts = "{}";
+</script>
+<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="https://lisr-pcx.github.io/on-board-cpp/" class="no-style">OnBoardCpp</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href=".." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Welcome</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../about/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">About</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="2">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="..">Welcome</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">General</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../regular_expressions/">Regular Expressions</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Tips</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../tips_for_junior_devs/">Tips for Junior Devs</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Tips for Team Leaders</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../about/">About</a>
+        
+    
+    
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#tips-for-team-leaders">Tips for Team Leaders</a></li>
+        <li><a href="#be-prepared">Be prepared</a></li><li><a href="#mastering-in-three-steps">Mastering in three steps</a></li><li><a href="#leadership-styles">Leadership styles</a></li><li><a href="#errors-and-lessons-learned">Errors and lessons learned</a></li><li><a href="#few-more-concepts">Few more concepts</a></li><li><a href="#the-google-project-aristotle">The Google Project Aristotle</a></li><li><a href="#links-and-resources">Links and resources</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="tips-for-team-leaders">Tips for Team Leaders</h1>
+<p>If you’re guiding a team of people towards an end goal, you’re a team leader.</p>
+<p>Team leaders are responsible for everything from day-to-day operations to ensuring that their team members are best supported to achieve their goals.<br />
+They provide guidance and instructions to a working group about a single or a portfolio of projects. They are in charge of delegating work, overseeing progress and coaching/mentorship team members as needed.</p>
+<p>Team Leads responsibilities include:</p>
+<ul>
+<li>Organizing work</li>
+<li>Communication (give context)</li>
+<li>Delegating</li>
+<li><a href="https://asana.com/resources/lead-by-example">Leading by example</a></li>
+<li><a href="https://asana.com/resources/resource-allocation">Allocating and managing resources</a></li>
+<li>Problem solving</li>
+<li>Managing project progress and reporting to stakeholders</li>
+<li>Coaching to improve team member skill sets and identifying areas for improvement</li>
+<li>Motivating team members to accomplish their goals</li>
+<li>Representing and advocating for team needs</li>
+</ul>
+<p>During transition from Dev to Tech-Lead be aware about your new duties and <strong>avoid these common errors</strong>:</p>
+<ul>
+<li>Writing code all the time - <em>You have also coordination and management task to do for the team, not just coding</em></li>
+<li>Making all the technical decisions - <em>Leave some challenges to your team, use their know-how</em></li>
+<li>Do not care about people - <em>Be aware about personal issue and feelings</em></li>
+<li>Assume that team know what they are doing - <em>Take some time to share scopes, goal, direction with all the team members</em></li>
+<li>Ignore arguments and conflicts - <em>Do not avoid difficult conversations</em></li>
+</ul>
+<p>Before accepting the role have a honest talk with the company management about what they expect from you (goals/duties) and what is your vision and your expectations.</p>
+<blockquote>
+<p>At the end of the day, it’s about making good software with a team.<br />
+<em>Eryn O’Neil</em></p>
+</blockquote>
+<h2 id="be-prepared">Be prepared</h2>
+<p>For this kind of role you'll need to develop some skills:</p>
+<p><strong>Context</strong><br />
+Good team leaders provide context, so team members understand why their work matters and how their work fits into the larger company vision.<br />
+With that context, developers can more effectively prioritize tasks and ensure they deliver quality work at the right time.</p>
+<p><strong>Moving work forward</strong><br />
+Once your team understands what goals they’re supporting, they also need a clear way to visualize how they’re going to get there.</p>
+<p><strong>Communication</strong><br />
+Verbal and nonverbal communication (in fact, a lot of communication comes through body language and facial expressions).<br />
+Learn how to translate tech topics into real world example for non tech people.<br />
+Your are going to write a lot of reports and exchange info with business units, it's better to learn basic financial management (ask to your manager how their spreadsheets works).</p>
+<p><strong>Organization</strong><br />
+Your team needs to be able to count on you and trust that you have everything under control.</p>
+<p><strong>Delegating</strong><br />
+To delegate effectively, you must first understand each team member’s strengths, weaknesses, and interests.    <br />
+Keep in mind that the team members may do things differently than you would have. Part of delegating is learning to let go and give your team members the reins.    <br />
+At last: ”Trust, but verify”  </p>
+<p><strong>Problem-Solving</strong><br />
+If you’re new to problem solving, try answering the following questions:    <br />
+How is the team going to approach the work?<br />
+What’s most important?<br />
+What do they have to focus on?<br />
+How will this decision impact the team?  </p>
+<p><strong>Time management</strong><br />
+Team leaders are masters on that, they have a great sense of how to prioritize work.<br />
+Be aware that context-switching is a proven drag on productivity. <br />
+Plan carefully your agenda and make sure to have some slot without meetings in order to do your stuff.  </p>
+<p><strong>Workload management</strong>    <br />
+You’re ultimately responsible for helping your team accomplish their goals.<br />
+Track progress and make sure no one is getting close to burnout.  </p>
+<p><strong>Team building</strong><br />
+Make sure everyone feels like part of the team, evaluate team performance and cheer your team members on.<br />
+Be honest, be fair, practice empathy.  </p>
+<p><strong>Mentoring and coaching</strong><br />
+A big part of a team leader’s role is to provide coaching, training, and mentoring where applicable.<br />
+Ask everytime for feedbacks but also give them. Identify communication channels and ways to promote these exchanges and growth.<br />
+Lead by example. Be the developer you wanna work with.  </p>
+<h2 id="mastering-in-three-steps">Mastering in three steps</h2>
+<p>Achieve tech lead mastery by:</p>
+<ol>
+<li>
+<p><strong>Facilitate</strong>. Help your team do their jobs</p>
+<ol>
+<li>Remove roadblocks</li>
+<li>Perceive the need</li>
+<li>Know the answers or where to find them</li>
+</ol>
+</li>
+<li>
+<p><strong>Advocate</strong>. Keep the big picture in mind</p>
+<ol>
+<li>Advocate for your project: sometimes you have to say no</li>
+<li>Say no + always explain why</li>
+<li>Say no + but ... (if you are talking to managers)</li>
+</ol>
+</li>
+<li>
+<p><strong>Motivate</strong>. Guide your team to the best possible result</p>
+<ol>
+<li>Your attitude is important. When complaining you’re not finding a solution.</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p>Remember that teams are not immutable: adding people in a team change cultural values, relationships, … it becames a new team. Think about it when hiring!<br />
+Also people who leave the team for a certain amount of time (sick leave, newborn, temporary moved …) modify the identity and roles inside.</p>
+</blockquote>
+<h2 id="leadership-styles">Leadership styles</h2>
+<p>There are different way to lead a team, apply them carefully:</p>
+<p><img alt="Leadership styles" src="../meta/leadership_styles.png" /></p>
+<h2 id="errors-and-lessons-learned">Errors and lessons learned</h2>
+<h3 id="process">Process</h3>
+<p>Define and apply a process for your team. You’ll need:</p>
+<ul>
+<li>Excellent onboarding and documentation</li>
+<li>Ongoing internal training</li>
+<li>Frequent code reviews and coaching</li>
+<li>Comprehensive test suites</li>
+<li>Consistent style and quality guidelines</li>
+</ul>
+<h3 id="keep-track">Keep track</h3>
+<p>Be open, discuss everything, have meetings… but always write down the facts and share it to eveyone involved (just in case when things go wrong).</p>
+<h3 id="avoid-the-rockstar-developers">Avoid the “Rockstar-Developers”</h3>
+<p>They become bottlenecks (when on holiday, away, assigned to another project…).</p>
+<p>They create dependent teams (other members stop looking for answers/thinking and just wait the rockstart point of view)</p>
+<p>They build knowledge silos (no shared information, full know-how to a single person)</p>
+<p>They eventually leave... Every team member must be interchangeable on the roles, or at least with a lower impact on delivery.</p>
+<h3 id="train-junior-developers">Train junior developers</h3>
+<p>Create an onboard program to smooth the learning curve for new team members.</p>
+<p>Follow these principles:</p>
+<ul>
+<li>Have a plan</li>
+<li>Spend time with the trainee (pair programming)</li>
+<li>Give <strong>clear</strong>, <strong>relevant</strong> feedbacks and share your experience</li>
+<li>Give opportunity to deliberate practice</li>
+</ul>
+<h2 id="few-more-concepts">Few more concepts</h2>
+<h3 id="smart">SMART</h3>
+<p>SMART allow you to write goals that are clear, attainable and meaningful.<br />
+Having clarity in your goal-setting provides the motivation and focus you need to be successful.</p>
+<ul>
+<li><strong>S</strong>pecific (simple, sensible, significant)</li>
+<li><strong>M</strong>easurable (meaningful, motivating)</li>
+<li><strong>A</strong>chievable (agreed, attainable)</li>
+<li><strong>R</strong>elevant (reasonable, realistic and resourced, results-based)</li>
+<li><strong>T</strong>ime bound (time-based, time limited, time/cost limited, timely, time-sensitive)</li>
+</ul>
+<h2 id="the-google-project-aristotle">The Google Project Aristotle</h2>
+<p>The researchers found (<a href="https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html">read</a>) that what really mattered was less about who is on the team, and more about how the team worked together. In order of importance:</p>
+<p><strong>Psychological safety</strong> (<a href="https://youtu.be/LhoLuui9gX8">video</a>)<br />
+Team members feel safe to take risks and be vulnerable in front of each other<br />
+<em>“If I make a mistake on our team, it is not held against me.”</em></p>
+<p><strong>Dependability</strong><br />
+Team members get things done on time and meet Google’s high bar for excellence
+<em>“When my teammates say they’ll do something, they follow through with it.”</em></p>
+<p><strong>Structure and clarity</strong>
+Team members have clear roles, plans and goals
+<em>“Our team has an effective decision-making process.”</em></p>
+<p><strong>Meaning</strong><br />
+Work is personally important to team members
+<em>“The work I do for our team is meaningful to me.”</em></p>
+<p><strong>Impact</strong><br />
+Team members think their work matters and creates change
+<em>“I understand how our team’s work contributes to the organization's goals.”</em></p>
+<p>The researchers also discovered which variables were not significantly connected with team effectiveness at Google:</p>
+<ul>
+<li>Collocation of teammates (sitting together in the same office)</li>
+<li>Consensus-driven decision making</li>
+<li>Extroversion of team members</li>
+<li>Individual performance of team members</li>
+<li>Workload size</li>
+<li>Seniority</li>
+<li>Team size</li>
+<li>Tenure</li>
+</ul>
+<p>It’s important to note though that while these variables did not significantly impact team effectiveness measurements at Google, that doesn’t mean they’re not important elsewhere.</p>
+<blockquote>
+<p>The fundamental thing that distinguish good teams from disfunctional ones is how team mates treat one another.<br />
+<em>Sandi Metz</em></p>
+</blockquote>
+<h2 id="links-and-resources">Links and resources</h2>
+<p><a href="https://youtu.be/95QwKa34PU4">How to lead</a></p>
+<p><a href="https://asana.com/resources/team-lead">10 things great team leaders do</a></p>
+<p><a href="https://asana.com/resources/problem-solving-strategies">Problem solving strategies</a></p>
+<p><a href="https://asana.com/resources/emotional-intelligence-skills">Emotional intelligence skills</a></p>
+<p><a href="https://asana.com/resources/smart-goals">Smart goals</a></p>
+<p><a href="https://youtu.be/xqT8e6_yzLg">Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow</a></p>
+<p><a href="https://youtu.be/Atfxtk2Q90k">Using Agile Techniques to Build a More Inclusive Team</a></p>
+<p><a href="https://youtu.be/MIh_992Nfes">Radical candor</a></p>
+<p><a href="https://youtu.be/jDIZS4IQlQk">Love Your Work</a></p>
+<p><a href="https://youtu.be/RyTQ5-SQYTo">Most Leaders Don't Even Know the Game They're In</a></p>
+<p><a href="https://youtu.be/jfQ5M6wXi2w">An Engineer's Guide To Burnout And How To Hack It</a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

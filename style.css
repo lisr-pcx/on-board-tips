@@ -1,0 +1,24 @@
+.terminal h1 {
+	font-size: 20px;
+	color: #FFA500;
+}
+.terminal h2 {
+	font-size: 18px;
+	color: #1A95E0;
+}
+img {
+	width: 75%;
+}
+.terminal blockquote {
+	content: '';
+	font-size: 15px;
+	padding-left: 10px;
+	border-left: 3px solid #CCC;
+}
+blockquote::after {
+	content: "";
+}
+.terminal code {
+	font-size: 13px;
+	font-family: monospace;
+}
