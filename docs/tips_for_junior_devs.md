@@ -38,7 +38,7 @@ Top five reason that make developers unhappy of their job:
 4. Under-performing colleague
 5. Feeling inadegate with work
 
-Don't be unhappy, find a way to cope with these things. Ask to your mentor for tips and tricks.
+Don't be unhappy, find a way to cope with these things. Ask to your mentor for tips!
 
 Be aware about the [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome).
 

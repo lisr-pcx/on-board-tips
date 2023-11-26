@@ -1,6 +1,6 @@
 # Project: OnBoardCpp
 
-This repo contains training material for C++ developers.
+This repo contains training material for C++ developers and a collection of general tips and suggestion about code development.
 
 All pages are managed using MkDocs, see official [documentation](https://www.mkdocs.org) for further details.
 
@@ -28,24 +28,23 @@ Thanks!
 ## TODO
 
 Full site index will be:
+
 Welcome
-Basic concepts
-    basics
+Focus on
     pointers
     memory
-    focus on ...
-    data structure
+    data structures
     STL
-    Lambda Expression
-Threads
-Sockets
-Regex
-OOP basics
-OOP design
-GIT basics
-    workflow
-    code reviews
-Tips for junior dev
-Tips for team leader
-FreeRTOS/SafeRTOS
+    Lambda Expressions
+General
+    Git basics
+    Threads
+    Sockets
+    Regex
+    Workflow
+OOP
+    Design basics
+Tips
+    Tips for junior devs
+    Tips for team leader
 About

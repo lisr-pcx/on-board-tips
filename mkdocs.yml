@@ -3,8 +3,20 @@ site_url: https://lisr-pcx.github.io/on-board-cpp
 
 nav:
   - Welcome: index.md
+  - 'Focus on':
+    - Pointers: empty.md
+    - Memory management: empty.md
+    - Data structures: empty.md
+    - STL: empty.md
+    - Lamba Expressions: empty.md
   - 'General':
+    - Git basics: git_basics.md
+    - Threads: empty.md
+    - Sockets: empty.md
     - Regular Expressions: regular_expressions.md
+    - Code workflow: empty.md
+  - 'OOP':
+    - Design basics: empty.md
   - 'Tips':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
