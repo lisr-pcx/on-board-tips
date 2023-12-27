@@ -15,6 +15,7 @@ nav:
     - Sockets: empty.md
     - Regular Expressions: regular_expressions.md
     - Code workflow: empty.md
+    - Code reviews: code_reviews.md
   - 'OOP':
     - Design basics: empty.md
   - 'Tips':
