@@ -9,7 +9,7 @@
      
      
     
-    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/code_reviews/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/debugging/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
 <link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
@@ -19,7 +19,7 @@
 
     
  
-<title>Code reviews - OnBoardCpp</title>
+<title>Debugging - OnBoardCpp</title>
 
 
 <link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -437,11 +437,9 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        
-            <a class="
+        <span class="
 
-    terminal-mkdocs-side-nav-item" href="../debugging/">Debugging</a>
-        
+    terminal-mkdocs-side-nav-item--active">Debugging</span>
     
     </li>
             
@@ -453,9 +451,11 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        <span class="
+        
+            <a class="
 
-    terminal-mkdocs-side-nav-item--active">Code reviews</span>
+    terminal-mkdocs-side-nav-item" href="../code_reviews/">Code reviews</a>
+        
     
     </li>
             
@@ -607,114 +607,80 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#code-reviews">Code Reviews</a></li>
-        <li><a href="#rules-for-the-programmer">Rules for the programmer</a></li><li><a href="#rules-for-the-reviewer">Rules for the reviewer</a></li><li><a href="#focus-on">Focus on</a></li><li><a href="#links-and-resources">Links and resources</a></li>
+        <li><a href="#debugging">Debugging</a></li>
+        <li><a href="#overview">Overview</a></li><li><a href="#strategies">Strategies</a></li><li><a href="#links-and-resources">Links and resources</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="code-reviews">Code Reviews</h1>
-<p>The term is used to identify all the activities of code analysis with the goal to identify bugs, non conformities and design flaws. After the review the code changes are usually merged with the official codebase and/or delivered to final users.</p>
-<p>This process can be formal or informal, but in any case it is suggested to follow some guidelines (create them if not defined). Technically there are multiple way to perform a review: email thread, company templates (word, excel), tools-assisted (Git cloud web services).</p>
-<p>Keep in mind that for new developers the code review can be a way to discover and understand the sw architecture and the sourcecode.</p>
-<p>During a review these aspect shall be considered:</p>
+    <h1 id="debugging">Debugging</h1>
+<p>Developers spend a considerable amount of time in debugging looking what's going wrong on running code. Learn where to look and how to do it is one of the essential skills of our job.</p>
+<p>A <strong>software bug</strong> is a defect in the logic, correctness, or performance of a software system.</p>
 <ul>
-<li>coding style (use sw tools for checking)</li>
-<li>coding rules</li>
-<li>safety and defensive code</li>
-<li>sw requirements</li>
-<li>logic, algorithms, and code flow</li>
-<li>design and architecture (flexibility and mantenibility)</li>
+<li>The program compile but it does not do at runtime what the developer expects <em>(logic)</em></li>
+<li>The program executes the right path but produces the wrong result <em>(correctness)</em></li>
+<li>When dependent on worload or external system/architecture <em>(performance)</em></li>
+<li>When occur in concurrent code and are sporadically observable <em>(non deterministic)</em></li>
 </ul>
-<p>Code reviews are not an exam, the scope is to check the code not the programmer who wrote it. Do not set or perceive code reviews as a personal attack. The reviewer wants the same as you: creating high-quality software, you are both on the same side.</p>
-<h2 id="rules-for-the-programmer">Rules for the programmer</h2>
-<p>Have an <em>open and humble mindset</em> about the feedback you are going to receive.</p>
+<p>Debugging is closely related to testing. <em>Testing</em> means we are checking for the presence of a bug, <em>debugging</em> is the process of removing an observed fault in software, and both are necessary skills to learn.</p>
+<h2 id="overview">Overview</h2>
+<p>The following links guide step by step into the argument:</p>
 <ul>
-<li>Mind that code can be improved</li>
-<li>You are not perfect. Accept that you will make mistakes</li>
-<li>Don’t infer your professionalism and reliability as a software developer from infallibility and flawlessness of your code</li>
-<li>Mind the IKEA effect. You might place a too high value on your own code</li>
-<li>Consider feedback as a valuable new perspective on your code (avoids a tunnel vision)</li>
-<li>Code reviews are a valuable source of best practices and experiences</li>
-<li>Code reviews are a discussion, not a dictation. It’s fine to disagree, but you have to elaborate your reservations politely and be willing to make compromises</li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/syntax-and-semantic-errors/">Syntax and Semantics Erros</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/the-debugging-process/">The process</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/a-strategy-for-debugging/">Strategy</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/basic-debugging-tactics/">Basic</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/more-debugging-tactics/">More</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/using-an-integrated-debugger-stepping/">Debugger tool: stepping</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/using-an-integrated-debugger-running-and-breakpoints/">Debugger tool: breakpoints</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/using-an-integrated-debugger-watching-variables/">Debugger tool: watch variables</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/using-an-integrated-debugger-the-call-stack/">Debugger tool: call stack</a></li>
+<li><a href="https://www.learncpp.com/cpp-tutorial/finding-issues-before-they-become-problems/">Finding issues</a></li>
 </ul>
-<h2 id="rules-for-the-reviewer">Rules for the reviewer</h2>
-<p>For the reviewer, it’s important to pay attention to <em>the way they formulate the feedback</em>. This is extremely crucial for your feedback to be accepted.</p>
-<ul>
-<li>Use I-messages:<ul>
-<li>Right: “It’s hard for me to grasp what’s going on in this code.”</li>
-<li>Wrong: “You are writing cryptic code.”</li>
-</ul>
-</li>
-<li>Talk about the code, not the coder.<ul>
-<li>Right: “This code is requesting the service multiple times, which is inefficient.”</li>
-<li>Wrong: “You’re requesting the service multiple times, which is inefficient.”</li>
-</ul>
-</li>
-<li>Ask questions instead of making statements.<ul>
-<li>Right: “What do you think about the name ‘userId’ for this variable?”</li>
-<li>Wrong: “This variable should have the name ‘userId’.”</li>
-</ul>
-</li>
-<li>Always refer to the behavior, not the traits of the author.<ul>
-<li>Right: “I believe that you should pay more attention to writing tests.”</li>
-<li>Wrong: “You are sloppy when it comes to writing tests.”</li>
-</ul>
-</li>
-<li>Accept that there are different solutions<ul>
-<li>Right: “I would do it in another way, but your solution is also fine.”</li>
-<li>Wrong: “I always do it this way and you should too.”</li>
-<li>Distinguish between common best practices and your personal taste.</li>
-<li>Mind that your criticism may just reflect your personal taste and not an objectively wrong code.</li>
-<li>Make compromises and be pragmatic.</li>
-</ul>
-</li>
-<li>Don’t jump in front of every train<ul>
-<li>Don’t be a pedant. Don’t criticize every single line in the code. This will annoy the author and reduce their openness to further feedback.</li>
-<li>Focus on the flaws and code smells that are most important to you.</li>
-</ul>
-</li>
-<li>Respect and trust the author<ul>
-<li>Nobody writes bad code on purpose.</li>
-<li>The author wrote the code to the best of their knowledge and belief.</li>
-</ul>
-</li>
-<li>Mind the <strong>OIR rule</strong> of giving feedback<ul>
-<li>Observation: “This method has 100 lines.”</li>
-<li>Impact: “This makes it hard for me to grasp the essential logic of this method.”</li>
-<li>Request: “I suggest extracting the low-level-details into subroutines and give them expressive names.”</li>
-</ul>
-</li>
-<li>Before giving feedback, ask yourself:<ul>
-<li>Is it true? (opinion != truth)</li>
-<li>Is it necessary? (avoid nagging, unnecessary comments and out-of-scope work)</li>
-<li>Is it kind? (no shaming)</li>
-</ul>
-</li>
-<li>Be humble! You are not perfect and you can also improve.</li>
-<li>It’s fine to say: Everything is good!</li>
-<li>Don’t forget to praise.</li>
-</ul>
-<h2 id="focus-on">Focus on</h2>
-<h3 id="coding-style-and-coding-rules">Coding style and coding rules</h3>
-<p>In progress</p>
-<p>Quick overview on static analysis tools</p>
-<h3 id="safety-and-defensive-code">Safety and defensive code</h3>
-<p>In progress</p>
-<p>Quick overview on dynamic analysis tools</p>
-<h3 id="sw-requirements">SW requirements</h3>
-<p>In progress</p>
-<h3 id="logic-algorithms-and-code-flow">Logic algorithms and code flow</h3>
-<p>In progress</p>
-<h3 id="design-and-architecture">Design and architecture</h3>
-<p>In progress</p>
+<h2 id="strategies">Strategies</h2>
+<p>Work experience and practice will improve your skills, but in the meantime apply any kind of tricks usefull for your scenario.</p>
+<h3 id="1-scan-and-look">(1) Scan and Look</h3>
+<p>Have a look and follow intuition (senior developers get best result compared to junior)</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main(){
+    **int** PI = 3.1415;  // &lt;- BUG logical error/typo
+        std::cout &lt;&lt; &quot;Value of PI is &quot; &lt;&lt; PI &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+<p><strong>TIP</strong> add these flag to the compiler <code>-Wall</code> and <code>-Wextra</code> in order to catch these kind of errors.</p>
+<h3 id="2-printf-debugging">(2) Printf debugging</h3>
+<p>Print some values at a particular point of source code to discover the current state of the program</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;stdlib.h&gt;
+
+int square(int a){
+    return **a**; // &lt;- BUG logical
+}
+
+int main(){
+        while(1){
+                **std::cout &lt;&lt; &quot;dbg out 1: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
+            if(square(5)==25){
+              **std::cout &lt;&lt; &quot;dbg out 2: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
+              exit(1);
+            }
+        **std::cout &lt;&lt; &quot;dbg out 3: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
+    }
+    std::cout &lt;&lt; &quot;Exiting program\n&quot;;
+    return 0;
+}
+</code></pre>
+<p><strong>TIP</strong> be aware that on embedded system adding a lot of printf can affect performance and behavior.</p>
+<h3 id="3-delta-debugging">(3) Delta debugging</h3>
+<p>Don't analyze everything but isolate and check in a kind of way as binary search.</p>
+<p><strong>TIP</strong> verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.</p>
 <h2 id="links-and-resources">Links and resources</h2>
-<p><a href="https://google.github.io/eng-practices/review/">Google code review overview</a></p>
-<p><a href="https://github.com/mawrkus/pull-request-review-guide">Guidelines for better, faster pull request reviews</a></p>
-<p><a href="https://github.com/mgreiler/all-about-code-review">Curated list of resources about code reviews</a></p>
-<p><a href="https://github.com/joho/awesome-code-review">Awesome list of code review resources</a></p>
-<p><a href="https://mtlynch.io/code-review-love/">Michael Lynch post</a></p>
+<p><a href="https://youtu.be/M7fV-eQwxrY">Bob Steagall, CppCon 2021, Debugging Techniques</a></p>
+<p><a href="https://youtu.be/YzIBwqWC6EM">Mike Shah, CppCon 2022, Debugging in C++</a></p>
+<p><a href="https://sourceware.org/gdb/current/onlinedocs/gdb.html/">Debugging with GDB: the GNU Source-Level Debugger</a></p>
 </section>
 
             </main>
