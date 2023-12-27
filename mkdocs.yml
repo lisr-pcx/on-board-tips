@@ -14,7 +14,10 @@ nav:
     - Threads: empty.md
     - Sockets: empty.md
     - Regular Expressions: regular_expressions.md
-    - Code workflow: empty.md
+  - 'Workflow':
+    - Analysis and sw requirements: empty.md
+    - Best practices: best_practices.md
+    - Debugging: debugging.md
     - Code reviews: code_reviews.md
   - 'OOP':
     - Design basics: empty.md
