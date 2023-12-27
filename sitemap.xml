@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/about/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/code_reviews/</loc>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/empty/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/git_basics/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/regular_expressions/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_junior_devs/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_team_leaders/</loc>
-         <lastmod>2023-11-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
