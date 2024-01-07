@@ -1,15 +1,15 @@
 # Debugging
 
-Developers spend a considerable amount of time in debugging looking what's going wrong on running code. Learn where to look and how to do it is one of the essential skills of our job.
+Developers spend a considerable amount of time looking what's going wrong on running code. Learn where to look and how to do it is a basic skill of the job.
 
 A **software bug** is a defect in the logic, correctness, or performance of a software system.
 
 + The program compile but it does not do at runtime what the developer expects *(logic)*
 + The program executes the right path but produces the wrong result *(correctness)*
-+ When dependent on worload or external system/architecture *(performance)*
++ When dependent on workload or external system/architecture *(performance)*
 + When occur in concurrent code and are sporadically observable *(non deterministic)*
 
-Debugging is closely related to testing. *Testing* means we are checking for the presence of a bug, *debugging* is the process of removing an observed fault in software, and both are necessary skills to learn.
+Debugging is closely related to testing. *Testing* means we are checking for the presence of a bug, *debugging* is the process of removing an observed fault in software, and both are essential skills to learn.
 
 ## Overview
 
@@ -38,8 +38,8 @@ Have a look and follow intuition (senior developers get best result compared to 
 #include <iostream>
 
 int main(){
-    **int** PI = 3.1415;  // <- BUG logical error/typo
-		std::cout << "Value of PI is " << PI << std::endl;
+    int PI = 3.1415;  // <- BUG logical error/typo
+    std::cout << "Value of PI is " << PI << std::endl;
     return 0;
 }
 ```
@@ -55,24 +55,24 @@ Print some values at a particular point of source code to discover the current s
 #include <stdlib.h>
 
 int square(int a){
-    return **a**; // <- BUG logical
+    return a; // <- BUG logical
 }
 
 int main(){
-		while(1){
-				**std::cout << "dbg out 1: " << square(5) << std::endl;**
-		    if(square(5)==25){
-	          **std::cout << "dbg out 2: " << square(5) << std::endl;**
-	          exit(1);
-		    }
-        **std::cout << "dbg out 3: " << square(5) << std::endl;**
+    while(1){
+        std::cout << "dbg out 1: " << square(5) << std::endl;
+        if(square(5)==25) {
+            std::cout << "dbg out 2: " << square(5) << std::endl;
+	    exit(1);
+        }
+        std::cout << "dbg out 3: " << square(5) << std::endl;
     }
     std::cout << "Exiting program\n";
     return 0;
 }
 ```
 
-**TIP** be aware that on embedded system adding a lot of printf can affect performance and behavior.
+**TIP** be aware that on embedded systems adding a lot of printf can affect performance and behavior.
 
 ### (3) Delta debugging
 

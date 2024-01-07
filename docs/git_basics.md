@@ -1,12 +1,12 @@
 # Git basics
 
-Three good reasons for use a version control software on daily basis:
+Three good reasons for using a version control software on daily basis:
 
 + backup of your source code
 + keep track of code changes (history)
 + force to apply a workflow when working in team
 
-Choose the tool that best fits your habits. I suggest **Git** because it's widely used, powerful, and easy to integrate on most IDE. There are also a lot of website that offer free online storage for your opensource projects.
+Choose the tool that best fits your habits. I suggest **Git** because it's widely used, powerful, and easy to integrate on most IDE. There are also a lot of website that offer free online storage for your git repository projects.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Some personal notes when defining workflow, branches, operations:
 
 + Think about team size and member's expertise
 + Conflicts issues during pull/merge request must be resolved in a short time
-+ Create new branches is cheap
++ Create new branches is cheap operation on git
 + Frequent commits
 + Push daily (means backup on remote server)
 + Learn it via bash then go for GUI
@@ -52,7 +52,7 @@ Most of the time you will contribute to an existing project. The first step is t
 git clone <put here URL of repository>
 ```
 
-Be aware that hidden folder ".git" contains inside information and history of the repository. Don't delete it and don't edit the content.
+Be aware that hidden folder ".git" contains information and history of the repository. Don't delete it and don't edit the content.
 
 ## Daily operations
 
@@ -159,13 +159,15 @@ git branch --set-upstream-to=<remote repo/branch>
 git branch -vv
 ```
 
+Funny, but think about it...
+
 ![Git funny image](meta/git_in_case_of_fire.png)
 
 ### Stash
 
-Sometimes you have to switch quickly to other branches (to fix a bug or check something ... ) but you can't do it if you already did some changes. At the same time you don't want to loose your current sourcecode.
+Sometimes you have to switch quickly to other branches (to fix a bug or check something ... ) but git can't switch branches if there are changes pending on your current branch. At the same time you don't want to clone another repo or worst to loose your current sourcecode.
 
-The **git stash** command can help you, temporary storing your changes, then they can be retrieved any time in the future. Please [read here](https://www.atlassian.com/git/tutorials/saving-changes/git-stash).
+The **git stash** command can help you, temporary storing your code changes. Then they can be retrieved any time in the future. Please [read here](https://www.atlassian.com/git/tutorials/saving-changes/git-stash).
 
 ## Files management
 

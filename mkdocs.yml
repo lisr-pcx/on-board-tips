@@ -26,6 +26,10 @@ nav:
     - Tips for Team Leaders: tips_for_team_leaders.md
   - About: about.md
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 theme: 
   name: terminal
   palette: sans

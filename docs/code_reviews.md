@@ -26,8 +26,10 @@ Have an *open and humble mindset* about the feedback you are going to receive.
 + Don’t infer your professionalism and reliability as a software developer from infallibility and flawlessness of your code
 + Mind the IKEA effect. You might place a too high value on your own code
 + Consider feedback as a valuable new perspective on your code (avoids a tunnel vision)
-+ Code reviews are a valuable source of best practices and experiences
-+ Code reviews are a discussion, not a dictation. It’s fine to disagree, but you have to elaborate your reservations politely and be willing to make compromises
+
+Code reviews are a valuable source of best practices and experiences.
+
+Code reviews are a discussion, not a dictation. It’s fine to disagree, but you have to elaborate your reservations politely and be willing to make compromises.
 
 ## Rules for the reviewer
 
