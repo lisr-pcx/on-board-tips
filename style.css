@@ -6,7 +6,13 @@
 	font-size: 18px;
 	color: #1A95E0;
 }
+.terminal h3 {
+	font-size: 15px;
+	color: #2EB82E;
+}
 img {
+	display: block;
+	margin: 0 auto;
 	width: 75%;
 }
 .terminal blockquote {

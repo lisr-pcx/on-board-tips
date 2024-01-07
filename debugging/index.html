@@ -615,15 +615,15 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <h1 id="debugging">Debugging</h1>
-<p>Developers spend a considerable amount of time in debugging looking what's going wrong on running code. Learn where to look and how to do it is one of the essential skills of our job.</p>
+<p>Developers spend a considerable amount of time looking what's going wrong on running code. Learn where to look and how to do it is a basic skill of the job.</p>
 <p>A <strong>software bug</strong> is a defect in the logic, correctness, or performance of a software system.</p>
 <ul>
 <li>The program compile but it does not do at runtime what the developer expects <em>(logic)</em></li>
 <li>The program executes the right path but produces the wrong result <em>(correctness)</em></li>
-<li>When dependent on worload or external system/architecture <em>(performance)</em></li>
+<li>When dependent on workload or external system/architecture <em>(performance)</em></li>
 <li>When occur in concurrent code and are sporadically observable <em>(non deterministic)</em></li>
 </ul>
-<p>Debugging is closely related to testing. <em>Testing</em> means we are checking for the presence of a bug, <em>debugging</em> is the process of removing an observed fault in software, and both are necessary skills to learn.</p>
+<p>Debugging is closely related to testing. <em>Testing</em> means we are checking for the presence of a bug, <em>debugging</em> is the process of removing an observed fault in software, and both are essential skills to learn.</p>
 <h2 id="overview">Overview</h2>
 <p>The following links guide step by step into the argument:</p>
 <ul>
@@ -645,8 +645,8 @@
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 
 int main(){
-    **int** PI = 3.1415;  // &lt;- BUG logical error/typo
-        std::cout &lt;&lt; &quot;Value of PI is &quot; &lt;&lt; PI &lt;&lt; std::endl;
+    int PI = 3.1415;  // &lt;- BUG logical error/typo
+    std::cout &lt;&lt; &quot;Value of PI is &quot; &lt;&lt; PI &lt;&lt; std::endl;
     return 0;
 }
 </code></pre>
@@ -657,23 +657,23 @@ int main(){
 #include &lt;stdlib.h&gt;
 
 int square(int a){
-    return **a**; // &lt;- BUG logical
+    return a; // &lt;- BUG logical
 }
 
 int main(){
-        while(1){
-                **std::cout &lt;&lt; &quot;dbg out 1: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
-            if(square(5)==25){
-              **std::cout &lt;&lt; &quot;dbg out 2: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
-              exit(1);
-            }
-        **std::cout &lt;&lt; &quot;dbg out 3: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;**
+    while(1){
+        std::cout &lt;&lt; &quot;dbg out 1: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;
+        if(square(5)==25) {
+            std::cout &lt;&lt; &quot;dbg out 2: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;
+        exit(1);
+        }
+        std::cout &lt;&lt; &quot;dbg out 3: &quot; &lt;&lt; square(5) &lt;&lt; std::endl;
     }
     std::cout &lt;&lt; &quot;Exiting program\n&quot;;
     return 0;
 }
 </code></pre>
-<p><strong>TIP</strong> be aware that on embedded system adding a lot of printf can affect performance and behavior.</p>
+<p><strong>TIP</strong> be aware that on embedded systems adding a lot of printf can affect performance and behavior.</p>
 <h3 id="3-delta-debugging">(3) Delta debugging</h3>
 <p>Don't analyze everything but isolate and check in a kind of way as binary search.</p>
 <p><strong>TIP</strong> verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.</p>

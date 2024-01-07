@@ -615,13 +615,13 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <h1 id="git-basics">Git basics</h1>
-<p>Three good reasons for use a version control software on daily basis:</p>
+<p>Three good reasons for using a version control software on daily basis:</p>
 <ul>
 <li>backup of your source code</li>
 <li>keep track of code changes (history)</li>
 <li>force to apply a workflow when working in team</li>
 </ul>
-<p>Choose the tool that best fits your habits. I suggest <strong>Git</strong> because it's widely used, powerful, and easy to integrate on most IDE. There are also a lot of website that offer free online storage for your opensource projects.</p>
+<p>Choose the tool that best fits your habits. I suggest <strong>Git</strong> because it's widely used, powerful, and easy to integrate on most IDE. There are also a lot of website that offer free online storage for your git repository projects.</p>
 <h2 id="overview">Overview</h2>
 <p>Official site here: <a href="https://git-scm.com/">Git</a></p>
 <p>Another good source of information can be the Atlassian software development portal: <a href="https://www.atlassian.com/git">Getting Git Right</a></p>
@@ -631,7 +631,7 @@
 <ul>
 <li>Think about team size and member's expertise</li>
 <li>Conflicts issues during pull/merge request must be resolved in a short time</li>
-<li>Create new branches is cheap</li>
+<li>Create new branches is cheap operation on git</li>
 <li>Frequent commits</li>
 <li>Push daily (means backup on remote server)</li>
 <li>Learn it via bash then go for GUI</li>
@@ -649,7 +649,7 @@ git config --global user.email “YOUREMAILADDRESS@EXAMPLE.COM”
 <p>Most of the time you will contribute to an existing project. The first step is to get a local copy of the sourcecode from the repository (remote server).</p>
 <pre><code class="language-cpp">git clone &lt;put here URL of repository&gt;
 </code></pre>
-<p>Be aware that hidden folder ".git" contains inside information and history of the repository. Don't delete it and don't edit the content.</p>
+<p>Be aware that hidden folder ".git" contains information and history of the repository. Don't delete it and don't edit the content.</p>
 <h2 id="daily-operations">Daily operations</h2>
 <h3 id="pull">Pull</h3>
 <p>Keep your local branches synchronized, run the <strong>git pull</strong> command in order to fetch and download content from remote repository.</p>
@@ -714,10 +714,11 @@ git push &lt;remote branch name&gt;
 git branch --set-upstream-to=&lt;remote repo/branch&gt;
 git branch -vv
 </code></pre>
+<p>Funny, but think about it...</p>
 <p><img alt="Git funny image" src="../meta/git_in_case_of_fire.png" /></p>
 <h3 id="stash">Stash</h3>
-<p>Sometimes you have to switch quickly to other branches (to fix a bug or check something ... ) but you can't do it if you already did some changes. At the same time you don't want to loose your current sourcecode.</p>
-<p>The <strong>git stash</strong> command can help you, temporary storing your changes, then they can be retrieved any time in the future. Please <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">read here</a>.</p>
+<p>Sometimes you have to switch quickly to other branches (to fix a bug or check something ... ) but git can't switch branches if there are changes pending on your current branch. At the same time you don't want to clone another repo or worst to loose your current sourcecode.</p>
+<p>The <strong>git stash</strong> command can help you, temporary storing your code changes. Then they can be retrieved any time in the future. Please <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">read here</a>.</p>
 <h2 id="files-management">Files management</h2>
 <p>There are some files you may want Git to ignore and not track in your repository. These include many that are auto-generated (by IDE) or platform-specific, as well as other local configuration files or compiled code (.elf .exe .bin).</p>
 <p>To do that create a hidden file name <strong>".gitignore"</strong> and edit putting inside all folders and name files that you want to ignore. Please note that multiple .gitgnore files can be created inside each project folder for better filter granularity. <a href="https://github.com/github/gitignore">Here some templates</a></p>
