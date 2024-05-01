@@ -78,7 +78,7 @@ Don't be unhappy, find a way to cope with these things. Ask to your mentor for t
 
 Be aware about the [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome).
 
-## Links and resources
+## Links
 
 [Habits of Efficient Developers](https://youtu.be/9-cyC6O81Bk)
 

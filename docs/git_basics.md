@@ -208,7 +208,7 @@ Other files are usually part of the repository:
 + **CONTRIBUTE.md** Guideline for contributing to the project.
 + **LICENSE.md** Software license information
 
-## Links and resources
+## Links
 
 [Git guide from Github platform](https://github.com/git-guides)
 

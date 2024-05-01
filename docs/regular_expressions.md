@@ -89,7 +89,7 @@ bool ValidateFunction(std::string sample)
 ```
 
 
-## Links and resources
+## Links
 
 For a quick overview [Regex by Corey Schafer](https://youtu.be/sa-TUpSx1JA)
 
@@ -99,8 +99,9 @@ Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ w
 
 [Online checker for regex](https://regex101.com/)
 
-**Book**  
-Mastering Regular Expressions  
+## Books
+
+**Mastering Regular Expressions**  
 Jeffrey E F Friedl  
 O’Really  
 

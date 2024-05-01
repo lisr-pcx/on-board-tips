@@ -10,8 +10,8 @@ Team Leads responsibilities include:
 + Organizing work
 + Communication (give context)
 + Delegating
-+ [Leading by example](https://asana.com/resources/lead-by-example)
-+ [Allocating and managing resources](https://asana.com/resources/resource-allocation)
++ Leading by example [(link)](https://asana.com/resources/lead-by-example)
++ Allocating and managing resources [(link)]](https://asana.com/resources/resource-allocation)
 + Problem solving
 + Managing project progress and reporting to stakeholders
 + Coaching to improve team member skill sets and identifying areas for improvement
@@ -20,7 +20,7 @@ Team Leads responsibilities include:
 
 ## Transition to Lead-Role
 
-During transition from Dev to Tech-Lead be aware about your new duties and **avoid these common errors**:
+During transition from Dev to Tech-Lead be aware about your new duties and **avoid these errors**:
 
 + Writing code all the time - *You have also coordination and management task to do for the team, not just coding*
 + Making all the technical decisions - *Leave some challenges to your team, use their know-how*
@@ -79,7 +79,8 @@ Be honest, be fair, practice empathy.
     
 **Mentoring and coaching**  
 A big part of a team leader’s role is to provide coaching, training, and mentoring where applicable.  
-Ask everytime for feedbacks but also give them. Identify communication channels and ways to promote these exchanges and growth.  
+Ask everytime for feedbacks but also give them. Identify communication channels and ways to promote these exchanges and growth.
+
 Remember: **"Lead by example. Be the developer you wanna work with."**
 
 ## Mastering in three steps
@@ -110,7 +111,7 @@ There are different way to lead a team, apply them carefully:
 
 ![Leadership styles](meta/leadership_styles.png)
 
-## Common errors and lessons learned
+## Lessons learned
 
 ### Define the workflow
 
@@ -147,60 +148,8 @@ Follow these principles:
 + Give **clear**, **relevant** feedbacks and share your experience
 + Give opportunity to deliberate practice
 
-## More concepts
 
-### SMART
-
-This method allows you to write goals that are clear, attainable and meaningful.  
-Having clarity in your goal-setting provides the motivation and focus you need to be successful.
-
-+ **S**pecific (simple, sensible, significant)
-+ **M**easurable (meaningful, motivating)
-+ **A**chievable (agreed, attainable)
-+ **R**elevant (reasonable, realistic and resourced, results-based)
-+ **T**ime bound (time-based, time limited, time/cost limited, timely, time-sensitive)
-
-## The Google Project Aristotle
-
-The researchers found ([read](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html)) that what really mattered was less about who is on the team, and more about how the team worked together. In order of importance:
-
-**Psychological safety** ([video](https://youtu.be/LhoLuui9gX8))  
-Team members feel safe to take risks and be vulnerable in front of each other  
-*“If I make a mistake on our team, it is not held against me.”*
-	
-**Dependability**  
-Team members get things done on time and meet Google’s high bar for excellence
-*“When my teammates say they’ll do something, they follow through with it.”*
-
-**Structure and clarity**
-Team members have clear roles, plans and goals
-*“Our team has an effective decision-making process.”*
-
-**Meaning**  
-Work is personally important to team members
-*“The work I do for our team is meaningful to me.”*
-
-**Impact**  
-Team members think their work matters and creates change
-*“I understand how our team’s work contributes to the organization's goals.”*
-
-The researchers also discovered which variables were not significantly connected with team effectiveness at Google:
-
-+ Collocation of teammates (sitting together in the same office)
-+ Consensus-driven decision making
-+ Extroversion of team members
-+ Individual performance of team members
-+ Workload size
-+ Seniority
-+ Team size
-+ Tenure
-
-It’s important to note though that while these variables did not significantly impact team effectiveness measurements at Google, that doesn’t mean they’re not important elsewhere.
-
-> The fundamental thing that distinguish good teams from disfunctional ones is how team mates treat one another.  
-> *Sandi Metz*
-
-## Links and resources
+## Links
 
 [How to lead](https://youtu.be/95QwKa34PU4)
 
@@ -210,16 +159,6 @@ It’s important to note though that while these variables did not significantly
 
 [Emotional intelligence skills](https://asana.com/resources/emotional-intelligence-skills)
 
-[Smart goals](https://asana.com/resources/smart-goals)
-
 [Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow](https://youtu.be/xqT8e6_yzLg)
 
 [Using Agile Techniques to Build a More Inclusive Team](https://youtu.be/Atfxtk2Q90k)
-
-[Radical candor](https://youtu.be/MIh_992Nfes)
-
-[Love Your Work](https://youtu.be/jDIZS4IQlQk)
-
-[Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)
-
-[An Engineer's Guide To Burnout And How To Hack It](https://youtu.be/jfQ5M6wXi2w)

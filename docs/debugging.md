@@ -80,7 +80,7 @@ Don't analyze everything but isolate and check in a kind of way as binary search
 
 **TIP** verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.
 
-## Links and resources
+## Links
 
 [Bob Steagall, CppCon 2021, Debugging Techniques](https://youtu.be/M7fV-eQwxrY)
 

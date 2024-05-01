@@ -1,9 +1,7 @@
 # Welcome to OnBoardCpp
 
-Training material for C/C++ developers.
+Training material for C/C++ developers, and other stuff...
 
-Full site is available on [GitHub](https://lisr-pcx.github.io/on-board-cpp)
+Full site is available on [GitHub](https://github.com/lisr-pcx/on-board-cpp)
 
-(under construction)
-
-(last update: January 2024)
+(under construction, last update: January 2024)

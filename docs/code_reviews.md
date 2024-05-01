@@ -89,7 +89,7 @@ Quick overview on dynamic analysis tools
 
 In progress
 
-### Logic algorithms and code flow
+### Logical operations and code flow
 
 In progress
 
@@ -97,7 +97,7 @@ In progress
 
 In progress
 
-## Links and resources
+## Links
 
 [Google code review overview](https://google.github.io/eng-practices/review/)
 

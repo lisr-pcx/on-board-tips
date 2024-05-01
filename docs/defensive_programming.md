@@ -1,8 +1,4 @@
-# Best practices
-
-A list of topics about doing things better and smarter.
-
-## Defensive programming
+# Defensive programming
 
 It's a form of defensive design intended to develop programs that are capable of detecting potential security anomalies and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances. These practices are often used where high availability, safety, or security is needed. *(source: Wikipedia)*
 

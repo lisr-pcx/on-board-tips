@@ -10,29 +10,29 @@ nav:
     - STL: empty.md
     - Lamba Expressions: empty.md
   - 'General':
+    - Technical documentation: technical_documentation.md
     - Git basics: git_basics.md
     - Threads: empty.md
     - Sockets: empty.md
     - Regular Expressions: regular_expressions.md
   - 'Workflow':
-    - Analysis and sw requirements: empty.md
-    - Best practices: best_practices.md
+    - Analysis and sw requirements: empty.md    
     - Debugging: debugging.md
     - Code reviews: code_reviews.md
-  - 'OOP':
-    - Design basics: empty.md
+  - 'Best practices':
+    - Defensive programming: defensive_programming.md
   - 'Tips':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
+    - More stuff: more_stuff.md
   - About: about.md
 
-markdown_extensions:
-  - attr_list
-  - md_in_html
-
 theme: 
-  name: terminal
-  palette: sans
+  name: readthedocs
+  include_homepage_in_sidebar: False
+  prev_next_buttons_location: none
+  titles_only: True
+  logo: null
 
 extra_css:
   - style.css

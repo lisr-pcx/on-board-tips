@@ -8,43 +8,32 @@ An introduction to markdown syntax is available [here](https://www.markdownguide
 
 ## Workflow
 
+Install Python and MkDocs.  
+For Linux (Debian) users run the following commands:
+
+```
+$ sudo apt install python3
+$ python3 --version
+$ sudo apt install python3-pip
+$ pip3 --version
+$ sudo apt-get install mkdocs
+```
+
+Then follow the steps:
+
 1. Clone the repository
 
 2. Edit pages inside folder: _docs/_
 
 3. Verify the changes locally (http://127.0.0.1:8000) run command  
-``$ mkdocs serve``
+   ``$ mkdocs serve``
 
 4. upload the changes to remote site (on GitHub branch named _gh-pages_) run command  
-``$ mkdocs gh-deploy``
+   ``$ mkdocs gh-deploy``
 
-5 Open the [website](https://lisr-pcx.github.io/on-board-cpp)
-
-## Support and Feedbacks
-
-Any kind of help to build a better documentation is welcome.  
-Thanks!
+5. Open the [website](https://lisr-pcx.github.io/on-board-cpp)
 
 ## TODO
 
-Full site index will be:
-
-Welcome
-Focus on
-    pointers
-    memory
-    data structures
-    STL
-    Lambda Expressions
-General
-    Git basics
-    Threads
-    Sockets
-    Regex
-    Workflow
-OOP
-    Design basics
-Tips
-    Tips for junior devs
-    Tips for team leader
-About
++ complete pages
++ change css style for better clarity
