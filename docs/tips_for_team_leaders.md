@@ -100,7 +100,6 @@ Achieve tech lead mastery by:
 3. **Motivate**. Guide your team to the best possible result
     1. Your attitude is important. When complaining you’re not finding a solution.
 
-
 Remember that teams are not immutable: adding people in a team change cultural values, relationships, … it becames a new team. Think about it when hiring!
 
 Also people who leave the team for a certain amount of time (sick leave, newborn, temporary moved …) modify the team identity and roles inside.
@@ -148,17 +147,11 @@ Follow these principles:
 + Give **clear**, **relevant** feedbacks and share your experience
 + Give opportunity to deliberate practice
 
-
 ## Links
 
-[How to lead](https://youtu.be/95QwKa34PU4)
-
-[10 things great team leaders do](https://asana.com/resources/team-lead)
-
-[Problem solving strategies](https://asana.com/resources/problem-solving-strategies)
-
-[Emotional intelligence skills](https://asana.com/resources/emotional-intelligence-skills)
-
-[Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow](https://youtu.be/xqT8e6_yzLg)
-
-[Using Agile Techniques to Build a More Inclusive Team](https://youtu.be/Atfxtk2Q90k)
+[How to lead](https://youtu.be/95QwKa34PU4)  
+[10 things great team leaders do](https://asana.com/resources/team-lead)  
+[Problem solving strategies](https://asana.com/resources/problem-solving-strategies)  
+[Emotional intelligence skills](https://asana.com/resources/emotional-intelligence-skills)  
+[Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow](https://youtu.be/xqT8e6_yzLg)  
+[Using Agile Techniques to Build a More Inclusive Team](https://youtu.be/Atfxtk2Q90k)  

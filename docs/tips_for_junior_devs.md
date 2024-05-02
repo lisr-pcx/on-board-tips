@@ -80,6 +80,5 @@ Be aware about the [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_sy
 
 ## Links
 
-[Habits of Efficient Developers](https://youtu.be/9-cyC6O81Bk)
-
-[Beyond Developer](https://youtu.be/wYEk0y8LYfg)
+[Habits of Efficient Developers](https://youtu.be/9-cyC6O81Bk)  
+[Beyond Developer](https://youtu.be/wYEk0y8LYfg)  

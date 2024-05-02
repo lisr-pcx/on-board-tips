@@ -44,7 +44,8 @@ int main(){
 }
 ```
 
-**TIP** add these flag to the compiler `-Wall` and `-Wextra` in order to catch these kind of errors.
+!!! tip
+    Add these flag to the compiler `-Wall` and `-Wextra` in order to catch these kind of errors.
 
 ### (2) Printf debugging
 
@@ -72,18 +73,18 @@ int main(){
 }
 ```
 
-**TIP** be aware that on embedded systems adding a lot of printf can affect performance and behavior.
+!!! tip
+    Be aware that on embedded systems adding a lot of printf can affect performance and behavior.
 
 ### (3) Delta debugging
 
 Don't analyze everything but isolate and check in a kind of way as binary search.
 
-**TIP** verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.
+!!! tip
+    Verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.
 
 ## Links
 
-[Bob Steagall, CppCon 2021, Debugging Techniques](https://youtu.be/M7fV-eQwxrY)
-
-[Mike Shah, CppCon 2022, Debugging in C++](https://youtu.be/YzIBwqWC6EM)
-
-[Debugging with GDB: the GNU Source-Level Debugger](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)
+[Bob Steagall, CppCon 2021, Debugging Techniques](https://youtu.be/M7fV-eQwxrY)  
+[Mike Shah, CppCon 2022, Debugging in C++](https://youtu.be/YzIBwqWC6EM)  
+[Debugging with GDB: the GNU Source-Level Debugger](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)  

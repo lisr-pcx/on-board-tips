@@ -33,14 +33,14 @@ Download and run the [Installer](https://git-scm.com/downloads).
 
 Then configure your local account:
 
-```cpp
+```console
 git config --global user.name “YOUR USERNAME”
 git config --global user.email “YOUREMAILADDRESS@EXAMPLE.COM”
 ```
 
 Check your current configuration:
 
-```cpp
+```console
 git config --global --list
 ```
 
@@ -48,7 +48,7 @@ git config --global --list
 
 Most of the time you will contribute to an existing project. The first step is to get a local copy of the sourcecode from the repository (remote server).
 
-```cpp
+```console
 git clone <put here URL of repository>
 ```
 
@@ -60,7 +60,7 @@ Be aware that hidden folder ".git" contains information and history of the repos
 
 Keep your local branches synchronized, run the **git pull** command in order to fetch and download content from remote repository.
 
-```cpp
+```console
 git pull
 git pull <put here URL of repository>
 git pull --verbose
@@ -70,26 +70,26 @@ git pull --verbose
 
 Before changing anything on your local copy make sure you are working on the right branch, list them:
 
-```cpp
+```console
 git branch
 git branch --list
 ```
 
 To create a local branch:
 
-```cpp
+```console
 git branch <put here name>
 ```
 
 To create a remote branch:
 
-```cpp
+```console
 git remote add <remote branch name> <put here URL of repository>
 ```
 
 Change (local) current working branch using:
 
-```cpp
+```console
 git checkout <put here branch name>
 ```
 
@@ -97,13 +97,13 @@ git checkout <put here branch name>
 
 Be familiar with the concept of [staging area](https://git-scm.com/about/staging-area), and verify the current status with:
 
-```cpp
+```console
 git status
 ```
 
 Then add files and changes you want to commit via:
 
-```cpp
+```console
 git add <filename>
 git add <directory>
 git add -u              <- stage modified and deleted files only (already part of the index)
@@ -112,7 +112,7 @@ git add .               <- stage all files in the entire repository
 
 Finally create a snapshot of these changes, it will be available in the history of **commits** of the branch.
 
-```cpp
+```console
 git commit -m "commit short description"
 git commit
 ```
@@ -128,7 +128,7 @@ I strongly suggest to use **git commit**, in order to open the predefined editor
 
 Some tips are available [here](https://www.conventionalcommits.org/en/v1.0.0/). When closing the editor the commit will be automatically done. Check the history via:
 
-```cpp
+```console
 git log --oneline
 git log -p <commit A sha> <commit B sha>
 git show <commit sha>
@@ -138,7 +138,7 @@ git show <commit sha>:filepathname > filepathname_of_the_copy
 
 If you want to get rid of all your changes (staged and not) and go back to the last commit use:
 
-```cpp
+```console
 git reset --hard
 ```
 
@@ -146,14 +146,14 @@ git reset --hard
 
 Upload your local repository content to the remote one, via **git push** command:
 
-```cpp
+```console
 git push
 git push <remote branch name>
 ```
 
 If you want to configure a relationship between your local branch and a remote one proceed as:
 
-```cpp
+```console
 git checkout <local branch>
 git branch --set-upstream-to=<remote repo/branch>
 git branch -vv
@@ -177,9 +177,8 @@ To do that create a hidden file name **".gitignore"** and edit putting inside al
 
 Example for Atmel embedded project:
 
-```cpp
+```text
 ## Ignore Atmel Studio temporary files and build results
-# https://www.microchip.com/mplab/avr-support/atmel-studio-7
 
 # Atmel Studio is powered by an older version of Visual Studio,
 # so most of the project and solution files are the same as VS files,
@@ -210,10 +209,7 @@ Other files are usually part of the repository:
 
 ## Links
 
-[Git guide from Github platform](https://github.com/git-guides)
-
-[Gitflow in 5 minutes](https://youtu.be/1SXpE08hvGs)
-
-[Git tutorial from freeCodeCamp.org](https://youtu.be/Uszj_k0DGsg)
-
-Third-party Git GUI clients: [Tortoise Git](https://tortoisegit.org/), [GitHub Desktop](https://desktop.github.com/), [Sourcetree](https://www.sourcetreeapp.com/)
+[Git guide from Github platform](https://github.com/git-guides)  
+[Gitflow in 5 minutes](https://youtu.be/1SXpE08hvGs)  
+[Git tutorial from freeCodeCamp.org](https://youtu.be/Uszj_k0DGsg)  
+Third-party Git GUI clients: [Tortoise Git](https://tortoisegit.org/), [GitHub Desktop](https://desktop.github.com/), [Sourcetree](https://www.sourcetreeapp.com/)  

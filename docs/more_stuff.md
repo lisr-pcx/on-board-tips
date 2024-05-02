@@ -55,12 +55,8 @@ It’s important to note though that while these variables did not significantly
 
 ## Links
 
-[Smart goals](https://asana.com/resources/smart-goals)
-
-[Radical candor](https://youtu.be/MIh_992Nfes)
-
-[Love Your Work](https://youtu.be/jDIZS4IQlQk)
-
-[Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)
-
-[An Engineer's Guide To Burnout And How To Hack It](https://youtu.be/jfQ5M6wXi2w)
+[Smart goals](https://asana.com/resources/smart-goals)  
+[Radical candor](https://youtu.be/MIh_992Nfes)  
+[Love Your Work](https://youtu.be/jDIZS4IQlQk)  
+[Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)  
+[An Engineer's Guide To Burnout And How To Hack It](https://youtu.be/jfQ5M6wXi2w)  

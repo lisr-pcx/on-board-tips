@@ -88,16 +88,12 @@ bool ValidateFunction(std::string sample)
 }
 ```
 
-
 ## Links
 
-For a quick overview [Regex by Corey Schafer](https://youtu.be/sa-TUpSx1JA)
-
-Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ weekly regex optimization](https://youtu.be/7hfSyxNxFfo)
-
-[Regex on Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)
-
-[Online checker for regex](https://regex101.com/)
+For a quick overview [Regex by Corey Schafer](https://youtu.be/sa-TUpSx1JA)  
+Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ weekly regex optimization](https://youtu.be/7hfSyxNxFfo)  
+[Regex on Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)  
+[Online checker for regex](https://regex101.com/)  
 
 ## Books
 

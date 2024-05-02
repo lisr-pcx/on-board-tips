@@ -99,12 +99,8 @@ In progress
 
 ## Links
 
-[Google code review overview](https://google.github.io/eng-practices/review/)
-
-[Guidelines for better, faster pull request reviews](https://github.com/mawrkus/pull-request-review-guide)
-
-[Curated list of resources about code reviews](https://github.com/mgreiler/all-about-code-review)
-
-[Awesome list of code review resources](https://github.com/joho/awesome-code-review)
-
-[Michael Lynch post](https://mtlynch.io/code-review-love/)
+[Google code review overview](https://google.github.io/eng-practices/review/)  
+[Guidelines for better, faster pull request reviews](https://github.com/mawrkus/pull-request-review-guide)  
+[Curated list of resources about code reviews](https://github.com/mgreiler/all-about-code-review)  
+[Awesome list of code review resources](https://github.com/joho/awesome-code-review)  
+[Michael Lynch post](https://mtlynch.io/code-review-love/)  

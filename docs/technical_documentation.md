@@ -9,9 +9,10 @@ Remember that writing documentation is part of the task. Only once documentation
 
 Identify your audience:
 
-+ Internal use (System design, architecture ..)  
++ Internal use (System design, architecture ..)
   Things that your worked on, that bugged you, what's unclear
-+ External use (API doc, ..)  
+
++ External use (API doc, ..)
   Quick start, issues, FAQ, examples ..
 
 Always include a table of contents or summary in your documentation, and keep in mind the reader approach follow these steps:
@@ -24,11 +25,10 @@ Always include a table of contents or summary in your documentation, and keep in
 Write in simple english, anyone can do that, **just be clear, simple and go straight to the point**. The goal is to provide information (to help people), this is not an essay.  
 Always share your text/draft with other team members and ask for feedbacks/reviews to improve clarity.
 
-### Avoid "single points of failure"
-
-Do not be the silo of information of your team. If you are the only one able to fix/do some stuff then forget about holidays and relaxing time.
-
-Share knownledge and make everyone confortable to manage the source code.
+!!! tip
+    Avoid "single points of failure": don't be the silo of information of your team.  
+    If you are the only one able to fix/do some stuff then forget about holidays and relaxing time.  
+    Share knownledge and make everyone confortable to manage the source code.
 
 ## Docs as a Code
 
@@ -62,4 +62,4 @@ Another benefit is that your documents are always updated and synchronized with 
 
 ## Links
 
-[Tech Docs, how can I write them better](https://youtu.be/0e22AQJTuOA)
+[Tech Docs, how can I write them better](https://youtu.be/0e22AQJTuOA)  

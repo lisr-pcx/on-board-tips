@@ -33,6 +33,10 @@ theme:
   prev_next_buttons_location: none
   titles_only: True
   logo: null
+  custom_dir: custom_theme/
+
+markdown_extensions:
+  - admonition
 
 extra_css:
   - style.css
