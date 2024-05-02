@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/about/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/technical_documentation/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
 <title>OnBoard Cpp</title>
 
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "About";
-        var mkdocs_page_input_path = "about.md";
-        var mkdocs_page_url = "/on-board-cpp/about/";
+        var mkdocs_page_name = "Technical documentation";
+        var mkdocs_page_input_path = "technical_documentation.md";
+        var mkdocs_page_url = "/on-board-cpp/technical_documentation/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -56,8 +56,8 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Technical documentation</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../git_basics/">Git basics</a>
                   </li>
@@ -91,8 +91,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
                   </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">About</a>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                 </li>
               </ul>
       </div>
@@ -109,7 +109,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>About</li>
+          <li>General &raquo;</li>
+      <li>Technical documentation</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -118,12 +119,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="about">About</h1>
-<p>Notes, links and tips collected during my last years as embedded software developer.</p>
-<p>Some information on these pages are older than six years now. I keep them for reference but probably do not reflect my current knowledge and beliefs.<br />
-Thanks to: MT, FL, BD, ST, GI, LM</p>
-<p>Reviews and feedbacks are welcome.</p>
-<p><img alt="About" src="../meta/about_FT_photo.png" title="Photo by F.Tessarollo" /></p>
+                <h1 id="technical-documentation">Technical Documentation</h1>
+<p>Forget the idea "My code is self documented", anyone who use your baseline need a good source of information about logical operations, design choice, guidelines, theory behind .. , troubleshooting, tips and tricks.<br />
+Do not confuse writing clear - and clean - code, with the documentation process, they are both necessary but they have different goal.</p>
+<p>Remember that writing documentation is part of the task. Only once documentation is added the activity can be mark as done.</p>
+<h2 id="how-to-write-technical-documents">How to write technical documents</h2>
+<p>Identify your audience:</p>
+<ul>
+<li>
+<p>Internal use (System design, architecture ..)
+  Things that your worked on, that bugged you, what's unclear</p>
+</li>
+<li>
+<p>External use (API doc, ..)
+  Quick start, issues, FAQ, examples ..</p>
+</li>
+</ul>
+<p>Always include a table of contents or summary in your documentation, and keep in mind the reader approach follow these steps:</p>
+<ol>
+<li>SEARCH (meaningful titles, headings, keywords, tags)</li>
+<li>SCAN (the entire page without reading)</li>
+<li>NAVIGATE (links to related topics)</li>
+<li>RESULT (short words and more sentences)</li>
+</ol>
+<p>Write in simple english, anyone can do that, <strong>just be clear, simple and go straight to the point</strong>. The goal is to provide information (to help people), this is not an essay.<br />
+Always share your text/draft with other team members and ask for feedbacks/reviews to improve clarity.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Avoid "single points of failure": don't be the silo of information of your team.<br />
+If you are the only one able to fix/do some stuff then forget about holidays and relaxing time.<br />
+Share knownledge and make everyone confortable to manage the source code.</p>
+</div>
+<h2 id="docs-as-a-code">Docs as a Code</h2>
+<p>Documentation as code is the process of creating and maintaining documentation in the same way as it is done for code.<br />
+This involves usually version control software, Markdown formatting, and defined workflows. In this way the development and product teams work closely together, and easily share the knownledge.</p>
+<p>Another benefit is that your documents are always updated and synchronized with the development process (CI/CD integration).</p>
+<h2 id="writing-tips-by-j-schulgasser-wix">Writing tips by J. Schulgasser (Wix)</h2>
+<ul>
+<li>Assume that your audience is already familir with industry/terms, but make sure to explain anything project-specific</li>
+<li>Use active words for any action performed by reader/system.</li>
+<li>Use the present tense for all situation (future tense is almost never required or desiderable).</li>
+<li>Use sentence case in headers.</li>
+<li>Capitalize proper names.</li>
+<li>Always capitalize acronyms.</li>
+<li>Do not use gerunds in task headers.</li>
+<li>Use numbered list to indicate steps in sequence and bulleted lists otherwise.</li>
+<li>For each steps describe where the step occurs, what to do, and what the expected result is (if applicable)</li>
+<li>Long procedures should be broken up into several smaller ones.</li>
+<li>If it is a feature name then should be capitalized.</li>
+<li>Link the first use to a definition if they are unfamiliar.</li>
+<li>Continually use the same terms for UI elements, system entities, and actions.</li>
+<li>A reader should be able to find all uses of the same word by performing a simple search.</li>
+<li>Emphasize important content using notes or bold text.</li>
+<li>Use bold for words that appear in the UI.</li>
+<li>Never use gender pronouns.</li>
+<li>Use links that contains the subject to which they are linking.</li>
+<li>Make use of automated spelling and grammars tools.</li>
+<li>Add useful alternative text for images.</li>
+</ul>
+<h2 id="links">Links</h2>
+<p><a href="https://youtu.be/0e22AQJTuOA">Tech Docs, how can I write them better</a>  </p>
               
             </div>
           </div><footer>
@@ -148,8 +203,10 @@ Thanks to: MT, FL, BD, ST, GI, LM</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../more_stuff/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../empty/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../git_basics/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

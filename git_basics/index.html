@@ -1,620 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="generator" content="mkdocs-1.5.1, mkdocs-terminal-4.4.0">
-     
-     
-    
-    <link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/git_basics/"><link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
-<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
-<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
-<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/git_basics/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+<title>OnBoard Cpp</title>
 
-
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
     
- 
-<title>Git basics - OnBoardCpp</title>
-
-
-<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
-<link href="../css/normalize.css" rel="stylesheet">
-<link href="../css/terminal.css" rel="stylesheet">
-<link href="../css/theme.css" rel="stylesheet">
-<link href="../css/theme.tile_grid.css" rel="stylesheet">
-<link href="../css/theme.footer.css" rel="stylesheet">
-<!-- sans color palette -->
-<link href="../css/palettes/sans.css" rel="stylesheet">
-
-<!-- page layout -->
-<style>
-/* initially set page layout to a one column grid */
-.terminal-mkdocs-main-grid {
-    display: grid;
-    grid-column-gap: 1.4em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
-
-/*  
-*   when side navigation is not hidden, use a two column grid.  
-*   if the screen is too narrow, fall back to the initial one column grid layout.
-*   in this case the main content will be placed under the navigation panel. 
-*/
-@media only screen and (min-width: 70em) {
-    .terminal-mkdocs-main-grid {
-        grid-template-columns: 4fr 9fr;
-    }
-}</style>
-
-
-
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Git basics";
+        var mkdocs_page_input_path = "git_basics.md";
+        var mkdocs_page_url = "/on-board-cpp/git_basics/";
+      </script>
     
-    <link href="../style.css" rel="stylesheet">  
-    
-    
-
-    
-    <!-- search css support -->
-<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
-<!-- search scripts -->
-<script>
-    var base_url = "..",
-    shortcuts = "{}";
-</script>
-<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
-<script src="../js/bootstrap/bootstrap.min.js" defer></script>
-<script src="../js/mkdocs/base.js" defer></script>
-    
-    
-    
-    
-    <script src="../search/main.js"></script>
-    
-
-    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
-<body class="terminal"><div class="container">
-    <div class="terminal-nav">
-        <header class="terminal-logo">
-            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="https://lisr-pcx.github.io/on-board-cpp/" class="no-style">OnBoardCpp</a></div>
-        </header>
-        
-        <nav class="terminal-menu">
-            
-            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
-                
-                
-                <li property="itemListElement" typeof="ListItem">
-                    <a href=".." class="menu-item " property="item" typeof="WebPage">
-                        <span property="name">Welcome</span>
-                    </a>
-                    <meta property="position" content="0">
-                </li>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                <li property="itemListElement" typeof="ListItem">
-                    <a href="../about/" class="menu-item " property="item" typeof="WebPage">
-                        <span property="name">About</span>
-                    </a>
-                    <meta property="position" content="1">
-                </li>
-                
-                    
-                    
+<body class="wy-body-for-nav" role="document">
 
-
-<li property="itemListElement" typeof="ListItem">
-    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
-        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
-    </a>
-    <meta property="position" content="2">
-</li>
-                    
-            </ul>
-            
-        </nav>
-    </div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> OnBoardCpp
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
 </div>
-        
-    <div class="container">
-        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
-  
-    <ul class="terminal-mkdocs-side-nav-items">
-        
-          
+      </div>
 
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Focus on</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Pointers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Memory management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Data structures</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">STL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Lamba Expressions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Git basics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Threads</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Sockets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../regular_expressions/">Regular Expressions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Analysis and sw requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Best practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tips</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../tips_for_junior_devs/">Tips for Junior Devs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tips_for_team_leaders/">Tips for Team Leaders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
 
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-    
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">OnBoardCpp</a>
         
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="..">Welcome</a>
-        
-    
-    
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-        
-        
-
-        
-            
-    
-        
-        
-            
-            
-            <span class="
-        
-    
-
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Focus on</span>
-        
-    
-    
-        
-      
-        
-            <ul class="terminal-mkdocs-side-nav-li-ul">
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Pointers</a>
-        
-    
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>General &raquo;</li>
+      <li>Git basics</li>
+    <li class="wy-breadcrumbs-aside">
     </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Memory management</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Data structures</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">STL</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Lamba Expressions</a>
-        
-    
-    </li>
-            
-            
-    </ul>
-        
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-        
-        
-
-        
-            
-    
-        
-        <span class="
-        
-    
-
-    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">General</span>
-    
-    
-        
-      
-        
-            <ul class="terminal-mkdocs-side-nav-li-ul">
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        <span class="
-
-    terminal-mkdocs-side-nav-item--active">Git basics</span>
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Threads</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Sockets</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../regular_expressions/">Regular Expressions</a>
-        
-    
-    </li>
-            
-            
-    </ul>
-        
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-        
-        
-
-        
-            
-    
-        
-        
-            
-            
-            <span class="
-        
-    
-
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Workflow</span>
-        
-    
-    
-        
-      
-        
-            <ul class="terminal-mkdocs-side-nav-li-ul">
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Analysis and sw requirements</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../best_practices/">Best practices</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../debugging/">Debugging</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../code_reviews/">Code reviews</a>
-        
-    
-    </li>
-            
-            
-    </ul>
-        
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-        
-        
-
-        
-            
-    
-        
-        
-            
-            
-            <span class="
-        
-    
-
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">OOP</span>
-        
-    
-    
-        
-      
-        
-            <ul class="terminal-mkdocs-side-nav-li-ul">
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../empty/">Design basics</a>
-        
-    
-    </li>
-            
-            
-    </ul>
-        
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-        
-        
-
-        
-            
-    
-        
-        
-            
-            
-            <span class="
-        
-    
-
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Tips</span>
-        
-    
-    
-        
-      
-        
-            <ul class="terminal-mkdocs-side-nav-li-ul">
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../tips_for_junior_devs/">Tips for Junior Devs</a>
-        
-    
-    </li>
-            
-        
-            
-            
-
-             
-                <li class="terminal-mkdocs-side-nav-li-ul-li">
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../tips_for_team_leaders/">Tips for Team Leaders</a>
-        
-    
-    </li>
-            
-            
-    </ul>
-        
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="../about/">About</a>
-        
-    
-    
-    
-  </li>
-        
-    </ul>
-  
-</nav><hr>
-<nav>
-    <ul>
-        <li><a href="#git-basics">Git basics</a></li>
-        <li><a href="#overview">Overview</a></li><li><a href="#installation">Installation</a></li><li><a href="#remote-and-local-repo">Remote and local repo</a></li><li><a href="#daily-operations">Daily operations</a></li><li><a href="#files-management">Files management</a></li><li><a href="#links-and-resources">Links and resources</a></li>
-    </ul>
-</nav>
-</aside>
-            <main id="terminal-mkdocs-main-content">
-<section id="mkdocs-terminal-content">
-    <h1 id="git-basics">Git basics</h1>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="git-basics">Git basics</h1>
 <p>Three good reasons for using a version control software on daily basis:</p>
 <ul>
 <li>backup of your source code</li>
@@ -639,50 +144,50 @@
 <h2 id="installation">Installation</h2>
 <p>Download and run the <a href="https://git-scm.com/downloads">Installer</a>.</p>
 <p>Then configure your local account:</p>
-<pre><code class="language-cpp">git config --global user.name “YOUR USERNAME”
+<pre><code class="language-console">git config --global user.name “YOUR USERNAME”
 git config --global user.email “YOUREMAILADDRESS@EXAMPLE.COM”
 </code></pre>
 <p>Check your current configuration:</p>
-<pre><code class="language-cpp">git config --global --list
+<pre><code class="language-console">git config --global --list
 </code></pre>
 <h2 id="remote-and-local-repo">Remote and local repo</h2>
 <p>Most of the time you will contribute to an existing project. The first step is to get a local copy of the sourcecode from the repository (remote server).</p>
-<pre><code class="language-cpp">git clone &lt;put here URL of repository&gt;
+<pre><code class="language-console">git clone &lt;put here URL of repository&gt;
 </code></pre>
 <p>Be aware that hidden folder ".git" contains information and history of the repository. Don't delete it and don't edit the content.</p>
 <h2 id="daily-operations">Daily operations</h2>
 <h3 id="pull">Pull</h3>
 <p>Keep your local branches synchronized, run the <strong>git pull</strong> command in order to fetch and download content from remote repository.</p>
-<pre><code class="language-cpp">git pull
+<pre><code class="language-console">git pull
 git pull &lt;put here URL of repository&gt;
 git pull --verbose
 </code></pre>
 <h3 id="branch-and-checkout">Branch and Checkout</h3>
 <p>Before changing anything on your local copy make sure you are working on the right branch, list them:</p>
-<pre><code class="language-cpp">git branch
+<pre><code class="language-console">git branch
 git branch --list
 </code></pre>
 <p>To create a local branch:</p>
-<pre><code class="language-cpp">git branch &lt;put here name&gt;
+<pre><code class="language-console">git branch &lt;put here name&gt;
 </code></pre>
 <p>To create a remote branch:</p>
-<pre><code class="language-cpp">git remote add &lt;remote branch name&gt; &lt;put here URL of repository&gt;
+<pre><code class="language-console">git remote add &lt;remote branch name&gt; &lt;put here URL of repository&gt;
 </code></pre>
 <p>Change (local) current working branch using:</p>
-<pre><code class="language-cpp">git checkout &lt;put here branch name&gt;
+<pre><code class="language-console">git checkout &lt;put here branch name&gt;
 </code></pre>
 <h3 id="status-add-and-commit">Status, Add and Commit</h3>
 <p>Be familiar with the concept of <a href="https://git-scm.com/about/staging-area">staging area</a>, and verify the current status with:</p>
-<pre><code class="language-cpp">git status
+<pre><code class="language-console">git status
 </code></pre>
 <p>Then add files and changes you want to commit via:</p>
-<pre><code class="language-cpp">git add &lt;filename&gt;
+<pre><code class="language-console">git add &lt;filename&gt;
 git add &lt;directory&gt;
 git add -u              &lt;- stage modified and deleted files only (already part of the index)
 git add .               &lt;- stage all files in the entire repository
 </code></pre>
 <p>Finally create a snapshot of these changes, it will be available in the history of <strong>commits</strong> of the branch.</p>
-<pre><code class="language-cpp">git commit -m &quot;commit short description&quot;
+<pre><code class="language-console">git commit -m &quot;commit short description&quot;
 git commit
 </code></pre>
 <p>I strongly suggest to use <strong>git commit</strong>, in order to open the predefined editor and write a complete description of the changes, including:</p>
@@ -695,22 +200,22 @@ git commit
 <li>Put notes for the "you from the future"</li>
 </ul>
 <p>Some tips are available <a href="https://www.conventionalcommits.org/en/v1.0.0/">here</a>. When closing the editor the commit will be automatically done. Check the history via:</p>
-<pre><code class="language-cpp">git log --oneline
+<pre><code class="language-console">git log --oneline
 git log -p &lt;commit A sha&gt; &lt;commit B sha&gt;
 git show &lt;commit sha&gt;
 git show &lt;commit sha&gt; --stat
 git show &lt;commit sha&gt;:filepathname &gt; filepathname_of_the_copy
 </code></pre>
 <p>If you want to get rid of all your changes (staged and not) and go back to the last commit use:</p>
-<pre><code class="language-cpp">git reset --hard
+<pre><code class="language-console">git reset --hard
 </code></pre>
 <h3 id="push">Push</h3>
 <p>Upload your local repository content to the remote one, via <strong>git push</strong> command:</p>
-<pre><code class="language-cpp">git push
+<pre><code class="language-console">git push
 git push &lt;remote branch name&gt;
 </code></pre>
 <p>If you want to configure a relationship between your local branch and a remote one proceed as:</p>
-<pre><code class="language-cpp">git checkout &lt;local branch&gt;
+<pre><code class="language-console">git checkout &lt;local branch&gt;
 git branch --set-upstream-to=&lt;remote repo/branch&gt;
 git branch -vv
 </code></pre>
@@ -723,8 +228,7 @@ git branch -vv
 <p>There are some files you may want Git to ignore and not track in your repository. These include many that are auto-generated (by IDE) or platform-specific, as well as other local configuration files or compiled code (.elf .exe .bin).</p>
 <p>To do that create a hidden file name <strong>".gitignore"</strong> and edit putting inside all folders and name files that you want to ignore. Please note that multiple .gitgnore files can be created inside each project folder for better filter granularity. <a href="https://github.com/github/gitignore">Here some templates</a></p>
 <p>Example for Atmel embedded project:</p>
-<pre><code class="language-cpp">## Ignore Atmel Studio temporary files and build results
-# https://www.microchip.com/mplab/avr-support/atmel-studio-7
+<pre><code class="language-text">## Ignore Atmel Studio temporary files and build results
 
 # Atmel Studio is powered by an older version of Visual Studio,
 # so most of the project and solution files are the same as VS files,
@@ -752,48 +256,51 @@ git branch -vv
 <li><strong>CONTRIBUTE.md</strong> Guideline for contributing to the project.</li>
 <li><strong>LICENSE.md</strong> Software license information</li>
 </ul>
-<h2 id="links-and-resources">Links and resources</h2>
-<p><a href="https://github.com/git-guides">Git guide from Github platform</a></p>
-<p><a href="https://youtu.be/1SXpE08hvGs">Gitflow in 5 minutes</a></p>
-<p><a href="https://youtu.be/Uszj_k0DGsg">Git tutorial from freeCodeCamp.org</a></p>
-<p>Third-party Git GUI clients: <a href="https://tortoisegit.org/">Tortoise Git</a>, <a href="https://desktop.github.com/">GitHub Desktop</a>, <a href="https://www.sourcetreeapp.com/">Sourcetree</a></p>
-</section>
+<h2 id="links">Links</h2>
+<p><a href="https://github.com/git-guides">Git guide from Github platform</a><br />
+<a href="https://youtu.be/1SXpE08hvGs">Gitflow in 5 minutes</a><br />
+<a href="https://youtu.be/Uszj_k0DGsg">Git tutorial from freeCodeCamp.org</a><br />
+Third-party Git GUI clients: <a href="https://tortoisegit.org/">Tortoise Git</a>, <a href="https://desktop.github.com/">GitHub Desktop</a>, <a href="https://www.sourcetreeapp.com/">Sourcetree</a>  </p>
+              
+            </div>
+          </div><footer>
 
-            </main>
-        </div>
-        <hr><footer>
-    <div class="terminal-mkdocs-footer-grid">
-        <div id="terminal-mkdocs-footer-copyright-info">
-             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
-        </div>
-    </div>
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-    </div>
-
-    
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
-    <div class="modal-dialog modal-lg" role="search">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="searchModalLabel">Search</h5>
-                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p id="searchInputLabel">Type to start searching</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
         </div>
-    </div>
-</div>
-    
-    
-</body>
+      </div>
 
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../technical_documentation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../empty/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
 </html>
