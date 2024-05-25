@@ -1,10 +1,11 @@
 # About
 
-Notes, links and tips collected during my last years as embedded software developer.
+*(kind of)* Embedded Software Developer.  
+In the last 6 years I worked as software consultant (EU market) on railway onboard/signalling devices, developing solutions in ADA and C++ language mainly on legacy codebases.
 
-Some information on these pages are older than six years now. I keep them for reference but probably do not reflect my current knowledge and beliefs.  
-Thanks to: MT, FL, BD, ST, GI, LM
+There are tons of good sites and opensource projects on the web.  
+Be curios, try stuff, be open-minded.
 
-Reviews and feedbacks are welcome.
+Have fun!
 
 ![About](meta/about_FT_photo.png "Photo by F.Tessarollo")

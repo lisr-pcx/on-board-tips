@@ -124,7 +124,7 @@ Build and apply a process for your team. You’ll need:
 
 ### Keep track
 
-Be open, discuss everything, have meetings… but always write down the facts and share it to eveyone involved (just in case when things go wrong).
+Be open, discuss everything, have meetings… but always write down the facts and share it to everyone involved (just in case when things go wrong).
 
 ### Avoid the “Rockstar-Developers”
 

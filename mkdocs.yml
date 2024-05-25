@@ -9,14 +9,14 @@ nav:
     - Data structures: empty.md
     - STL: empty.md
     - Lamba Expressions: empty.md
+    - Threads: empty.md
+    - Sockets: empty.md
   - 'General':
     - Technical documentation: technical_documentation.md
     - Git basics: git_basics.md
-    - Threads: empty.md
-    - Sockets: empty.md
     - Regular Expressions: regular_expressions.md
   - 'Workflow':
-    - Analysis and sw requirements: empty.md    
+    - Analysis and Design: analysis_and_design.md
     - Debugging: debugging.md
     - Code reviews: code_reviews.md
   - 'Best practices':

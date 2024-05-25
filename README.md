@@ -1,6 +1,6 @@
 # Project: OnBoardCpp
 
-This repo contains training material for C++ developers and a collection of general tips and suggestion about code development.
+This repo is a collection of training material for C++ developers and general tips about code development.
 
 All pages are managed using MkDocs, see official [documentation](https://www.mkdocs.org) for further details.
 
@@ -35,5 +35,6 @@ Then follow the steps:
 
 ## TODO
 
-+ complete pages
-+ change css style for better clarity
+-[ ] complete pages in section *Focus on*  
+-[ ] complete page: Analysis and Design  
+-[ ] add page: Builds, file structure, abstractions (based on concepts https://youtu.be/NGLid96ceEo)  

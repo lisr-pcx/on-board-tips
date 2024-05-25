@@ -71,32 +71,6 @@ For the reviewer, it’s important to pay attention to *the way they formulate 
 + It’s fine to say: Everything is good!
 + Don’t forget to praise.
 
-## Focus on
-   
-### Coding style and coding rules
-
-In progress
-
-Quick overview on static analysis tools
-
-### Safety and defensive code
-
-In progress
-
-Quick overview on dynamic analysis tools
-
-### SW requirements
-
-In progress
-
-### Logical operations and code flow
-
-In progress
-
-### Design and architecture
-
-In progress
-
 ## Links
 
 [Google code review overview](https://google.github.io/eng-practices/review/)  
