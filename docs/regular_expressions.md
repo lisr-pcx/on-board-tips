@@ -97,7 +97,7 @@ Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ w
 
 ## Books
 
-**Mastering Regular Expressions**  
 Jeffrey E F Friedl  
-O’Really  
+**Mastering Regular Expressions**  
+O’Reilly  
 

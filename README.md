@@ -33,8 +33,3 @@ Then follow the steps:
 
 5. Open the [website](https://lisr-pcx.github.io/on-board-cpp)
 
-## TODO
-
--[ ] complete pages in section *Focus on*  
--[ ] complete page: Analysis and Design  
--[ ] add page: Builds, file structure, abstractions (based on concepts https://youtu.be/NGLid96ceEo)  

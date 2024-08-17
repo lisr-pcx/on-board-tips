@@ -5,6 +5,7 @@ nav:
   - Welcome: index.md
   - 'Focus on':
     - Pointers: empty.md
+    - Constants: constants.md
     - Memory management: empty.md
     - Data structures: empty.md
     - STL: empty.md
@@ -15,17 +16,19 @@ nav:
     - Technical documentation: technical_documentation.md
     - Git basics: git_basics.md
     - Regular Expressions: regular_expressions.md
+    - Linux OS: linux_os.md
+    - Embedded Systems: embedded.md
   - 'Workflow':
     - Analysis and Design: analysis_and_design.md
     - Debugging: debugging.md
     - Code reviews: code_reviews.md
   - 'Best practices':
     - Defensive programming: defensive_programming.md
-  - 'Tips':
+  - 'Extra':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
     - More stuff: more_stuff.md
-  - About: about.md
+    - About: about.md
 
 theme: 
   name: readthedocs

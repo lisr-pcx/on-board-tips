@@ -1,6 +1,6 @@
 # Welcome to OnBoardCpp
 
-A *personal* collection of resources, links, notes, and training materials.
+A *personal* collection of resources, links, notes, and training materials. All the credits to people and web communities who believe and provide free and public information.
 
 
 !!! note
@@ -16,10 +16,15 @@ Videos and articles are a good source of information.
 [C in 100 seconds](https://youtu.be/U3aXWizDbQ4)  
 [C++ in 100 seconds](https://youtu.be/MNeX4EGtR5Y)
 
+## References
 
+[ISO C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 
+## Tools
 
-## Afterword
+[Compiler Explorer](https://godbolt.org/): interactive tool that lets you type code in one window and see the results of its compilation in another window.
+
+## Afterwords
 
 Some information on these pages are older than six years now. I keep them for reference but probably do not reflect my current knowledge and beliefs.  
 Thanks to: MT, FL, BD, ST, GI, LM
