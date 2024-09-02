@@ -198,20 +198,3 @@ Full documentation can be found on official Debian site, anyway...
 [Debian Developers' Reference](https://www.debian.org/doc/manuals/developers-reference/)
 
 [Debian New Maintainers' Guide](https://www.debian.org/doc/manuals/maint-guide/)
-
-
-
-
-```bash
-
-
-```
-
-!!! tip
-    Text tip.   
-    Second line.  
-    Last line.
-
-## Links
-
-[Text](https://google.com)  

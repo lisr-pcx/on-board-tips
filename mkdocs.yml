@@ -3,7 +3,8 @@ site_url: https://lisr-pcx.github.io/on-board-cpp
 
 nav:
   - Welcome: index.md
-  - 'Focus on':
+  - 'Focus on C/C++':
+    - Basics: basics_c_cpp.md
     - Pointers: empty.md
     - Constants: constants.md
     - Memory management: empty.md
@@ -28,6 +29,7 @@ nav:
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
     - More stuff: more_stuff.md
+    - Podcast and books: podcast_books.md
     - About: about.md
 
 theme: 
