@@ -2,67 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/about/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/analysis_and_design/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/basics_c_cpp/</loc>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/code_reviews/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/constants/</loc>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/debugging/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/defensive_programming/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/embedded/</loc>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/empty/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/git_basics/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/linux_os/</loc>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/more_stuff/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-cpp/podcast_books/</loc>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/regular_expressions/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/technical_documentation/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_junior_devs/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_team_leaders/</loc>
-         <lastmod>2024-05-25</lastmod>
+         <lastmod>2024-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
