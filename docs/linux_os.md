@@ -1,6 +1,7 @@
 # Linux OS
 
-Linux is one of the most versatile operative systems available today. There are different *flavors* but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).
+Linux is one of the most versatile operative systems available today.  
+There are different *flavors* but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).
 
 !!! tip
     Makeyou confortable to use linux shell.  
@@ -8,9 +9,9 @@ Linux is one of the most versatile operative systems available today. There are 
 
 ## Quick overview on OS
 
-What's an OS.  
-Differente layers and components.  
-Linux distributions.
+TODO What's an OS.  
+TODO Differente layers and components.  
+TODO Linux distributions.
 
 ## Basic commands
 

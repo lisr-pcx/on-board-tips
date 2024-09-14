@@ -1,10 +1,10 @@
 # Work on Embedded Devices
 
-Overview and information.
+TODO Overview and information.
 
 ## Embedded Linux Systems
 
-Add notes...
+TODO
 
 ## Books
 

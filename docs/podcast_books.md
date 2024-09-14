@@ -7,6 +7,15 @@
 
 # Books
 
+## Technical
+
+Robert C. Martin  
+**Clean Code**  
+**A Handbook of Agile Software Craftsmanship**  
+*Prentice Hall*
+
+## Fiction
+
 Douglas Coupland  
 **Microserfs**
 

@@ -22,7 +22,8 @@ Always include a table of contents or summary in your documentation, and keep in
 3. NAVIGATE (links to related topics)
 4. RESULT (short words and more sentences)
 
-Write in simple english, anyone can do that, **just be clear, simple and go straight to the point**. The goal is to provide information (to help people), this is not an essay.  
+Write in simple english, anyone can do that, **just be clear, simple and go straight to the point**. The goal is to provide information (to help people), this is not an essay.
+
 Always share your text/draft with other team members and ask for feedbacks/reviews to improve clarity.
 
 !!! tip
