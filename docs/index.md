@@ -1,7 +1,7 @@
 # Welcome to OnBoardCpp
 
 A *personal* collection of resources, links, notes, and training materials.  
-All credits to people and web communities who believe and provide free and public information.
+All credits to people and web communities who provide free and public information.
 
 The site was initially built around C++ but in fact most of the concepts are not specific to this language.
 
@@ -13,7 +13,7 @@ Full site is available on [GitHub](https://github.com/lisr-pcx/on-board-cpp)
 
 
 !!! note
-    Work in progress, last update: September 2024
+    Work in progress, last update: October 2024
 
 
 !!! warning

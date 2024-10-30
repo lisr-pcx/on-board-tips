@@ -5,20 +5,23 @@ nav:
   - Welcome: index.md
   - 'Focus on C/C++':
     - Basics: basics_c_cpp.md
-    - Pointers: empty.md
+    - Pointers
     - Constants: constants.md
-    - Memory management: empty.md
-    - Data structures: empty.md
-    - STL: empty.md
-    - Lamba Expressions: empty.md
-    - Threads: empty.md
-    - Sockets: empty.md
+    - Memory management
+    - Data structures
+    - STL
+    - Lamba Expressions
+    - Threads
+    - Sockets
   - 'General':
     - Technical documentation: technical_documentation.md
     - Git basics: git_basics.md
     - Regular Expressions: regular_expressions.md
-    - Linux OS: linux_os.md
+    - Wireshark and tcpdump: wireshark_tcpdump.md
     - Embedded Systems: embedded.md
+  - 'Operative Systems':
+    - Work with Linux: linux_os.md
+    - Fedora OS: linux_fedora.md
   - 'Workflow':
     - Analysis and Design: analysis_and_design.md
     - Debugging: debugging.md

@@ -17,7 +17,7 @@ TODO Linux distributions.
 
 Work on files, folder, ...
 
-```bash
+```sh
 $ pwd
 $ ls -la
 $ mkdir <DIR PATH>
@@ -32,9 +32,25 @@ $ nano <FILE PATH>
 $ cat <FILE PATH>
 ```
 
+Give folder/file permission:  
+Each number has a specific meaning for: user - group - others. Just don't give always full permission to everyone.
+
++ 0 (binary 000) `---` No permissions at all
++ 1 (binary 001) `--x` Only execute
++ 2 (binary 010) `-w-` Only write
++ 3 (binary 011) `-wx` Write and execute
++ 4 (binary 100) `r--` Only read
++ 5 (binary 101) `r-x` Read and execute
++ 6 (binary 110) `rw-` Read and write
++ 7 (binary 111) `rwx` Read, write, and execute
+
+```sh
+$ sudo chmod -R NNN FOLDERPATH 
+```
+
 TAR is a tool to archive files, it creates a single file out of multiple ones (*archiving* .tar file) and if requested it can also reduce the final size (*compression* .tar.gz using GZIP). The final file is often called "tarball".
 
-```bash
+```sh
 $ tar cvf <TARBALL NAME>.tar <SOURCE DIRNAME>
 $ tar cvzf <TARBALL NAME>.tar.gz <SOURCE DIRNAME>
 $ tar tvf <TARBALL FILE>
@@ -43,9 +59,9 @@ $ tar xvf <TARBALL FILE>
 $ tar xvf <TARBALL FILE> -C <DESTINATION DIRNAME>
 ```
 
-Install, update, remove software (packages).
+Install, update, remove software (APT package manager).
 
-```bash
+```sh
 $ apt edit-sources
 $ apt update
 $ apt list --installed
@@ -139,7 +155,7 @@ int Snake::Run()
 
 The program can be compiled and run using:
 
-```bash
+```sh
 $ g++ *.cpp -o snake -lcurses -Wall
 ```
 
@@ -147,7 +163,7 @@ $ g++ *.cpp -o snake -lcurses -Wall
 
 Open your project folder, then create the configuration file "configure.ac"
 
-```bash
+```sh
 AC_INIT([snake], [0.1], [lisr-pcx@mail.com])
 
 AM_INIT_AUTOMAKE
@@ -161,7 +177,7 @@ AC_OUTPUT
 
 Create the "Makefile.am"
 
-```bash
+```sh
 bin_PROGRAMS = snakegame
 snakegame_SOURCES = snake.cpp
 
@@ -175,7 +191,7 @@ clean-local:
 
 Finally run commands:
 
-```bash
+```sh
 $ aclocal
 $ autoheader
 $ autoconf
