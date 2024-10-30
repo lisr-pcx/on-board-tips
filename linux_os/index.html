@@ -9,22 +9,21 @@
 
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../style.css" rel="stylesheet" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Linux OS";
+        var mkdocs_page_name = "Work with Linux";
         var mkdocs_page_input_path = "linux_os.md";
         var mkdocs_page_url = "/on-board-cpp/linux_os/";
       </script>
     
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -36,7 +35,7 @@
           <a href=".." class="icon icon-home"> OnBoardCpp
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -46,34 +45,41 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../basics_c_cpp/">Basics</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Pointers</a>
+                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Memory management</a>
+                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Data structures</a>
+                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">STL</a>
+                  <li class="toctree-l1"><a class="" href="../STL">None</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Lamba Expressions</a>
+                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Threads</a>
+                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../empty/">Sockets</a>
+                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../git_basics/">Git basics</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../regular_expressions/">Regular Expressions</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../wireshark_tcpdump/">Wireshark and tcpdump</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../embedded/">Embedded Systems</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Operative Systems</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Work with Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
@@ -116,9 +122,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>General &raquo;</li>
-      <li>Linux OS</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Operative Systems</li>
+      <li class="breadcrumb-item active">Work with Linux</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -128,19 +134,20 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="linux-os">Linux OS</h1>
-<p>Linux is one of the most versatile operative systems available today. There are different <em>flavors</em> but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).</p>
+<p>Linux is one of the most versatile operative systems available today.<br />
+There are different <em>flavors</em> but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Makeyou confortable to use linux shell.<br />
 Most of the time the target system does not run a Desktop GUI and you will connect via SSH.</p>
 </div>
 <h2 id="quick-overview-on-os">Quick overview on OS</h2>
-<p>What's an OS.<br />
-Differente layers and components.<br />
-Linux distributions.</p>
+<p>TODO What's an OS.<br />
+TODO Differente layers and components.<br />
+TODO Linux distributions.</p>
 <h2 id="basic-commands">Basic commands</h2>
 <p>Work on files, folder, ...</p>
-<pre><code class="language-bash">$ pwd
+<pre><code class="language-sh">$ pwd
 $ ls -la
 $ mkdir &lt;DIR PATH&gt;
 $ rmdir &lt;DIR PATH&gt;
@@ -153,16 +160,30 @@ $ vi &lt;FILE PATH&gt;
 $ nano &lt;FILE PATH&gt;
 $ cat &lt;FILE PATH&gt;
 </code></pre>
+<p>Give folder/file permission:<br />
+Each number has a specific meaning for: user - group - others. Just don't give always full permission to everyone.</p>
+<ul>
+<li>0 (binary 000) <code>---</code> No permissions at all</li>
+<li>1 (binary 001) <code>--x</code> Only execute</li>
+<li>2 (binary 010) <code>-w-</code> Only write</li>
+<li>3 (binary 011) <code>-wx</code> Write and execute</li>
+<li>4 (binary 100) <code>r--</code> Only read</li>
+<li>5 (binary 101) <code>r-x</code> Read and execute</li>
+<li>6 (binary 110) <code>rw-</code> Read and write</li>
+<li>7 (binary 111) <code>rwx</code> Read, write, and execute</li>
+</ul>
+<pre><code class="language-sh">$ sudo chmod -R NNN FOLDERPATH 
+</code></pre>
 <p>TAR is a tool to archive files, it creates a single file out of multiple ones (<em>archiving</em> .tar file) and if requested it can also reduce the final size (<em>compression</em> .tar.gz using GZIP). The final file is often called "tarball".</p>
-<pre><code class="language-bash">$ tar cvf &lt;TARBALL NAME&gt;.tar &lt;SOURCE DIRNAME&gt;
+<pre><code class="language-sh">$ tar cvf &lt;TARBALL NAME&gt;.tar &lt;SOURCE DIRNAME&gt;
 $ tar cvzf &lt;TARBALL NAME&gt;.tar.gz &lt;SOURCE DIRNAME&gt;
 $ tar tvf &lt;TARBALL FILE&gt;
 $ tar rvf &lt;TARBALL NAME&gt;.tar &lt;FILES OR DIRNAME TO APPEND&gt;
 $ tar xvf &lt;TARBALL FILE&gt;
 $ tar xvf &lt;TARBALL FILE&gt; -C &lt;DESTINATION DIRNAME&gt;
 </code></pre>
-<p>Install, update, remove software (packages).</p>
-<pre><code class="language-bash">$ apt edit-sources
+<p>Install, update, remove software (APT package manager).</p>
+<pre><code class="language-sh">$ apt edit-sources
 $ apt update
 $ apt list --installed
 $ apt show &lt;PACKAGE NAME&gt;
@@ -246,11 +267,11 @@ int Snake::Run()
 }
 </code></pre>
 <p>The program can be compiled and run using:</p>
-<pre><code class="language-bash">$ g++ *.cpp -o snake -lcurses -Wall
+<pre><code class="language-sh">$ g++ *.cpp -o snake -lcurses -Wall
 </code></pre>
 <h3 id="create-the-package">Create the package</h3>
 <p>Open your project folder, then create the configuration file "configure.ac"</p>
-<pre><code class="language-bash">AC_INIT([snake], [0.1], [lisr-pcx@mail.com])
+<pre><code class="language-sh">AC_INIT([snake], [0.1], [lisr-pcx@mail.com])
 
 AM_INIT_AUTOMAKE
 
@@ -261,7 +282,7 @@ AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
 </code></pre>
 <p>Create the "Makefile.am"</p>
-<pre><code class="language-bash">bin_PROGRAMS = snakegame
+<pre><code class="language-sh">bin_PROGRAMS = snakegame
 snakegame_SOURCES = snake.cpp
 
 clean-local:
@@ -272,7 +293,7 @@ clean-local:
         @rm compile install-sh missing Makefile.in
 </code></pre>
 <p>Finally run commands:</p>
-<pre><code class="language-bash">$ aclocal
+<pre><code class="language-sh">$ aclocal
 $ autoheader
 $ autoconf
 $ automake
@@ -312,21 +333,22 @@ $ make dist
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../regular_expressions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../embedded/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../embedded/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../linux_fedora/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

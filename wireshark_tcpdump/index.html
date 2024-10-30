@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/wireshark_tcpdump/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+<title>OnBoard Cpp</title>
+
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Wireshark and tcpdump";
+        var mkdocs_page_input_path = "wireshark_tcpdump.md";
+        var mkdocs_page_url = "/on-board-cpp/wireshark_tcpdump/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> OnBoardCpp
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../basics_c_cpp/">Basics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../STL">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../git_basics/">Git basics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../regular_expressions/">Regular Expressions</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Wireshark and tcpdump</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../embedded/">Embedded Systems</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Operative Systems</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_os/">Work with Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Best practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../tips_for_junior_devs/">Tips for Junior Devs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tips_for_team_leaders/">Tips for Team Leaders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../podcast_books/">Podcast and books</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">OnBoardCpp</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">General</li>
+      <li class="breadcrumb-item active">Wireshark and tcpdump</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="wireshark">Wireshark</h1>
+<p>A powerful opensource software for network traffic sniffing and analysis. A similar tool available only for Linux OS is <strong>tcpdump</strong> (explained on next section).</p>
+<p>Download according to your OS release: <a href="https://www.wireshark.org/download.html">https://www.wireshark.org/download.html</a><br />
+(For Windows OS it's highly recommended the <em>portable</em> version)</p>
+<p>Official documentation: <a href="https://www.wireshark.org/docs/wsug_html_chunked/">https://www.wireshark.org/docs/wsug_html_chunked/</a></p>
+<h2 id="overview">Overview</h2>
+<p>Wireshark is a data capturing program (it uses <strong>pcap</strong>) for different networking protocols. It can parse and display the packet fields and related information.  </p>
+<p>Features:</p>
+<ul>
+<li>Data can be captured "from the wire" from a live network connection (Ethernet, IEEE 802.11, PPP, and loopback) or read from a file (trace) of already-captured packets.</li>
+<li>Captured network data can be browsed via a GUI, or via the terminal (command line) version of the utility, TShark.</li>
+<li>Captured files can be programmatically edited or converted via command-line switches to the "editcap" program.</li>
+<li>Data display can be refined using a display filter.</li>
+<li>Plug-ins can be created for dissecting new protocols.[23]</li>
+<li>VoIP calls in the captured traffic can be detected. If encoded in a compatible encoding, the media flow can even be played.</li>
+<li>Raw USB traffic can be captured.[24]</li>
+<li>Various settings, timers, and filters can be set to provide the facility of filtering the output of the captured traffic.</li>
+<li>Wireshark's native network trace file formats are the libpcap format read and written by libpcap, WinPcap, and Npcap, so it can exchange captured network traces with other applications that use the same format, including tcpdump and CA NetMaster, and the pcapng format read by newer versions of libpcap.</li>
+</ul>
+<h2 id="how-to-sniff-packets">How to sniff packets</h2>
+<p>TODO</p>
+<h2 id="traffic-analysis">Traffic analysis</h2>
+<p>Acquire a new trace or load a previous acquisition (file with <em>.pcap</em> or <em>.pcap.gz</em> extension).</p>
+<p>Apply some filters in order to highlight the behavior of the devices and the flow of messages. Filters can be combined together via <code>or</code>, <code>and</code> operators.</p>
+<h3 id="tcp-filtering">TCP filtering</h3>
+<p>Show packets with specific source/destinatio/both ports:</p>
+<pre><code class="language-text">tcp.srcport==PORTNUMBER
+tcp.dstport==PORTNUMBER
+tcp.port==PORTNUMBER
+</code></pre>
+<p>Show packets with specific properties:</p>
+<pre><code class="language-text">tcp.flags.reset==1
+tcp.flags.syn==1
+...
+
+for TCP flags like ACK, SYN ...
+    000. .... .... = Reserved
+    ...0 .... .... = Accurate ECN
+    .... 0... .... = Congestion Window Reduced
+    .... .0.. .... = ECN-Echo
+    .... ..0. .... = Urgent
+    .... ...0 .... = Acknowledgment
+    .... .... 0... = Push
+    .... .... .0.. = Reset
+    .... .... ..0. = Syn
+    .... .... ...0 = Fin
+</code></pre>
+<p>Show packets related with a specific behavior (explore the <code>analysis</code> menu for more options)</p>
+<pre><code class="language-text">tcp.analysis.spurious_retransmission
+tcp.analysis.reused_ports
+...
+</code></pre>
+<h3 id="ip-filtering">IP filtering</h3>
+<p>Show packets with specific source/destinatio/both IP address:</p>
+<pre><code class="language-text">ip.src==IPADDRESS
+ip.dst==IPADDRESS
+ip.addr==IPADDRESS
+</code></pre>
+<h3 id="example">Example</h3>
+<p>This trace was acquired on the server side, during some monitoring tests. The user raised some concerns about a device disconnection.<br />
+Logs on the device highlighted a <em>disconnection indication</em> on communication stack (due to RST packet sent by the server) </p>
+<p><em>server IP address=10.251.6.166</em><br />
+<em>server PORT=1314</em></p>
+<p><em>client device IP address=10.81.50.95</em><br />
+<em>client PORT=41742</em></p>
+<p><img alt="Wireshark GUI" src="../meta/wireshark_example.png" /></p>
+<p>Workflow:</p>
+<ol>
+<li>Get the network topology and devices configuration</li>
+<li>
+<p>Understand the meaning/theory about RST packet (when it's used and who send it):</p>
+<p>```text
+List of reasons for the server to send the RST:</p>
+<pre><code>A: Non-Existence TCP endpoint
+The client sends SYN to a non-existing TCP port or IP on the server side. The server will send a reset to the client.
+
+B: SYN matches the existing TCP endpoint
+The client sends SYN to an existing TCP endpoint, which means the same 5-tuple. The server will send a reset to the client.
+
+C: Accept Queue Full
+When the accept queue is full on the server side, the server will send a reset to the client.
+
+D: Half-Open Connections
+When the server restarts itself. Then all connections before would receive a reset from the server side.
+
+E: Firewall
+The firewall/routers could send a reset to the client or server (due to idle time or other reasons)
+Example: if there is a router doing NAT, especially a low end router with few resources, it will age the oldest TCP sessions first. To do this it sets the RST flag in the packet that effectively tells the receiving station to (very ungracefully) close the connection. this is done to save resources.
+
+F: Time-Wait Assassination
+When the client in the time-wait state, receives a message from the server-side, the client will send a reset to the server.
+
+G: Aborting Connection
+When the server aborts the connection, it could send a reset to the client
+The RST packets are only sent by the server.
+
+H: Connection Timeout
+If a TCP connection is idle for an extended period, one of the parties might send a reset packet to close the connection (in most applications, the socket connection has a timeout).
+Example: FTP server, if you connect to the server and just leave the connection without browsing or downloading files, the server will kick you off the connection, usually to allow others to be able to connect.
+
+I: Application protocol error
+TCP reset is sent when the peer (the other end of the connection) closes its socket while there is still unread data pending in its socket receive buffer.
+</code></pre>
+<p>```</p>
+</li>
+<li>
+<p>Filter RST packets and look for a relation with other messages</p>
+</li>
+<li>Check the presence of:<ul>
+<li>"Spurius retransmission”</li>
+<li>"Duplicated ack”</li>
+</ul>
+</li>
+<li>Open application source-code and verify how the TCP-stack is implemented (it's usually and external library like lwIP, ...).</li>
+<li>
+<p>Verify that application manages connections as defined by protocol documentation.</p>
+<p>```text
+TCP supports two types of connection releases like most connection-oriented transport protocols:</p>
+<pre><code>GRACEFUL connection release
+In the Graceful connection release, the connection is open until both parties have closed their sides of the connection.
+The common way of terminating a TCP connection is by using the TCP header’s FIN flag. This mechanism allows each host to release its own side of the connection individually.
+
+ABRUPT connection release
+In an Abrupt connection release, either one TCP entity is forced to close the connection or one user closes both directions of data transfer.
+An abrupt connection release is carried out when an RST segment is sent.
+</code></pre>
+<p>```</p>
+</li>
+</ol>
+<h1 id="tcpdump">Tcpdump</h1>
+<p>TODO</p>
+<h2 id="overview_1">Overview</h2>
+<p>TODO</p>
+<h2 id="how-to-use-it">How to use it</h2>
+<p>TODO</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../regular_expressions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../embedded/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
