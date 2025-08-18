@@ -26,3 +26,6 @@ Then:
 
 ## TODO
 
+- [ ] File: linux_os.md - complete overview about OS
+- [ ] File: tdd_workflow.md - TODO
+- [ ] File: rust_overview.md - TODO

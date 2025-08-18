@@ -22,12 +22,12 @@ nav:
     - Defensive programming: defensive_programming.md
   - 'Operative Systems':
     - Work with Linux: linux_os.md
-    - Fedora OS: linux_fedora.md
+    - Fedora Linux: linux_fedora.md
   - 'Workflow':
-    - Analysis and Design: analysis_and_design.md
+    - SDLC models: sdlc_models.md
+    - Test Driven Development: tdd_workflow.md
     - Debugging: debugging.md
     - Code reviews: code_reviews.md
-    - Test Driven Development: tdd_workflow.md
   - 'Extra':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md

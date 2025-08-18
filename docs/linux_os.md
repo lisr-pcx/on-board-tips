@@ -1,35 +1,50 @@
 # Linux OS
 
-Linux is one of the most versatile operative systems available today.  
-There are different *flavors* but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).
+Linux is one of the most versatile operative systems available today. There are different *flavors* but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).
 
-!!! tip
-    Makeyou confortable to use linux shell.  
-    Most of the time the target system does not run a Desktop GUI and you will connect via SSH.
+Makeyou confortable to use linux shell. Most of the time you will connect to a target device using terminal/shell.
 
 ## Quick overview on OS
 
-TODO What's an OS.  
+TODO What is an OS.  
 TODO Differente layers and components.  
-TODO Linux distributions.
 
 ## Basic commands
 
-Work on files, folder, ...
+!!! note
+    Some of the commands above shall be run as admin.  
+    Add `su` or `sudo` before the desired command to run it with priviledges.
+
+!!! tip
+    All the commands have a specific manual page with usage and flags description.
+    Check syntax and options to get desired result.    
+    `$ man <COMMAND>`
+
+!!! tip
+    UNIX derived systems work with the pipeline mechanism, a really cool way to process an output through mutiple stages.  
+    Example: if your command return a bigger list of items, you can filter them in order to get only the relevant ones, and then make it scrollable on the screen just by adding:
+    `$ <COMMAND> | grep <FILTER> | less`
+
+### Files and folders
 
 ```sh
 $ pwd
+
 $ ls -la
+
 $ mkdir <DIR PATH>
 $ rmdir <DIR PATH>
 $ rm -rf <DIR PATH>
-$ mv <FILE OR DIR PATH> <NEW FILE OR DIR PATH> 
-$ cp <FILES OR DIR PATH> <NEW FILES OR DIR PATH> 
+$ mv <FILE OR DIR PATH> <NEW FILE OR DIR PATH>
+$ cp <FILES OR DIR PATH> <NEW FILES OR DIR PATH>
 
 $ touch <FILE PATH>
 $ vi <FILE PATH>
 $ nano <FILE PATH>
 $ cat <FILE PATH>
+
+$ find <PATH TO LOOK> -name "<FILE>" -print
+$ find . -name "*.bak" - print
 ```
 
 Give folder/file permission:  
@@ -48,6 +63,15 @@ Each number has a specific meaning for: user - group - others. Just don't give a
 $ sudo chmod -R NNN FOLDERPATH 
 ```
 
+To inspect the raw byte use:
+
+```sh
+$ xxd <FILENAME>
+$ xxd -ps <FILENAME>
+```
+
+### Archives
+
 TAR is a tool to archive files, it creates a single file out of multiple ones (*archiving* .tar file) and if requested it can also reduce the final size (*compression* .tar.gz using GZIP). The final file is often called "tarball".
 
 ```sh
@@ -59,7 +83,9 @@ $ tar xvf <TARBALL FILE>
 $ tar xvf <TARBALL FILE> -C <DESTINATION DIRNAME>
 ```
 
-Install, update, remove software (APT package manager).
+### Install, update, and remove software
+
+Using APT package manager:
 
 ```sh
 $ apt edit-sources
@@ -71,147 +97,51 @@ $ apt install <PACKAGE NAME>
 $ apt remove <PACKAGE NAME>
 ```
 
-!!! note
-    Some of the commands above shall be run as admin.  
-    Add `su` or `sudo` before the desired command to run it with priviledges.
+### Processes, applications and devices
 
-!!! tip
-    All the commands have a specific manual page with usage and flags description.
-    Check syntax and options to get desired result.    
-    `$ man <COMMAND>`
-
-!!! tip
-    UNIX derived systems work with the pipeline mechanism, a really cool way to process an output through mutiple stages.  
-    Example: if your command return a bigger list of items, you can filter them in order to get only the relevant ones, and then make it scrollable on the screen just by adding:
-    `$ <COMMAND> | grep <FILTER> | less`
+```sh
+$ top
+$ ps -ef
+$ ps -ef | grep <APPLICATION NAME>
+$ kill <PROCESS ID>
+$ sudo dmesg
+```
 
 ### Editing files
 
 Two editors are always available on Linux systems: `nano` (simple and straightforward) or `vi` (less intuitive but powerful).  
 I suggest to learn basic few operations on both editors:
 
-* open, save, save as, close
-* search a word
-* copy and paste text
-
-## Use AUTOTOOLS to create a package
-
-### Sample project: snake clone
-
-This project is composed by following files:
-
-* **main.cpp**: entry point
-* **snake.h**: (header) class in charge to plot the game area and manage the game logic
-* **snake.cpp**: (body)
-
-The game uses "curses" library for plotting the graphical elements via text console.
-
-```cpp
-// File: main.cpp
-#include <iostream>
-#include <curses.h>
-#include <unistd.h>
-#include "snake.h"
-
-int main()
-{    
-    // code
-}
-```
-
-```cpp
-// File: snake.h
-#ifndef SNAKE_H
-#define SNAKE_H
-
-// define
-
-#include <iostream>
-#include <stdlib.h>
-#include <time.h>
-#include <curses.h>
-
-class Snake
-{
-public:
-  // code
-}
-```
-
-```cpp
-// File: snake.cpp
-#include "snake.h"
-
-Snake::Snake()
-{
-	// code
-}
-
-int Snake::Run()
-{
-  // code
-}
-```
-
-The program can be compiled and run using:
+- open, save, save as, close
+- search a word
+- copy and paste text
 
 ```sh
-$ g++ *.cpp -o snake -lcurses -Wall
+$ vi <FILE PATH>
+$ nano <FILE PATH>
 ```
 
-### Create the package
+### Search a pattern
 
-Open your project folder, then create the configuration file "configure.ac"
+It's useful to find where a pattern or a string has been used on files. The **grep** command is all you need!
 
 ```sh
-AC_INIT([snake], [0.1], [lisr-pcx@mail.com])
-
-AM_INIT_AUTOMAKE
-
-AC_PROG_CPP
-
-AC_CONFIG_FILES([Makefile])
-
-AC_OUTPUT
+$ grep -Ril "<PATTERN>" <PATH>
+$ grep -Ri "<PATTERN>" <PATH>
+$ grep -Ri -B5 -A2 "<PATTERN>" <PATH>
 ```
 
-Create the "Makefile.am"
+Filtering for specific files (e.g. cpp, hpp) on desired path:
 
 ```sh
-bin_PROGRAMS = snakegame
-snakegame_SOURCES = snake.cpp
-
-clean-local:
-        @rm config.status configure config.log
-        @rm Makefile
-        @rm -r autom4te.cache/
-        @rm aclocal.m4
-        @rm compile install-sh missing Makefile.in
+$ grep -Ri --include=*.{cpp,hpp} "<PATTERN>" <PATH>
 ```
 
-Finally run commands:
+### Connect to remote system
+
+Secure SHell is a cryptographic protocol that allows to login into a remote computer.
 
 ```sh
-$ aclocal
-$ autoheader
-$ autoconf
-$ automake
-$ automake --add-missing
-$ ./configure
-$ make
-$ make dist
+$ ssh <USERNAME>@<IPv4 or HOSTNAME>
+$ ssh -i <LOCALPATH CERTIFICATE KEY> <USERNAME>@<IPv4 or HOSTNAME>
 ```
-
-At this stage make sure your tarball works fine, copy into your testing OS, extract and run again `./configure` and `make`.
-
-## Create a DEBIAN package
-
-Full documentation can be found on official Debian site, anyway...
-
-[Introduction to Debian packaging](https://wiki.debian.org/Packaging/Intro)
-
-[Be friendly to your packagers](https://wiki.debian.org/SoftwarePackaging)
-
-[Debian Developers' Reference](https://www.debian.org/doc/manuals/developers-reference/)
-
-[Debian New Maintainers' Guide](https://www.debian.org/doc/manuals/maint-guide/)

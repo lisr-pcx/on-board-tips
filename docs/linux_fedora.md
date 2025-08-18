@@ -1,12 +1,10 @@
 # Fedora Linux
 
-TODO
-
 I usually work on virtual machines. They give me isolation and security from my primary OS, and they offers a versatile environment for testing and development. Steps below have been written according to that idea.
 
 ## Installation
 
-Download the last release for laptop: [Fedora Workstation](https://fedoraproject.org/workstation/download)
+Download the last release of [Fedora Workstation](https://fedoraproject.org/workstation/download).
 
 Create a new virtual machine (use VMware or VirtualBox software) by adding the ISO file just downloaded.
 
@@ -19,13 +17,25 @@ test@fedora:~$ uname -a
 Linux fedora 6.8.5-301.fc40.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 11 20:00:10 UTC 2024 x86_64 GNU/Linux
 ```
 
-Update the system:
+## Update
+
+Keep your system and packages updated by running command below:
 
 ```sh
 test@fedora:~$ sudo dnf update
+test@fedora:~$ uname -a
 ```
 
-### The package manager: DNF
+Then reboot the system (both commands are equivalent):
+
+```sh
+test@fedora:~$ sudo reboot
+test@fedora:~$ sudo shutdown -r now
+```
+
+I suggest to rarely use `dnf upgrade` due to its harsh behavior during the upgrade process like removing/replacing existing packages or dependencies.
+
+## DNF: the package manager
 
 Basic operations on a package:
 
@@ -61,11 +71,11 @@ Show repository:
 test@fedora:~$ sudo dnf repolist all
 ```
 
-## Setup
+## Customization
 
-These are my personal customization, as a guideline.
+Few additional operations I usually do after a fresh installation.
 
-**Mount local shared folder (VMware)**  
+### Mount local shared folder (VMware)
 Note: add the desired folder in the VMware configuration panel, then run the virtual machine and run the command
 
 ```sh
@@ -84,9 +94,15 @@ test@fedora:~$ git config --global user.email "YOUR EMAIL ADDRESS"
 
 ### Install C/C++ toolchain
 
-TODO
+```sh
+test@fedora:~$ sudo dnf install gcc
+```
 
-### Install Python
+### Install RUST toolchain
+
+Make sure you have gcc toolchain, then follow instruction [here](https://www.rust-lang.org/learn/get-started).
+
+### Install Python toolchain
 
 Python is already pre-installed on Fedora. Just check the version and eventually updated it...  
 Check also PIP (Python package manager).
@@ -100,11 +116,7 @@ test@fedora:~$ pip install mkdocs
 pip 23.3.2 from /usr/lib/python3.12/site-packages/pip (python 3.12)
 ```
 
-If you have some project documentation via **MkDocs** install the package:
-
-```sh
-test@fedora:~$ pip install mkdocs
-```
+I highly recommend to install specific packages into specific virtual environment of each project.
 
 ### Install VSCode
 
@@ -136,3 +148,5 @@ Run VSCode and install desired extensions:
 
 + Git Graph (mhutchie)
 + Markdown Preview Github Stylng (Matt Bierner)
++ Python (Microsoft)
++ rust-analyzer (The Rust Programming Language)
