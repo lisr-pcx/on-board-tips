@@ -1,4 +1,4 @@
-# Welcome to OnBoardCpp
+# Welcome to OnBoardTips
 
 A *personal* collection of resources, links, notes, and training materials.  
 All credits to people and web communities who provide free and public information.
@@ -9,11 +9,11 @@ Thanks to: MT, FL, BD, ST, GI, LM
 
 Reviews and feedbacks are welcome.
 
-Full site is available on [GitHub](https://github.com/lisr-pcx/on-board-cpp)
+Full site is available on [GitHub](https://github.com/lisr-pcx/on-board-tips)
 
 
 !!! note
-    Work in progress, last update: October 2024
+    Work in progress, last update: September 2025
 
 
 !!! warning

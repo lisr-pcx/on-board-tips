@@ -1,6 +1,6 @@
 # More stuff
 
-More concepts and information.
+Down below are listed further concepts, articles, projects, topics ... that I can't relate directly to the topics of this site. This page is a kind of a *storage box*, sorry for the mess.
 
 ## SMART
 
@@ -12,6 +12,8 @@ Having clarity in your goal-setting provides the motivation and focus you need t
 + **A**chievable (agreed, attainable)
 + **R**elevant (reasonable, realistic and resourced, results-based)
 + **T**ime bound (time-based, time limited, time/cost limited, timely, time-sensitive)
+
+[Smart goals](https://asana.com/resources/smart-goals)
 
 ## The Google Project Aristotle
 
@@ -53,9 +55,8 @@ It’s important to note though that while these variables did not significantly
 > The fundamental thing that distinguish good teams from disfunctional ones is how team mates treat one another.  
 > *Sandi Metz*
 
-## Links
+## Links to Conferences
 
-[Smart goals](https://asana.com/resources/smart-goals)  
 [Radical candor](https://youtu.be/MIh_992Nfes)  
 [Love Your Work](https://youtu.be/jDIZS4IQlQk)  
 [Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)  

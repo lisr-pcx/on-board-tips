@@ -1,5 +1,5 @@
-site_name: OnBoardCpp
-site_url: https://lisr-pcx.github.io/on-board-cpp
+site_name: OnBoardTips
+site_url: https://lisr-pcx.github.io/on-board-tips
 
 nav:
   - Welcome: index.md
@@ -19,6 +19,7 @@ nav:
     - Regular Expressions: regular_expressions.md
     - Wireshark and tcpdump: wireshark_tcpdump.md
     - Embedded Systems: embedded.md
+    - Defensive programming: defensive_programming.md
   - 'Operative Systems':
     - Work with Linux: linux_os.md
     - Fedora OS: linux_fedora.md
@@ -26,8 +27,7 @@ nav:
     - Analysis and Design: analysis_and_design.md
     - Debugging: debugging.md
     - Code reviews: code_reviews.md
-  - 'Best practices':
-    - Defensive programming: defensive_programming.md
+    - Test Driven Development: tdd_workflow.md
   - 'Extra':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
