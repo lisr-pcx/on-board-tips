@@ -1,83 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/about/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/about/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/analysis_and_design/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/analysis_and_design/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/basics_c_cpp/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/basics_c_cpp/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/code_reviews/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/code_reviews/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/constants/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/constants/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/debugging/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/debugging/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/defensive_programming/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/defensive_programming/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/embedded/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/embedded/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/empty/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/empty/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/git_basics/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/git_basics/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/linux_fedora/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/linux_fedora/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/linux_os/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/linux_os/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/more_stuff/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/more_stuff/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/podcast_books/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/podcast_books/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/regular_expressions/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/regular_expressions/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/technical_documentation/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/tdd_workflow/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_junior_devs/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/technical_documentation/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/tips_for_team_leaders/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/tips_for_junior_devs/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
     <url>
-         <loc>https://lisr-pcx.github.io/on-board-cpp/wireshark_tcpdump/</loc>
-         <lastmod>2024-10-30</lastmod>
+         <loc>https://lisr-pcx.github.io/on-board-tips/tips_for_team_leaders/</loc>
+         <lastmod>2025-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-tips/wireshark_tcpdump/</loc>
+         <lastmod>2025-08-18</lastmod>
     </url>
 </urlset>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/analysis_and_design/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/tdd_workflow/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
 <title>OnBoard Tips</title>
 
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Analysis and Design";
-        var mkdocs_page_input_path = "analysis_and_design.md";
-        var mkdocs_page_url = "/on-board-tips/analysis_and_design/";
+        var mkdocs_page_name = "Test Driven Development";
+        var mkdocs_page_input_path = "tdd_workflow.md";
+        var mkdocs_page_url = "/on-board-tips/tdd_workflow/";
       </script>
     
     <!--[if lt IE 9]>
@@ -86,13 +86,13 @@
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -123,7 +123,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Workflow</li>
-      <li class="breadcrumb-item active">Analysis and Design</li>
+      <li class="breadcrumb-item active">Test Driven Development</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -132,10 +132,76 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="analysis-and-design">Analysis and Design</h1>
-<p>(under construction)</p>
+                <h1 id="tdd-test-driven-development">TDD: Test-Driven Development</h1>
+<p>TODO overview</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>TODO workflow + example</p>
+<h2 id="tips">Tips</h2>
+<p>For the reviewer, it’s important to pay attention to <em>the way they formulate the feedback</em>. This is extremely crucial for your feedback to be accepted.</p>
+<ul>
+<li>Use I-messages:<ul>
+<li>Right: “It’s hard for me to grasp what’s going on in this code.”</li>
+<li>Wrong: “You are writing cryptic code.”</li>
+</ul>
+</li>
+<li>Talk about the code, not the coder.<ul>
+<li>Right: “This code is requesting the service multiple times, which is inefficient.”</li>
+<li>Wrong: “You’re requesting the service multiple times, which is inefficient.”</li>
+</ul>
+</li>
+<li>Ask questions instead of making statements.<ul>
+<li>Right: “What do you think about the name ‘userId’ for this variable?”</li>
+<li>Wrong: “This variable should have the name ‘userId’.”</li>
+</ul>
+</li>
+<li>Always refer to the behavior, not the traits of the author.<ul>
+<li>Right: “I believe that you should pay more attention to writing tests.”</li>
+<li>Wrong: “You are sloppy when it comes to writing tests.”</li>
+</ul>
+</li>
+<li>Accept that there are different solutions<ul>
+<li>Right: “I would do it in another way, but your solution is also fine.”</li>
+<li>Wrong: “I always do it this way and you should too.”</li>
+<li>Distinguish between common best practices and your personal taste.</li>
+<li>Mind that your criticism may just reflect your personal taste and not an objectively wrong code.</li>
+<li>Make compromises and be pragmatic.</li>
+</ul>
+</li>
+<li>Don’t jump in front of every train<ul>
+<li>Don’t be a pedant. Don’t criticize every single line in the code. This will annoy the author and reduce their openness to further feedback.</li>
+<li>Focus on the flaws and code smells that are most important to you.</li>
+</ul>
+</li>
+<li>Respect and trust the author<ul>
+<li>Nobody writes bad code on purpose.</li>
+<li>The author wrote the code to the best of their knowledge and belief.</li>
+</ul>
+</li>
+<li>Mind the <strong>OIR rule</strong> of giving feedback<ul>
+<li>Observation: “This method has 100 lines.”</li>
+<li>Impact: “This makes it hard for me to grasp the essential logic of this method.”</li>
+<li>Request: “I suggest extracting the low-level-details into subroutines and give them expressive names.”</li>
+</ul>
+</li>
+<li>Before giving feedback, ask yourself:<ul>
+<li>Is it true? (opinion != truth)</li>
+<li>Is it necessary? (avoid nagging, unnecessary comments and out-of-scope work)</li>
+<li>Is it kind? (no shaming)</li>
+</ul>
+</li>
+<li>Be humble! You are not perfect and you can also improve.</li>
+<li>It’s fine to say: Everything is good!</li>
+<li>Don’t forget to praise.</li>
+</ul>
+<h2 id="books">Books</h2>
+<p>Saleem Siddiqui<br />
+<strong>Learning Test-Driven Development</strong><br />
+O’Reilly, 2022  </p>
+<p>Kent Beck<br />
+<strong>Test-Driven Development By Example</strong><br />
+Addison Wesley, 2002  </p>
 <h2 id="links">Links</h2>
-<p><a href="https://google.com">Empty link</a></p>
+<p><a href="https://www.google.com">TODO</a></p>
               
             </div>
           </div><footer>
@@ -160,10 +226,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../linux_fedora/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../code_reviews/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../debugging/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../tips_for_junior_devs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

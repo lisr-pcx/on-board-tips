@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-cpp/linux_fedora/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/linux_fedora/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-<title>OnBoard Cpp</title>
+<title>OnBoard Tips</title>
 
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
@@ -16,7 +16,7 @@
         // Current page data
         var mkdocs_page_name = "Fedora OS";
         var mkdocs_page_input_path = "linux_fedora.md";
-        var mkdocs_page_url = "/on-board-cpp/linux_fedora/";
+        var mkdocs_page_url = "/on-board-tips/linux_fedora/";
       </script>
     
     <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> OnBoardCpp
+          <a href=".." class="icon icon-home"> OnBoardTips
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -74,6 +74,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../embedded/">Embedded Systems</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Operative Systems</span></p>
               <ul class="current">
@@ -90,10 +92,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
                   </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Best practices</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -116,7 +115,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">OnBoardCpp</a>
+          <a href="..">OnBoardTips</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -146,6 +145,15 @@ Linux fedora 6.8.5-301.fc40.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 11 20:00:10 UT
 </code></pre>
 <p>Update the system:</p>
 <pre><code class="language-sh">test@fedora:~$ sudo dnf update
+</code></pre>
+<h2 id="update">Update</h2>
+<p>Keep your system and packages updated by running command below:</p>
+<pre><code class="language-sh">test@fedora:~$ sudo dnf upgrade
+test@fedora:~$ uname -a
+</code></pre>
+<p>Then reboot the system (both commands are equivalent):</p>
+<pre><code class="language-sh">test@fedora:~$ sudo reboot
+test@fedora:~$ sudo shutdown -r now
 </code></pre>
 <h3 id="the-package-manager-dnf">The package manager: DNF</h3>
 <p>Basic operations on a package:</p>
@@ -180,7 +188,10 @@ test@fedora:~$ sudo /usr/bin/vmhgfs-fuse .host:/ /media/shared -o subtype=vmhgfs
 test@fedora:~$ git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
 </code></pre>
 <h3 id="install-cc-toolchain">Install C/C++ toolchain</h3>
-<p>TODO</p>
+<pre><code class="language-sh">test@fedora:~$ sudo dnf install gcc
+</code></pre>
+<h3 id="install-rust-toolchain">Install RUST toolchain</h3>
+<p>Make sure you have gcc toolchain, then follow instruction <a href="https://www.rust-lang.org/learn/get-started">here</a>.</p>
 <h3 id="install-python">Install Python</h3>
 <p>Python is already pre-installed on Fedora. Just check the version and eventually updated it...<br />
 Check also PIP (Python package manager).</p>
@@ -211,6 +222,21 @@ pip 23.3.2 from /usr/lib/python3.12/site-packages/pip (python 3.12)
 <ul>
 <li>Git Graph (mhutchie)</li>
 <li>Markdown Preview Github Stylng (Matt Bierner)</li>
+<li>Python (Microsoft)</li>
+<li>rust-analyzer (The Rust Programming Language)</li>
+</ul>
+<p><strong>RUST: Code navigation</strong><br />
+Code navigation features are available in the context menu in the editor.</p>
+<ul>
+<li>Go to Definition <code>F12</code></li>
+<li>Peek Definition <code>Ctrl+Shift+F10</code></li>
+<li>Go to References <code>Shift+F12</code> - Show all references for the type.</li>
+<li>Show Call Hierarchy <code>Shift+Alt+H</code> - Show all calls from or to a function.</li>
+</ul>
+<p>You can navigate via symbol search using the Go to Symbol commands from the Command Palette (<code>Ctrl+Shift+P</code>).</p>
+<ul>
+<li>Go to Symbol in File <code>Ctrl+Shift+O</code></li>
+<li>Go to Symbol in Workspace <code>Ctrl+T</code></li>
 </ul>
               
             </div>
