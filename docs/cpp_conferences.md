@@ -1,0 +1,4 @@
+# Conference and Keynotes
+
+**[The Real Problem of C++ - Klaus Iglberger](https://youtu.be/vN0U4P4qmRY)**  
+In this talk, we will focus on what really goes wrong in the C++ industry. We’ll talk about the 10% bubble, i.e. the fact that the vast majority of “C++ developers” is not fully aware of the state of the art and does not use the  recommended tools and features. We’ll take a look at the reason why current teaching material is not consequently updated to the newest best practices. And finally, we’ll consider the lack of investment into good  programmers. Although initially it may sound like a legacy problem, we’ll come to realize that C++ has a people problem.
