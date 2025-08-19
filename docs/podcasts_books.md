@@ -1,4 +1,4 @@
-# Podcast
+# Podcasts
 
 [Soft Skills Engineering](https://softskills.audio)  
 [CoRecursive](https://corecursive.com)  

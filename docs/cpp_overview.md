@@ -18,16 +18,16 @@ TODO
 
 TODO
 
-## Learn building small projects
+## Learn by building small projects
 
-"Learn by doing" is good philosophy, anyway make sure to know some basic concepts or it could became a mere "copy and paste" routine.
+TODO
 
 ## Focus on ..
 
-- Pointers and memory management
+- TODO Pointers and memory management
 - [Constants](./cpp_constants.md)
-- Data structures and STL
-- Lamba Expressions
+- TODO Data structures and STL
+- TODO Lamba Expressions
 
 ## References
 

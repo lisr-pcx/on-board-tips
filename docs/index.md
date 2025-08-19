@@ -11,10 +11,9 @@ These pages was initially built around C++ language but in fact most of the conc
 
 Before start just get a *quick bite* of the topic you are interested.
 
-This tip is valid for any kind of technology, feature, framework .. at beginning you just want some highlights and try some live examples when available.  
-Videos and articles are a good source of information. At this stage do not be afraid to jump from link to link.
+This tip is valid for any kind of technology, feature, framework .. at beginning you just want some highlights and try some live examples when available. Videos and articles are a good source of information. At this stage do not be afraid to jump from link to link.
 
-Then it's time to acquire some core concepts and build simple stuff.
+After that it's time to acquire some core concepts and build simple stuff.
 
 Essentially there are three different ways for learning:
 
@@ -23,8 +22,9 @@ Essentially there are three different ways for learning:
 3. **Learn by doing (small project, tutorial)**: try to build up something, gettin the knownledge on your specific needs (learn by mistakes)
 
 Choose your preferred path or mix them according to your goal.  
-Some people are confortable gettin the theory first, and then process all the information before start coding.  
-Other people instead go straight to the action "hammering the code" until they get some results, and then they explore all the concepts and layers behind.
+Some people are confortable gettin the theory first, and then process all the information before start coding. Other people instead go straight to the action "hammering the code" until they get some results, and then they explore all the concepts and layers behind.
+
+The "Learn by doing" is good philosophy, anyway make sure to know some basic concepts before to start or it could became a mere "copy and paste" routine.
 
 I suggest to setup your development enviroinment as soon as possible (IDE, editor, toolchain...) and try all the code snippets proposed from time to time. A good balance between theory and practice is the key.
 
@@ -32,8 +32,7 @@ Give yourself some time in between the arguments, sometimes it's good to keep a 
 
 ## Arguments
 
-Most of the programming language share the same elements (but maybe work differently, syntactically or conceptually).  
-This is a generic index of arguments:
+Most of the programming language share the same elements (but work differently, syntactically or conceptually). This is a generic index of arguments:
 
 - basics
     - statements and expressions

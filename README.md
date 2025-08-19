@@ -26,6 +26,9 @@ Then:
 
 ## TODO
 
-- [ ] File: linux_os.md - complete overview about OS
-- [ ] File: tdd_workflow.md - TODO
+On the published version there are still some section incomplete, just search "TODO" on markdown files to fix it.
+
+Pages below have been created, but are not online.  
+Fix and add them to "mkdocs.yml".
+
 - [ ] File: rust_overview.md - TODO

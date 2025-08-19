@@ -8,6 +8,8 @@ nav:
     - 'Focus on':
       - constants: cpp_constants.md
     - Conferences and keynotes: cpp_conferences.md
+  - 'ADA language':
+    - Overview: ada_overview.md
   - 'General':
     - Technical documentation: technical_documentation.md
     - Git basics: git_basics.md
@@ -27,7 +29,7 @@ nav:
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
     - More stuff: more_stuff.md
-    - Podcast and books: podcast_books.md
+    - Podcasts and books: podcasts_books.md
     - About: about.md
 
 theme: 
