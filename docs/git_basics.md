@@ -211,5 +211,6 @@ Other files are usually part of the repository:
 
 [Git guide from Github platform](https://github.com/git-guides)  
 [Gitflow in 5 minutes](https://youtu.be/1SXpE08hvGs)  
-[Git tutorial from freeCodeCamp.org](https://youtu.be/Uszj_k0DGsg)  
+[Git tutorial from freeCodeCamp.org](https://youtu.be/Uszj_k0DGsg)
+
 Third-party Git GUI clients: [Tortoise Git](https://tortoisegit.org/), [GitHub Desktop](https://desktop.github.com/), [Sourcetree](https://www.sourcetreeapp.com/)  

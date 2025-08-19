@@ -99,7 +99,7 @@ Workflow:
 1. Get the network topology and devices configuration
 2. Understand the meaning/theory about RST packet (when it's used and who send it):
     
-    ```text
+```text
     List of reasons for the server to send the RST:
     
     	A: Non-Existence TCP endpoint
@@ -131,7 +131,7 @@ Workflow:
     	
     	I: Application protocol error
     	TCP reset is sent when the peer (the other end of the connection) closes its socket while there is still unread data pending in its socket receive buffer.
-    ```
+```
 
 3. Filter RST packets and look for a relation with other messages
 4. Check the presence of:
@@ -140,7 +140,7 @@ Workflow:
 5. Open application source-code and verify how the TCP-stack is implemented (it's usually and external library like lwIP, ...).
 6. Verify that application manages connections as defined by protocol documentation.
     
-    ```text
+```text
     TCP supports two types of connection releases like most connection-oriented transport protocols:
 
     	GRACEFUL connection release
@@ -150,11 +150,18 @@ Workflow:
     	ABRUPT connection release
     	In an Abrupt connection release, either one TCP entity is forced to close the connection or one user closes both directions of data transfer.
     	An abrupt connection release is carried out when an RST segment is sent.
-    ```
+```
 
 # Tcpdump
 
 TODO
+
+```sh
+$ tcpdump -D
+$ tcpdump -XX -i lo
+$ tcpdump -XX -i lo tcp port 80
+$ tcpdump -XX -i lo host x.x.x.x
+```
 
 ## Overview
 

@@ -2,14 +2,26 @@
 
 A *personal* collection of resources, links, notes, and training materials.
 
-These pages was initially built around C++ language but in fact most of the concepts are not specific to that.
+These pages were initially built around C++ language but in fact most of the concepts are not specific to that.
 
 !!! note
     Work in progress, last update: September 2025
 
 ## Preface
 
-Before start just get a *quick bite* of the topic you are interested.
+Programming is the process to define a set of instructions to be executed by a computer in order to perform a computation or task to fulfill a specific user need or request.
+
+This process is usually done by designing/building an executable computer program, and it involves tasks such as analysis, generating algorithms, coding, profiling performance and resource consumption, and testing to identify behavior anomalies.
+
+During that process the program (=the code) is thoroughly checked for errors. Then errors are pointed out and fixed. Debugging is the process of finding and removing errors in a program.
+
+One of the hardest thing about being a software developer may not be related to technical skill, but rather a personality trait.  
+Digital platforms and frameworks are evolving faster than ever before. Also the job market offers different roles/positions following tech trends and world economy.  
+Adaptability is the winning skill, you’ll soon find yourself ready and capable of tackling every challenge thrown on your way.
+
+## Get started
+
+Before anything just get a *quick bite* of the topic you are interested.
 
 This tip is valid for any kind of technology, feature, framework .. at beginning you just want some highlights and try some live examples when available. Videos and articles are a good source of information. At this stage do not be afraid to jump from link to link.
 
@@ -29,6 +41,9 @@ The "Learn by doing" is good philosophy, anyway make sure to know some basic con
 I suggest to setup your development enviroinment as soon as possible (IDE, editor, toolchain...) and try all the code snippets proposed from time to time. A good balance between theory and practice is the key.
 
 Give yourself some time in between the arguments, sometimes it's good to keep a slower pace (it's not a sprint, it's a marathon).
+
+Sometimes it is usefull to draw a roadmap. It clears goals, progress and direction. You will put effort on branches with *real* values, avoiding distractions.  
+At the same time: do not prune your tree! You will focus on the other branches later on your career.
 
 ## Arguments
 

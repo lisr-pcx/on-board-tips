@@ -1,7 +1,6 @@
 # Regular Expressions
 
-Mastering regex can take a lot of your time, especially at the beginning, but you only need to practice.  
-Use them in your C/C++ code but also inside scripts (Python) or directly in your editor (vi or notepad++).
+Mastering regex can take a lot of your time, especially at the beginning, but you only need to practice. Use them in your code but also inside scripts or directly in your editor (vi or notepad++).
 
 ## Overview
 
@@ -99,5 +98,5 @@ Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ w
 
 Jeffrey E F Friedl  
 **Mastering Regular Expressions**  
-O’Reilly  
+*O’Reilly*  
 

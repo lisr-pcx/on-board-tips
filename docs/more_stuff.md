@@ -1,8 +1,6 @@
-# More stuff
-
 Down below are listed further concepts, articles, projects, topics ... that I can't relate directly to the topics of this site. This page is a kind of a *storage box*, sorry for the mess.
 
-## SMART
+# SMART
 
 This method allows you to write goals that are clear, attainable and meaningful.  
 Having clarity in your goal-setting provides the motivation and focus you need to be successful.
@@ -15,7 +13,7 @@ Having clarity in your goal-setting provides the motivation and focus you need t
 
 [Smart goals](https://asana.com/resources/smart-goals)
 
-## The Google Project Aristotle
+# The Google Project Aristotle
 
 The researchers found ([read](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html)) that what really mattered was less about who is on the team, and more about how the team worked together. In order of importance:
 
@@ -55,12 +53,24 @@ It’s important to note though that while these variables did not significantly
 > The fundamental thing that distinguish good teams from disfunctional ones is how team mates treat one another.  
 > *Sandi Metz*
 
-## Links to Conferences
+# Conferences on work-Life balance and career tips
 
-[Radical candor](https://youtu.be/MIh_992Nfes)  
-[Love Your Work](https://youtu.be/jDIZS4IQlQk)  
-[Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)  
-[An Engineer's Guide To Burnout And How To Hack It](https://youtu.be/jfQ5M6wXi2w)  
+**[Love Your Work - Simon Sinek](https://youtu.be/jDIZS4IQlQk)**  
+Simon Sinek speaks on how to be fulfilled by your job and how companies can better support and inspire the people who work for them.
+
+**[How to Become Accomplished - Chad Fowler](https://youtu.be/hsIcFf9pnCo)**  
+We work in a time and culture of incredibly hard work. When someone asks how you're doing, how often do you use the word "busy" in the answer? But, what are we busy doing?  
+As a professiional musician, I learned that the most successful musicians are rarely the best musicians. This holds true in the technology business world. It's also true that the busiest, hardest working among us aren't necessarily the most accomplished.  
+So, what is accomplishment, and how do we get it?
+
+**[An Engineer's Guide To Burnout And How To Hack It - Tim Duckett](https://youtu.be/jfQ5M6wXi2w)**  
+The tech industry is notorious for its masochistic approach to deadlines, workloads and hours spent toiling at the code face. The projects might ship, but what's the long-term cost to our physical and mental health?  
+It doesn't have to be this way - in this session, Tim will draw from both practical experience of (just about) surviving death march projects and Proper Psychological Science to show how burnout happens, what causes it, and what we can do to survive.
+
+# Conferences about programming
+
+**[Legacy - Chad Fowler](https://youtu.be/YruzQgWdv48)**  
+As software developers, we learn to abhor maintaining other people's old software. It's old, funky and brittle. In fact, we spend much of our work lives trying to kill it or at the very least marginalize its use, so we can limit our exposure to it. We pity people who have to do it [..]
 
 # GNU Build System
 
@@ -188,3 +198,8 @@ $ make dist
 ```
 
 At this stage make sure your tarball works fine, copy into your testing OS, extract and run again `./configure` and `make`.
+
+# Lead and relationship
+
+[Radical candor](https://youtu.be/MIh_992Nfes)  
+[Most Leaders Don't Even Know the Game They're In](https://youtu.be/RyTQ5-SQYTo)  

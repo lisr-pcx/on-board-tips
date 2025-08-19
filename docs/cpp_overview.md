@@ -12,11 +12,38 @@ Only a small snippet of code is showed, forcing the reader to actively retrieve 
 
 ## Learn on books
 
-TODO
+Introduction to the language:
+
+Bjarne Stroustrup  
+**A Tour of C++**  
+*Addison Wesley*  
+
+For experienced developer:
+
+Scott Meyers  
+**Effective Modern C++**
+*O'Reilly*  
+
+Frances Buontempo  
+**Learn C++ by Example**  
+*Manning*  
+
+Jeff Langr  
+**Modern C++ Programming, with Test-Driven Development**  
+*The Pragmatic Programmers*  
 
 ## Learn via video tutorials
 
-TODO
+For people with zero or very limited background in programming (pick-up the style you prefer most):
+
+[C++ full course - Saldina Nurak](https://youtu.be/GQp1zzTwrIg)  
+[C++ tutorial for beginners - Mike Dane](https://youtu.be/vLnPwxZdW4Y)  
+[Modern C++ 20 for beginners - Daniel Gakwaya](https://youtu.be/8jLOx1hD3_o)  
+
+The examples are very basic, with focus on learning, so it's important to wide the perspective and start reading code written by other developers. Start looking for small and simple project, and gradually increase the complexity. These sites are a good starting point:
+
+[Github, Project Based Learning](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#cc)  
+[Github, Awesome C++ frameworks, libraries, resources ..](https://github.com/fffaraz/awesome-cpp/)  
 
 ## Learn by building small projects
 
@@ -31,7 +58,8 @@ TODO
 
 ## References
 
-[ISO C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+[ISO C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)  
+[Google C++ style guide](https://google.github.io/styleguide/cppguide.html)
 
 ## Tools
 
