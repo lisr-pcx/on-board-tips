@@ -41,25 +41,22 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
+              <p class="caption"><span class="caption-text">C++ language</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../basics_c_cpp/">Basics</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
+                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cpp_constants/">constants</a>
+                </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_conferences/">Conferences and keynotes</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../STL">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
+              </ul>
+              <p class="caption"><span class="caption-text">ADA language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ada_overview/">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
@@ -81,18 +78,18 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../linux_os/">Work with Linux</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora Linux</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdlc_models/">SDLC models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -103,7 +100,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../podcast_books/">Podcast and books</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                   </li>
@@ -201,68 +198,67 @@ Logs on the device highlighted a <em>disconnection indication</em> on communicat
 <p>Workflow:</p>
 <ol>
 <li>Get the network topology and devices configuration</li>
-<li>
-<p>Understand the meaning/theory about RST packet (when it's used and who send it):</p>
-<p>```text
-List of reasons for the server to send the RST:</p>
-<pre><code>A: Non-Existence TCP endpoint
-The client sends SYN to a non-existing TCP port or IP on the server side. The server will send a reset to the client.
+<li>Understand the meaning/theory about RST packet (when it's used and who send it):</li>
+</ol>
+<pre><code class="language-text">    List of reasons for the server to send the RST:
 
-B: SYN matches the existing TCP endpoint
-The client sends SYN to an existing TCP endpoint, which means the same 5-tuple. The server will send a reset to the client.
+        A: Non-Existence TCP endpoint
+        The client sends SYN to a non-existing TCP port or IP on the server side. The server will send a reset to the client.
 
-C: Accept Queue Full
-When the accept queue is full on the server side, the server will send a reset to the client.
+        B: SYN matches the existing TCP endpoint
+        The client sends SYN to an existing TCP endpoint, which means the same 5-tuple. The server will send a reset to the client.
 
-D: Half-Open Connections
-When the server restarts itself. Then all connections before would receive a reset from the server side.
+        C: Accept Queue Full
+        When the accept queue is full on the server side, the server will send a reset to the client.
 
-E: Firewall
-The firewall/routers could send a reset to the client or server (due to idle time or other reasons)
-Example: if there is a router doing NAT, especially a low end router with few resources, it will age the oldest TCP sessions first. To do this it sets the RST flag in the packet that effectively tells the receiving station to (very ungracefully) close the connection. this is done to save resources.
+        D: Half-Open Connections
+        When the server restarts itself. Then all connections before would receive a reset from the server side.
 
-F: Time-Wait Assassination
-When the client in the time-wait state, receives a message from the server-side, the client will send a reset to the server.
+        E: Firewall
+        The firewall/routers could send a reset to the client or server (due to idle time or other reasons)
+        Example: if there is a router doing NAT, especially a low end router with few resources, it will age the oldest TCP sessions first. To do this it sets the RST flag in the packet that effectively tells the receiving station to (very ungracefully) close the connection. this is done to save resources.
 
-G: Aborting Connection
-When the server aborts the connection, it could send a reset to the client
-The RST packets are only sent by the server.
+        F: Time-Wait Assassination
+        When the client in the time-wait state, receives a message from the server-side, the client will send a reset to the server.
 
-H: Connection Timeout
-If a TCP connection is idle for an extended period, one of the parties might send a reset packet to close the connection (in most applications, the socket connection has a timeout).
-Example: FTP server, if you connect to the server and just leave the connection without browsing or downloading files, the server will kick you off the connection, usually to allow others to be able to connect.
+        G: Aborting Connection
+        When the server aborts the connection, it could send a reset to the client
+        The RST packets are only sent by the server.
 
-I: Application protocol error
-TCP reset is sent when the peer (the other end of the connection) closes its socket while there is still unread data pending in its socket receive buffer.
+        H: Connection Timeout
+        If a TCP connection is idle for an extended period, one of the parties might send a reset packet to close the connection (in most applications, the socket connection has a timeout).
+        Example: FTP server, if you connect to the server and just leave the connection without browsing or downloading files, the server will kick you off the connection, usually to allow others to be able to connect.
+
+        I: Application protocol error
+        TCP reset is sent when the peer (the other end of the connection) closes its socket while there is still unread data pending in its socket receive buffer.
 </code></pre>
-<p>```</p>
-</li>
-<li>
-<p>Filter RST packets and look for a relation with other messages</p>
-</li>
+<ol>
+<li>Filter RST packets and look for a relation with other messages</li>
 <li>Check the presence of:<ul>
 <li>"Spurius retransmission”</li>
 <li>"Duplicated ack”</li>
 </ul>
 </li>
 <li>Open application source-code and verify how the TCP-stack is implemented (it's usually and external library like lwIP, ...).</li>
-<li>
-<p>Verify that application manages connections as defined by protocol documentation.</p>
-<p>```text
-TCP supports two types of connection releases like most connection-oriented transport protocols:</p>
-<pre><code>GRACEFUL connection release
-In the Graceful connection release, the connection is open until both parties have closed their sides of the connection.
-The common way of terminating a TCP connection is by using the TCP header’s FIN flag. This mechanism allows each host to release its own side of the connection individually.
-
-ABRUPT connection release
-In an Abrupt connection release, either one TCP entity is forced to close the connection or one user closes both directions of data transfer.
-An abrupt connection release is carried out when an RST segment is sent.
-</code></pre>
-<p>```</p>
-</li>
+<li>Verify that application manages connections as defined by protocol documentation.</li>
 </ol>
+<pre><code class="language-text">    TCP supports two types of connection releases like most connection-oriented transport protocols:
+
+        GRACEFUL connection release
+        In the Graceful connection release, the connection is open until both parties have closed their sides of the connection.
+        The common way of terminating a TCP connection is by using the TCP header’s FIN flag. This mechanism allows each host to release its own side of the connection individually.
+
+        ABRUPT connection release
+        In an Abrupt connection release, either one TCP entity is forced to close the connection or one user closes both directions of data transfer.
+        An abrupt connection release is carried out when an RST segment is sent.
+</code></pre>
 <h1 id="tcpdump">Tcpdump</h1>
 <p>TODO</p>
+<pre><code class="language-sh">$ tcpdump -D
+$ tcpdump -XX -i lo
+$ tcpdump -XX -i lo tcp port 80
+$ tcpdump -XX -i lo host x.x.x.x
+</code></pre>
 <h2 id="overview_1">Overview</h2>
 <p>TODO</p>
 <h2 id="how-to-use-it">How to use it</h2>

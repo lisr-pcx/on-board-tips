@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/defensive_programming/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/ada_overview/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
 <title>OnBoard Tips</title>
 
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Defensive programming";
-        var mkdocs_page_input_path = "defensive_programming.md";
-        var mkdocs_page_url = "/on-board-tips/defensive_programming/";
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "ada_overview.md";
+        var mkdocs_page_url = "/on-board-tips/ada_overview/";
       </script>
     
     <!--[if lt IE 9]>
@@ -55,12 +55,12 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">ADA language</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../ada_overview/">Overview</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../git_basics/">Git basics</a>
@@ -71,7 +71,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../embedded/">Embedded Systems</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Defensive programming</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Operative Systems</span></p>
@@ -119,8 +119,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">General</li>
-      <li class="breadcrumb-item active">Defensive programming</li>
+          <li class="breadcrumb-item">ADA language</li>
+      <li class="breadcrumb-item active">Overview</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,18 +129,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="defensive-programming">Defensive programming</h1>
-<p>It's a form of defensive design intended to develop programs that are capable of detecting potential security anomalies and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances. These practices are often used where high availability, safety, or security is needed. <em>(source: Wikipedia)</em></p>
-<p>The final goal is to improve software and source code, in terms of:</p>
+                <h1 id="ada-language">ADA language</h1>
+<p>Ada is a state-of-the art programming language that development teams worldwide are using for critical software: from microkernels and small-footprint, real-time embedded systems to large-scale enterprise applications, and everything in between.</p>
+<p>Ada is a structured, statically typed, imperative, and object-oriented high-level programming language, inspired by Pascal and other languages. It has built-in language support for design by contract (DbC), extremely strong typing, explicit concurrency, tasks, synchronous message passing, protected objects, and non-determinism. It improves code safety and maintainability by using the compiler to find errors in favor of runtime errors.</p>
+<h2 id="features">Features</h2>
 <ul>
-<li>Quality, reducing the number of software bugs and problems</li>
-<li>Readability</li>
-<li>Making the software behave in a predictable manner despite unexpected inputs or user actions.</li>
+<li>Strong typing</li>
+<li>Modular programming mechanisms (packages)</li>
+<li>Run-time checking</li>
+<li>Parallel processing (tasks, synchronous message passing, protected objects, and nondeterministic select statements)</li>
+<li>Exception handling</li>
+<li>Generics</li>
+<li>Object-oriented programming (from Ada95)</li>
 </ul>
-<p>Overly defensive programming, however, may safeguard against errors that will never be encountered, thus incurring run-time and maintenance costs.</p>
-<p>A complete overview of the topic can be found <a href="https://gjbex.github.io/Defensive_programming_and_debugging/">here</a></p>
-<p>A collection of tips from Red Hat <a href="https://redhat-crypto.gitlab.io/defensive-coding-guide/#_programming_languages">Defensive coding guide, multiple languages</a></p>
-<p>Guidelines and certification: <a href="https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards">SEI-CERT standards</a></p>
+<p>The <strong>Ravenscar profile</strong> is a subset of the Ada tasking features designed for safety-critical hard real-time computing. It was defined by a separate technical report in Ada 95 and it is now part of the Ada 2012 Standard.</p>
+<p>The <strong>SPARK</strong> language consists of a well-defined subset of the Ada language that uses contracts to describe the specification of components in a form that is suitable for both static and dynamic verification. It is intended for developing high integrity software used in systems where predictable and highly reliable operation is essential, facilitating development of applications that demand safety, security, or business integrity.</p>
+<h2 id="get-started">Get started</h2>
+<p>I highly recommend to start from the site <a href="https://learn.adacore.com">LEARN.ADACORE.COM</a>.</p>
+<p>AdaCore (founded in 1994) is the leading provider of commercial and open-source software solutions for Ada language. It also provide an IDE available <a href="https://www.adacore.com/download">here</a> (Community version).</p>
+<p>For a quick overview of the IDE: GNAT Programming Studio (also names GPS), please refer to <a href="https://docs.adacore.com/live/wave/gps/html/gps_tutorial/intro.html">GPS tutorial</a>.</p>
+<p>For the <strong>newbie</strong>:</p>
+<ul>
+<li>Start from <a href="https://learn.adacore.com/courses/intro-to-ada/index.html">Introduction to Ada</a> and follow the proposed index, and do exercises available on <a href="https://learn.adacore.com/labs/intro-to-ada/index.html">Introduction to Ada: Laboratories</a></li>
+</ul>
+<p>For <strong>seasoned programmers</strong> who have <em>strong</em> background on C, C++ ora Java and nned to ramp-up quickly, then skip the basics for now, and just compare the two languages:</p>
+<ul>
+<li><a href="https://learn.adacore.com/courses/Ada_For_The_Embedded_C_Developer/index.html">Ada for the embedded C developer</a>  </li>
+<li><a href="https://learn.adacore.com/courses/Ada_For_The_CPP_Java_Developer/index.html">Ada for C++/Java developer</a>  </li>
+</ul>
+<h2 id="learn-by-building-small-projects">Learn by building small projects</h2>
+<p>TODO</p>
+<h2 id="focus-on">Focus on ..</h2>
+<ul>
+<li>TODO Interface with C language</li>
+<li>TODO GUI frameworks</li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="https://www.adacore.com/products/languages">AdaCore</a><br />
+<a href="https://www.adacore.com/about-ada">AdaCore about Ada</a><br />
+<a href="https://www.adacore.com/gnatpro/toolsuite/gnatstudio">AdaCore GNAT Studio</a>  </p>
+<h2 id="tools">Tools</h2>
+<p><a href="https://godbolt.org/">Compiler Explorer</a>: interactive online tool that lets you type code in one window and see the results of its compilation in another window.</p>
               
             </div>
           </div><footer>
@@ -165,10 +194,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../embedded/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../cpp_conferences/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../linux_os/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../technical_documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

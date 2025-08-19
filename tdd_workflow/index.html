@@ -41,25 +41,22 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
+              <p class="caption"><span class="caption-text">C++ language</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../basics_c_cpp/">Basics</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
+                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cpp_constants/">constants</a>
+                </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_conferences/">Conferences and keynotes</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../STL">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
+              </ul>
+              <p class="caption"><span class="caption-text">ADA language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ada_overview/">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
@@ -81,18 +78,18 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../linux_os/">Work with Linux</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora Linux</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdlc_models/">SDLC models</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Test Driven Development</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -103,7 +100,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../podcast_books/">Podcast and books</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                   </li>
@@ -136,63 +133,6 @@
 <p>TODO overview</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>TODO workflow + example</p>
-<h2 id="tips">Tips</h2>
-<p>For the reviewer, it’s important to pay attention to <em>the way they formulate the feedback</em>. This is extremely crucial for your feedback to be accepted.</p>
-<ul>
-<li>Use I-messages:<ul>
-<li>Right: “It’s hard for me to grasp what’s going on in this code.”</li>
-<li>Wrong: “You are writing cryptic code.”</li>
-</ul>
-</li>
-<li>Talk about the code, not the coder.<ul>
-<li>Right: “This code is requesting the service multiple times, which is inefficient.”</li>
-<li>Wrong: “You’re requesting the service multiple times, which is inefficient.”</li>
-</ul>
-</li>
-<li>Ask questions instead of making statements.<ul>
-<li>Right: “What do you think about the name ‘userId’ for this variable?”</li>
-<li>Wrong: “This variable should have the name ‘userId’.”</li>
-</ul>
-</li>
-<li>Always refer to the behavior, not the traits of the author.<ul>
-<li>Right: “I believe that you should pay more attention to writing tests.”</li>
-<li>Wrong: “You are sloppy when it comes to writing tests.”</li>
-</ul>
-</li>
-<li>Accept that there are different solutions<ul>
-<li>Right: “I would do it in another way, but your solution is also fine.”</li>
-<li>Wrong: “I always do it this way and you should too.”</li>
-<li>Distinguish between common best practices and your personal taste.</li>
-<li>Mind that your criticism may just reflect your personal taste and not an objectively wrong code.</li>
-<li>Make compromises and be pragmatic.</li>
-</ul>
-</li>
-<li>Don’t jump in front of every train<ul>
-<li>Don’t be a pedant. Don’t criticize every single line in the code. This will annoy the author and reduce their openness to further feedback.</li>
-<li>Focus on the flaws and code smells that are most important to you.</li>
-</ul>
-</li>
-<li>Respect and trust the author<ul>
-<li>Nobody writes bad code on purpose.</li>
-<li>The author wrote the code to the best of their knowledge and belief.</li>
-</ul>
-</li>
-<li>Mind the <strong>OIR rule</strong> of giving feedback<ul>
-<li>Observation: “This method has 100 lines.”</li>
-<li>Impact: “This makes it hard for me to grasp the essential logic of this method.”</li>
-<li>Request: “I suggest extracting the low-level-details into subroutines and give them expressive names.”</li>
-</ul>
-</li>
-<li>Before giving feedback, ask yourself:<ul>
-<li>Is it true? (opinion != truth)</li>
-<li>Is it necessary? (avoid nagging, unnecessary comments and out-of-scope work)</li>
-<li>Is it kind? (no shaming)</li>
-</ul>
-</li>
-<li>Be humble! You are not perfect and you can also improve.</li>
-<li>It’s fine to say: Everything is good!</li>
-<li>Don’t forget to praise.</li>
-</ul>
 <h2 id="books">Books</h2>
 <p>Saleem Siddiqui<br />
 <strong>Learning Test-Driven Development</strong><br />
@@ -226,10 +166,10 @@ Addison Wesley, 2002  </p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../code_reviews/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../sdlc_models/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../tips_for_junior_devs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../debugging/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

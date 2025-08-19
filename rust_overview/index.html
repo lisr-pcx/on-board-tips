@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/basics_c_cpp/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/rust_overview/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
 <title>OnBoard Tips</title>
 
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Basics";
-        var mkdocs_page_input_path = "basics_c_cpp.md";
-        var mkdocs_page_url = "/on-board-tips/basics_c_cpp/";
+        var mkdocs_page_name = "RUST language";
+        var mkdocs_page_input_path = "rust_overview.md";
+        var mkdocs_page_url = "/on-board-tips/rust_overview/";
       </script>
     
     <!--[if lt IE 9]>
@@ -41,25 +41,22 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Basics</a>
+              <p class="caption"><span class="caption-text">C++ language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
+                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cpp_constants/">constants</a>
+                </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_conferences/">Conferences and keynotes</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../STL">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
+              </ul>
+              <p class="caption"><span class="caption-text">ADA language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ada_overview/">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
@@ -81,18 +78,18 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../linux_os/">Work with Linux</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora Linux</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdlc_models/">SDLC models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -103,7 +100,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../podcast_books/">Podcast and books</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                   </li>
@@ -122,8 +119,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Focus on C/C++</li>
-      <li class="breadcrumb-item active">Basics</li>
+      <li class="breadcrumb-item active">RUST language</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -132,39 +128,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="basics">Basics</h1>
-<blockquote>
-<p>Before start just get a <em>quick bite</em> of the topic.</p>
-</blockquote>
-<p>This tip is valid for any kind of technology, feature, framework .. at beginning you just want some highlights and try some live examples when available. Videos and articles are a good source of information. At this stage do not be afraid to jump from link to link.</p>
-<p><a href="https://youtu.be/U3aXWizDbQ4">C in 100 seconds</a><br />
-<a href="https://youtu.be/MNeX4EGtR5Y">C++ in 100 seconds</a></p>
-<p>After that it's time to acquire some core concepts and build simple stuff.</p>
-<p>Essentially there are three different ways for learning:</p>
-<ol>
-<li><strong>Books and Docs</strong>: gradually discover chapter by chapter, guided by authors</li>
-<li><strong>Videos (lessons, seminaries)</strong>: concepts are explained putting more emphasis on schemes, flowcharts, ... and live examples</li>
-<li><strong>Doing (small project, tutorial)</strong>: try to build up something, gettin the knownledge on your specific needs (learn by mistakes)</li>
-</ol>
-<p>Choose your preferred path or mix them according to your goal.<br />
-Some people are confortable gettin the theory first, and then process all the information before start coding. Other people instead go straight to the action "hammering the code" until they get some results, and then they explore all the concepts and layers behind.</p>
-<p>I suggest to setup your dev enviroinment (IDE, editor, toolchain...) and try the code snippets proposed time to time. A good balance between theory and practice is the key.</p>
-<p>Give yourself some time in between the arguments, sometimes it's good to keep a slower pace.</p>
-<p>I found the websites "ByExample" quite effective because they give you the classic index of topics to acquire.<br />
-Only a small snippet of code is showed, forcing the reader to actively retrieve via other sources the theory behind.</p>
-<p><a href="https://www.cbyexample.com">C/C++ by example</a><br />
-<a href="https://cppbyexample.com">Another C++ By Example site</a></p>
-<h2 id="books-and-documentation">Books and documentation</h2>
-<p>TODO</p>
-<h2 id="video-lessons">Video lessons</h2>
-<p>TODO</p>
-<h2 id="small-projects-and-tutorials">Small projects and tutorials</h2>
-<p>"Learn by doing" is good philosophy, anyway make sure to know some basic stuffs or it could became a mere "copy and paste" routine.</p>
-<p>TODO</p>
-<h2 id="references">References</h2>
-<p><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">ISO C++ Core Guidelines</a></p>
-<h2 id="tools">Tools</h2>
-<p><a href="https://godbolt.org/">Compiler Explorer</a>: interactive online tool that lets you type code in one window and see the results of its compilation in another window.</p>
+                <h1 id="rust-language">RUST language</h1>
+<h2 id="getting-started">Getting started</h2>
+<p>Make sure you have gcc toolchain, then follow instruction <a href="https://www.rust-lang.org/learn/get-started">here</a>.</p>
+<h2 id="configure-visual-studio-code">Configure Visual Studio Code</h2>
+<p>Run VSCode and install desired extensions:</p>
+<ul>
+<li>Git Graph (mhutchie)</li>
+<li>Markdown Preview Github Stylng (Matt Bierner)</li>
+<li>rust-analyzer (The Rust Programming Language)</li>
+</ul>
+<h3 id="code-navigation">Code navigation</h3>
+<p>Code navigation features are available in the context menu in the editor.</p>
+<ul>
+<li>Go to Definition <code>F12</code></li>
+<li>Peek Definition <code>Ctrl+Shift+F10</code></li>
+<li>Go to References <code>Shift+F12</code> - Show all references for the type.</li>
+<li>Show Call Hierarchy <code>Shift+Alt+H</code> - Show all calls from or to a function.</li>
+</ul>
+<p>You can navigate via symbol search using the Go to Symbol commands from the Command Palette (<code>Ctrl+Shift+P</code>).</p>
+<ul>
+<li>Go to Symbol in File <code>Ctrl+Shift+O</code></li>
+<li>Go to Symbol in Workspace <code>Ctrl+T</code></li>
+</ul>
               
             </div>
           </div><footer>
@@ -189,10 +175,6 @@ Only a small snippet of code is showed, forcing the reader to actively retrieve 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../constants/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

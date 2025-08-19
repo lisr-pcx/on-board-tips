@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/defensive_programming/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://lisr-pcx.github.io/on-board-tips/cpp_constants/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
 <title>OnBoard Tips</title>
 
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Defensive programming";
-        var mkdocs_page_input_path = "defensive_programming.md";
-        var mkdocs_page_url = "/on-board-tips/defensive_programming/";
+        var mkdocs_page_name = "constants";
+        var mkdocs_page_input_path = "cpp_constants.md";
+        var mkdocs_page_url = "/on-board-tips/cpp_constants/";
       </script>
     
     <!--[if lt IE 9]>
@@ -42,12 +42,12 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">C++ language</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../cpp_constants/">constants</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Focus on</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">constants</a>
                 </li>
     </ul>
                   </li>
@@ -60,7 +60,7 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../technical_documentation/">Technical documentation</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../git_basics/">Git basics</a>
@@ -71,7 +71,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../embedded/">Embedded Systems</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Defensive programming</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../defensive_programming/">Defensive programming</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Operative Systems</span></p>
@@ -119,8 +119,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">General</li>
-      <li class="breadcrumb-item active">Defensive programming</li>
+          <li class="breadcrumb-item">C++ language</li>
+          <li class="breadcrumb-item">Focus on</li>
+      <li class="breadcrumb-item active">constants</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,18 +130,70 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="defensive-programming">Defensive programming</h1>
-<p>It's a form of defensive design intended to develop programs that are capable of detecting potential security anomalies and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances. These practices are often used where high availability, safety, or security is needed. <em>(source: Wikipedia)</em></p>
-<p>The final goal is to improve software and source code, in terms of:</p>
+                <h1 id="constants">Constants</h1>
+<p>Basically there are two ways (<em>keywords</em>) to manage it:</p>
 <ul>
-<li>Quality, reducing the number of software bugs and problems</li>
-<li>Readability</li>
-<li>Making the software behave in a predictable manner despite unexpected inputs or user actions.</li>
+<li><strong>const</strong> it applies to variables and objects and prevents them from being modified in the code. It allows you to communicate to both compilers and other programmers that a value should remain invariant. <a href="https://en.cppreference.com/w/cpp/language/cv">Link</a></li>
+<li><strong>constexpr</strong> tell to the compiler to evaluate the variable or the expression at compile time. It's typically used to assign constant variables, array sizes, and store them into read-only memory. <a href="https://en.cppreference.com/w/cpp/language/constexpr">Link</a></li>
 </ul>
-<p>Overly defensive programming, however, may safeguard against errors that will never be encountered, thus incurring run-time and maintenance costs.</p>
-<p>A complete overview of the topic can be found <a href="https://gjbex.github.io/Defensive_programming_and_debugging/">here</a></p>
-<p>A collection of tips from Red Hat <a href="https://redhat-crypto.gitlab.io/defensive-coding-guide/#_programming_languages">Defensive coding guide, multiple languages</a></p>
-<p>Guidelines and certification: <a href="https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards">SEI-CERT standards</a></p>
+<h2 id="const">const</h2>
+<p>Google C++ guidelines: <a href="https://google.github.io/styleguide/cppguide.html#Use_of_const">link</a><br />
+Abseil Tip of the Week about const: <a href="https://abseil.io/tips/109">link</a></p>
+<pre><code class="language-cpp">int main()
+{
+  int arr[] = {1, 2, 3, 4};
+  int val = 25;
+
+  // Tip(!)
+  // Read from right to left (following the rule that
+  // const always follows the object it's describing...)
+
+  // pointers
+
+  int * a = arr;
+  a++;        // valid
+  *a = 20;    // valid
+
+  int const * b = arr;
+  b++;        // valid
+  *b = 20;    // ERROR
+
+  int * const c = arr;
+  c++;        // ERROR
+  *c = 20;    // valid
+
+  int const * const d = arr;
+  d++;        // ERROR
+  *d = 20;    // ERROR
+
+  int * p1 = &amp;val;
+  int const * p2 = p1;  // valid
+  int * p3 = p2;        // ERROR const-ness can not be removed
+  int * const p4 = p1;  // valid
+
+  // references
+
+  int &amp; r1 = val;
+  int const &amp; r2 = r1;  // valid
+  int &amp; r3 = r2;        // ERROR const-ness can not be removed
+  int &amp; const r4 = r1   // ERROR const-ness can not be added to ref.
+
+  return 0;
+}
+</code></pre>
+<h2 id="constexpr-constinit-consteval">constexpr, constinit, consteval</h2>
+<p>Google C++ guidelines: <a href="https://google.github.io/styleguide/cppguide.html#Use_of_constexpr">link</a></p>
+<p>Some variables can be declared constexpr to indicate the variables are true constants, i.e., fixed at compilation/link time. Some functions and constructors can be declared constexpr which enables them to be used in defining a constexpr variable. Functions can be declared consteval to restrict their use to compile time.</p>
+<p>Use <strong>constexpr</strong> to specify true constants (fixed at compilation time). Also functions can be declared as <strong>constexpr</strong> and if it's not possible to evaluate at compile time they will managed as normal functions at run-time.<br />
+Use <strong>constinit</strong> to ensure constant initialization for non-constant variables.<br />
+Use <strong>consteval</strong> only for compile time.</p>
+<h2 id="video-conferences">Video / Conferences</h2>
+<p><a href="https://youtu.be/Y1KOuFYtTF4">CppCon 2015: Richard Powell “The Importance of Being const"</a><br />
+<a href="https://youtu.be/MdrfPSUtMVM">CppCon 2021: Jason Turner "Your New Mental Model of constexpr"</a>
+<a href="https://youtu.be/tA6LbPyYdco">Back to Basics: const and constexpr - Rainer Grimm - CppCon 2021</a></p>
+<h2 id="links">Links</h2>
+<p><a href="https://stackoverflow.com/questions/14116003/whats-the-difference-between-constexpr-and-const">Stackoverflow Post</a><br />
+<a href="https://medium.com/@elysiumceleste/understanding-the-power-of-constexpr-in-c-33aca6f9880">Medium "Understanding the power of constexpr"</a>  </p>
               
             </div>
           </div><footer>
@@ -165,10 +218,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../embedded/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../cpp_overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../linux_os/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../cpp_conferences/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

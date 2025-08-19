@@ -41,25 +41,22 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
+              <p class="caption"><span class="caption-text">C++ language</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="basics_c_cpp/">Basics</a>
+                  <li class="toctree-l1"><a class="reference internal" href="cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="Pointers">None</a>
+                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="cpp_constants/">constants</a>
+                </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="constants/">Constants</a>
+                  <li class="toctree-l1"><a class="reference internal" href="cpp_conferences/">Conferences and keynotes</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="Memory management">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="Data structures">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="STL">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="Lamba Expressions">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="Threads">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="Sockets">None</a>
+              </ul>
+              <p class="caption"><span class="caption-text">ADA language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="ada_overview/">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
@@ -81,18 +78,18 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="linux_os/">Work with Linux</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="linux_fedora/">Fedora OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="linux_fedora/">Fedora Linux</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="analysis_and_design/">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="sdlc_models/">SDLC models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="tdd_workflow/">Test Driven Development</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code_reviews/">Code reviews</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="tdd_workflow/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -103,7 +100,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="more_stuff/">More stuff</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="podcast_books/">Podcast and books</a>
+                  <li class="toctree-l1"><a class="reference internal" href="podcasts_books/">Podcasts and books</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="about/">About</a>
                   </li>
@@ -132,16 +129,73 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="welcome-to-onboardtips">Welcome to OnBoardTips</h1>
-<p>A <em>personal</em> collection of resources, links, notes, and training materials.<br />
-All credits to people and web communities who provide free and public information.</p>
-<p>The site was initially built around C++ but in fact most of the concepts are not specific to this language.</p>
-<p>Thanks to: MT, FL, BD, ST, GI, LM</p>
-<p>Reviews and feedbacks are welcome.</p>
-<p>Full site is available on <a href="https://github.com/lisr-pcx/on-board-tips">GitHub</a></p>
+<p>A <em>personal</em> collection of resources, links, notes, and training materials.</p>
+<p>These pages were initially built around C++ language but in fact most of the concepts are not specific to that.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Work in progress, last update: September 2025</p>
 </div>
+<h2 id="preface">Preface</h2>
+<p>Programming is the process to define a set of instructions to be executed by a computer in order to perform a computation or task to fulfill a specific user need or request.</p>
+<p>This process is usually done by designing/building an executable computer program, and it involves tasks such as analysis, generating algorithms, coding, profiling performance and resource consumption, and testing to identify behavior anomalies.</p>
+<p>During that process the program (=the code) is thoroughly checked for errors. Then errors are pointed out and fixed. Debugging is the process of finding and removing errors in a program.</p>
+<p>One of the hardest thing about being a software developer may not be related to technical skill, but rather a personality trait.<br />
+Digital platforms and frameworks are evolving faster than ever before. Also the job market offers different roles/positions following tech trends and world economy.<br />
+Adaptability is the winning skill, you’ll soon find yourself ready and capable of tackling every challenge thrown on your way.</p>
+<h2 id="get-started">Get started</h2>
+<p>Before anything just get a <em>quick bite</em> of the topic you are interested.</p>
+<p>This tip is valid for any kind of technology, feature, framework .. at beginning you just want some highlights and try some live examples when available. Videos and articles are a good source of information. At this stage do not be afraid to jump from link to link.</p>
+<p>After that it's time to acquire some core concepts and build simple stuff.</p>
+<p>Essentially there are three different ways for learning:</p>
+<ol>
+<li><strong>Books and docs</strong>: gradually discover chapter by chapter, guided by authors</li>
+<li><strong>Videos (lessons, seminaries)</strong>: concepts are explained putting more emphasis on schemes, flowcharts, ... and live examples</li>
+<li><strong>Learn by doing (small project, tutorial)</strong>: try to build up something, gettin the knownledge on your specific needs (learn by mistakes)</li>
+</ol>
+<p>Choose your preferred path or mix them according to your goal.<br />
+Some people are confortable gettin the theory first, and then process all the information before start coding. Other people instead go straight to the action "hammering the code" until they get some results, and then they explore all the concepts and layers behind.</p>
+<p>The "Learn by doing" is good philosophy, anyway make sure to know some basic concepts before to start or it could became a mere "copy and paste" routine.</p>
+<p>I suggest to setup your development enviroinment as soon as possible (IDE, editor, toolchain...) and try all the code snippets proposed from time to time. A good balance between theory and practice is the key.</p>
+<p>Give yourself some time in between the arguments, sometimes it's good to keep a slower pace (it's not a sprint, it's a marathon).</p>
+<p>Sometimes it is usefull to draw a roadmap. It clears goals, progress and direction. You will put effort on branches with <em>real</em> values, avoiding distractions.<br />
+At the same time: do not prune your tree! You will focus on the other branches later on your career.</p>
+<h2 id="arguments">Arguments</h2>
+<p>Most of the programming language share the same elements (but work differently, syntactically or conceptually). This is a generic index of arguments:</p>
+<ul>
+<li>basics<ul>
+<li>statements and expressions</li>
+<li>variables</li>
+<li>strings</li>
+<li>loops and conditionals</li>
+<li>data structures</li>
+<li>functions</li>
+<li>classes and objects</li>
+</ul>
+</li>
+<li>advanced<ul>
+<li>multithreading</li>
+<li>design patterns</li>
+<li>memory management</li>
+<li>errors and exceptions</li>
+<li>collections, libraries, and packages</li>
+</ul>
+</li>
+<li>GUI framework</li>
+<li>working with FILEs</li>
+<li>working with databases</li>
+<li>working with TCP/IP stack<ul>
+<li>UDP socket</li>
+<li>TCP socket</li>
+<li>HTTP server</li>
+</ul>
+</li>
+<li>debug and logging</li>
+<li>test and profiling</li>
+</ul>
+<h2 id="thanks">Thanks</h2>
+<p>All credits to people and web communities who provide free and public information.<br />
+Reviews and feedbacks are welcome.</p>
+<p>Full site is available on <a href="https://github.com/lisr-pcx/on-board-tips">GitHub</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Some information are older than six years now. I keep for reference but probably do not reflect my current knowledge and beliefs.</p>
@@ -171,7 +225,7 @@ All credits to people and web communities who provide free and public informatio
     
     
     
-      <span><a href="basics_c_cpp/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="cpp_overview/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -191,5 +245,5 @@ All credits to people and web communities who provide free and public informatio
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-08-18 10:11:29.805811+00:00
+Build Date UTC : 2025-08-19 18:52:45.072582+00:00
 -->

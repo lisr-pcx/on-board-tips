@@ -41,25 +41,22 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Focus on C/C++</span></p>
+              <p class="caption"><span class="caption-text">C++ language</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../basics_c_cpp/">Basics</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_overview/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Pointers">None</a>
+                  <li class="toctree-l1"><a class="reference internal" >Focus on</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cpp_constants/">constants</a>
+                </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../constants/">Constants</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../cpp_conferences/">Conferences and keynotes</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../Memory management">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Data structures">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../STL">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Lamba Expressions">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Threads">None</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../Sockets">None</a>
+              </ul>
+              <p class="caption"><span class="caption-text">ADA language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ada_overview/">Overview</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General</span></p>
@@ -81,18 +78,18 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Work with Linux</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora OS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux_fedora/">Fedora Linux</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Workflow</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../analysis_and_design/">Analysis and Design</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdlc_models/">SDLC models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../debugging/">Debugging</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../code_reviews/">Code reviews</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tdd_workflow/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Extra</span></p>
@@ -103,7 +100,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../podcast_books/">Podcast and books</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                   </li>
@@ -133,63 +130,12 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="linux-os">Linux OS</h1>
-<p>Linux is one of the most versatile operative systems available today.<br />
-There are different <em>flavors</em> but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Makeyou confortable to use linux shell.<br />
-Most of the time the target system does not run a Desktop GUI and you will connect via SSH.</p>
-</div>
+<p>Linux is one of the most versatile operative systems available today. There are different <em>flavors</em> but most of the concepts are applicable on any distribution (following notes are based on Debian 11.6).</p>
+<p>Makeyou confortable to use linux shell. Most of the time you will connect to a target device using terminal/shell.</p>
 <h2 id="quick-overview-on-os">Quick overview on OS</h2>
-<p>TODO What's an OS.<br />
-TODO Differente layers and components.<br />
-TODO Linux distributions.</p>
+<p>TODO What is an OS.<br />
+TODO Differente layers and components.  </p>
 <h2 id="basic-commands">Basic commands</h2>
-<p>Work on files, folder, ...</p>
-<pre><code class="language-sh">$ pwd
-$ ls -la
-$ mkdir &lt;DIR PATH&gt;
-$ rmdir &lt;DIR PATH&gt;
-$ rm -rf &lt;DIR PATH&gt;
-$ mv &lt;FILE OR DIR PATH&gt; &lt;NEW FILE OR DIR PATH&gt; 
-$ cp &lt;FILES OR DIR PATH&gt; &lt;NEW FILES OR DIR PATH&gt; 
-
-$ touch &lt;FILE PATH&gt;
-$ vi &lt;FILE PATH&gt;
-$ nano &lt;FILE PATH&gt;
-$ cat &lt;FILE PATH&gt;
-</code></pre>
-<p>Give folder/file permission:<br />
-Each number has a specific meaning for: user - group - others. Just don't give always full permission to everyone.</p>
-<ul>
-<li>0 (binary 000) <code>---</code> No permissions at all</li>
-<li>1 (binary 001) <code>--x</code> Only execute</li>
-<li>2 (binary 010) <code>-w-</code> Only write</li>
-<li>3 (binary 011) <code>-wx</code> Write and execute</li>
-<li>4 (binary 100) <code>r--</code> Only read</li>
-<li>5 (binary 101) <code>r-x</code> Read and execute</li>
-<li>6 (binary 110) <code>rw-</code> Read and write</li>
-<li>7 (binary 111) <code>rwx</code> Read, write, and execute</li>
-</ul>
-<pre><code class="language-sh">$ sudo chmod -R NNN FOLDERPATH 
-</code></pre>
-<p>TAR is a tool to archive files, it creates a single file out of multiple ones (<em>archiving</em> .tar file) and if requested it can also reduce the final size (<em>compression</em> .tar.gz using GZIP). The final file is often called "tarball".</p>
-<pre><code class="language-sh">$ tar cvf &lt;TARBALL NAME&gt;.tar &lt;SOURCE DIRNAME&gt;
-$ tar cvzf &lt;TARBALL NAME&gt;.tar.gz &lt;SOURCE DIRNAME&gt;
-$ tar tvf &lt;TARBALL FILE&gt;
-$ tar rvf &lt;TARBALL NAME&gt;.tar &lt;FILES OR DIRNAME TO APPEND&gt;
-$ tar xvf &lt;TARBALL FILE&gt;
-$ tar xvf &lt;TARBALL FILE&gt; -C &lt;DESTINATION DIRNAME&gt;
-</code></pre>
-<p>Install, update, remove software (APT package manager).</p>
-<pre><code class="language-sh">$ apt edit-sources
-$ apt update
-$ apt list --installed
-$ apt show &lt;PACKAGE NAME&gt;
-$ apt search &lt;PACKAGE NAME&gt;
-$ apt install &lt;PACKAGE NAME&gt;
-$ apt remove &lt;PACKAGE NAME&gt;
-</code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Some of the commands above shall be run as admin.<br />
@@ -207,6 +153,69 @@ Check syntax and options to get desired result.  <br />
 Example: if your command return a bigger list of items, you can filter them in order to get only the relevant ones, and then make it scrollable on the screen just by adding:
 <code>$ &lt;COMMAND&gt; | grep &lt;FILTER&gt; | less</code></p>
 </div>
+<h3 id="files-and-folders">Files and folders</h3>
+<pre><code class="language-sh">$ pwd
+
+$ ls -la
+
+$ mkdir &lt;DIR PATH&gt;
+$ rmdir &lt;DIR PATH&gt;
+$ rm -rf &lt;DIR PATH&gt;
+$ mv &lt;FILE OR DIR PATH&gt; &lt;NEW FILE OR DIR PATH&gt;
+$ cp &lt;FILES OR DIR PATH&gt; &lt;NEW FILES OR DIR PATH&gt;
+
+$ touch &lt;FILE PATH&gt;
+$ vi &lt;FILE PATH&gt;
+$ nano &lt;FILE PATH&gt;
+$ cat &lt;FILE PATH&gt;
+
+$ find &lt;PATH TO LOOK&gt; -name &quot;&lt;FILE&gt;&quot; -print
+$ find . -name &quot;*.bak&quot; - print
+</code></pre>
+<p>Give folder/file permission:<br />
+Each number has a specific meaning for: user - group - others. Just don't give always full permission to everyone.</p>
+<ul>
+<li>0 (binary 000) <code>---</code> No permissions at all</li>
+<li>1 (binary 001) <code>--x</code> Only execute</li>
+<li>2 (binary 010) <code>-w-</code> Only write</li>
+<li>3 (binary 011) <code>-wx</code> Write and execute</li>
+<li>4 (binary 100) <code>r--</code> Only read</li>
+<li>5 (binary 101) <code>r-x</code> Read and execute</li>
+<li>6 (binary 110) <code>rw-</code> Read and write</li>
+<li>7 (binary 111) <code>rwx</code> Read, write, and execute</li>
+</ul>
+<pre><code class="language-sh">$ sudo chmod -R NNN FOLDERPATH 
+</code></pre>
+<p>To inspect the raw byte use:</p>
+<pre><code class="language-sh">$ xxd &lt;FILENAME&gt;
+$ xxd -ps &lt;FILENAME&gt;
+</code></pre>
+<h3 id="archives">Archives</h3>
+<p>TAR is a tool to archive files, it creates a single file out of multiple ones (<em>archiving</em> .tar file) and if requested it can also reduce the final size (<em>compression</em> .tar.gz using GZIP). The final file is often called "tarball".</p>
+<pre><code class="language-sh">$ tar cvf &lt;TARBALL NAME&gt;.tar &lt;SOURCE DIRNAME&gt;
+$ tar cvzf &lt;TARBALL NAME&gt;.tar.gz &lt;SOURCE DIRNAME&gt;
+$ tar tvf &lt;TARBALL FILE&gt;
+$ tar rvf &lt;TARBALL NAME&gt;.tar &lt;FILES OR DIRNAME TO APPEND&gt;
+$ tar xvf &lt;TARBALL FILE&gt;
+$ tar xvf &lt;TARBALL FILE&gt; -C &lt;DESTINATION DIRNAME&gt;
+</code></pre>
+<h3 id="install-update-and-remove-software">Install, update, and remove software</h3>
+<p>Using APT package manager:</p>
+<pre><code class="language-sh">$ apt edit-sources
+$ apt update
+$ apt list --installed
+$ apt show &lt;PACKAGE NAME&gt;
+$ apt search &lt;PACKAGE NAME&gt;
+$ apt install &lt;PACKAGE NAME&gt;
+$ apt remove &lt;PACKAGE NAME&gt;
+</code></pre>
+<h3 id="processes-applications-and-devices">Processes, applications and devices</h3>
+<pre><code class="language-sh">$ top
+$ ps -ef
+$ ps -ef | grep &lt;APPLICATION NAME&gt;
+$ kill &lt;PROCESS ID&gt;
+$ sudo dmesg
+</code></pre>
 <h3 id="editing-files">Editing files</h3>
 <p>Two editors are always available on Linux systems: <code>nano</code> (simple and straightforward) or <code>vi</code> (less intuitive but powerful).<br />
 I suggest to learn basic few operations on both editors:</p>
@@ -215,99 +224,23 @@ I suggest to learn basic few operations on both editors:</p>
 <li>search a word</li>
 <li>copy and paste text</li>
 </ul>
-<h2 id="use-autotools-to-create-a-package">Use AUTOTOOLS to create a package</h2>
-<h3 id="sample-project-snake-clone">Sample project: snake clone</h3>
-<p>This project is composed by following files:</p>
-<ul>
-<li><strong>main.cpp</strong>: entry point</li>
-<li><strong>snake.h</strong>: (header) class in charge to plot the game area and manage the game logic</li>
-<li><strong>snake.cpp</strong>: (body)</li>
-</ul>
-<p>The game uses "curses" library for plotting the graphical elements via text console.</p>
-<pre><code class="language-cpp">// File: main.cpp
-#include &lt;iostream&gt;
-#include &lt;curses.h&gt;
-#include &lt;unistd.h&gt;
-#include &quot;snake.h&quot;
-
-int main()
-{    
-    // code
-}
+<pre><code class="language-sh">$ vi &lt;FILE PATH&gt;
+$ nano &lt;FILE PATH&gt;
 </code></pre>
-<pre><code class="language-cpp">// File: snake.h
-#ifndef SNAKE_H
-#define SNAKE_H
-
-// define
-
-#include &lt;iostream&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;time.h&gt;
-#include &lt;curses.h&gt;
-
-class Snake
-{
-public:
-  // code
-}
+<h3 id="search-a-pattern">Search a pattern</h3>
+<p>It's useful to find where a pattern or a string has been used on files. The <strong>grep</strong> command is all you need!</p>
+<pre><code class="language-sh">$ grep -Ril &quot;&lt;PATTERN&gt;&quot; &lt;PATH&gt;
+$ grep -Ri &quot;&lt;PATTERN&gt;&quot; &lt;PATH&gt;
+$ grep -Ri -B5 -A2 &quot;&lt;PATTERN&gt;&quot; &lt;PATH&gt;
 </code></pre>
-<pre><code class="language-cpp">// File: snake.cpp
-#include &quot;snake.h&quot;
-
-Snake::Snake()
-{
-    // code
-}
-
-int Snake::Run()
-{
-  // code
-}
+<p>Filtering for specific files (e.g. cpp, hpp) on desired path:</p>
+<pre><code class="language-sh">$ grep -Ri --include=*.{cpp,hpp} &quot;&lt;PATTERN&gt;&quot; &lt;PATH&gt;
 </code></pre>
-<p>The program can be compiled and run using:</p>
-<pre><code class="language-sh">$ g++ *.cpp -o snake -lcurses -Wall
+<h3 id="connect-to-remote-system">Connect to remote system</h3>
+<p>Secure SHell is a cryptographic protocol that allows to login into a remote computer.</p>
+<pre><code class="language-sh">$ ssh &lt;USERNAME&gt;@&lt;IPv4 or HOSTNAME&gt;
+$ ssh -i &lt;LOCALPATH CERTIFICATE KEY&gt; &lt;USERNAME&gt;@&lt;IPv4 or HOSTNAME&gt;
 </code></pre>
-<h3 id="create-the-package">Create the package</h3>
-<p>Open your project folder, then create the configuration file "configure.ac"</p>
-<pre><code class="language-sh">AC_INIT([snake], [0.1], [lisr-pcx@mail.com])
-
-AM_INIT_AUTOMAKE
-
-AC_PROG_CPP
-
-AC_CONFIG_FILES([Makefile])
-
-AC_OUTPUT
-</code></pre>
-<p>Create the "Makefile.am"</p>
-<pre><code class="language-sh">bin_PROGRAMS = snakegame
-snakegame_SOURCES = snake.cpp
-
-clean-local:
-        @rm config.status configure config.log
-        @rm Makefile
-        @rm -r autom4te.cache/
-        @rm aclocal.m4
-        @rm compile install-sh missing Makefile.in
-</code></pre>
-<p>Finally run commands:</p>
-<pre><code class="language-sh">$ aclocal
-$ autoheader
-$ autoconf
-$ automake
-$ automake --add-missing
-$ ./configure
-$ make
-$ make dist
-</code></pre>
-<p>At this stage make sure your tarball works fine, copy into your testing OS, extract and run again <code>./configure</code> and <code>make</code>.</p>
-<h2 id="create-a-debian-package">Create a DEBIAN package</h2>
-<p>Full documentation can be found on official Debian site, anyway...</p>
-<p><a href="https://wiki.debian.org/Packaging/Intro">Introduction to Debian packaging</a></p>
-<p><a href="https://wiki.debian.org/SoftwarePackaging">Be friendly to your packagers</a></p>
-<p><a href="https://www.debian.org/doc/manuals/developers-reference/">Debian Developers' Reference</a></p>
-<p><a href="https://www.debian.org/doc/manuals/maint-guide/">Debian New Maintainers' Guide</a></p>
               
             </div>
           </div><footer>
