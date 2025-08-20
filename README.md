@@ -26,7 +26,7 @@ Then:
 
 ## TODO
 
-On the published version there are still some section incomplete, just search "TODO" on markdown files to fix it.
+The online site has some incomplete sections. Just search the word "TODO" on repo files to fix them.
 
 Pages below have been created, but are not online.  
 Fix and add them to "mkdocs.yml".

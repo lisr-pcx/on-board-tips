@@ -46,6 +46,8 @@ TODO
 
 ## References
 
+A rich collection of stuff related to this language, highly recommended: [Awesome Ada](https://github.com/ohenley/awesome-ada)
+
 [AdaCore](https://www.adacore.com/products/languages)  
 [AdaCore about Ada](https://www.adacore.com/about-ada)  
 [AdaCore GNAT Studio](https://www.adacore.com/gnatpro/toolsuite/gnatstudio)  

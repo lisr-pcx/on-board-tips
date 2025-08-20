@@ -30,6 +30,9 @@ The following links guide step by step into the argument:
 
 Work experience and practice will improve your skills, but in the meantime apply any kind of tricks usefull for your scenario.
 
+> A problem well-stated is a problem half-solved.  
+> *Charles Kettering*
+
 ### (1) Scan and Look
 
 Have a look and follow intuition (senior developers get best result compared to junior)

@@ -47,7 +47,8 @@ The examples are very basic, with focus on learning, so it's important to wide t
 
 ## Learn by building small projects
 
-TODO
+If you need some inspiration this repository has a curated list of practical projects that anyone can solve (in any programming language):  
+[Github - Karan Project List](https://github.com/karan/Projects)
 
 ## Focus on ..
 
