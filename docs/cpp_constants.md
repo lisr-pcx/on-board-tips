@@ -58,7 +58,7 @@ int main()
 
 Google C++ guidelines: [link](https://google.github.io/styleguide/cppguide.html#Use_of_constexpr)
 
-Some variables can be declared constexpr to indicate the variables are true constants, i.e., fixed at compilation/link time. Some functions and constructors can be declared constexpr which enables them to be used in defining a constexpr variable. Functions can be declared consteval to restrict their use to compile time.
+Some variables can be declared constexpr to indicate the variables are true constants, fixed at compilation/link time. Some functions and constructors can be declared constexpr which enables them to be used in defining a constexpr variable. Functions can be declared consteval to restrict their use to compile time.
 
 Use **constexpr** to specify true constants (fixed at compilation time). Also functions can be declared as **constexpr** and if it's not possible to evaluate at compile time they will managed as normal functions at run-time.  
 Use **constinit** to ensure constant initialization for non-constant variables.  

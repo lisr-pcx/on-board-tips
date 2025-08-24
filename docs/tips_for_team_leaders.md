@@ -10,8 +10,8 @@ Team Leads responsibilities include:
 + Organizing work
 + Communication (give context)
 + Delegating
-+ Leading by example [(link)](https://asana.com/resources/lead-by-example)
-+ Allocating and managing resources [(link)]](https://asana.com/resources/resource-allocation)
++ [Leading by example](https://asana.com/resources/lead-by-example)
++ [Allocating and managing resources](https://asana.com/resources/resource-allocation)
 + Problem solving
 + Managing project progress and reporting to stakeholders
 + Coaching to improve team member skill sets and identifying areas for improvement
@@ -81,24 +81,24 @@ Be honest, be fair, practice empathy.
 A big part of a team leader’s role is to provide coaching, training, and mentoring where applicable.  
 Ask everytime for feedbacks but also give them. Identify communication channels and ways to promote these exchanges and growth.
 
-Remember: **"Lead by example. Be the developer you wanna work with."**
+Remember: *"Lead by example. Be the developer you wanna work with."*
 
 ## Mastering in three steps
 
 Achieve tech lead mastery by:
 
 1. **Facilitate**. Help your team do their jobs
-    1. Remove roadblocks
-    2. Perceive the need
-    3. Know the answers or where to find them
+    + Remove roadblocks
+    + Perceive the need
+    + Know the answers or where to find them
     
 2. **Advocate**. Keep the big picture in mind
-    1. Advocate for your project: sometimes you have to say no
-    2. Say no + always explain why
-    3. Say no + but ... (if you are talking to managers)
+    + Advocate for your project: sometimes you have to say no
+    + Say no + always explain why
+    + Say no + but ... (if you are talking to managers)
     
 3. **Motivate**. Guide your team to the best possible result
-    1. Your attitude is important. When complaining you’re not finding a solution.
+    + Your attitude is important. When complaining you’re not finding a solution.
 
 Remember that teams are not immutable: adding people in a team change cultural values, relationships, … it becames a new team. Think about it when hiring!
 
@@ -149,9 +149,9 @@ Follow these principles:
 
 ## Links
 
-[How to lead](https://youtu.be/95QwKa34PU4)  
+[How to lead (video)](https://youtu.be/95QwKa34PU4)  
 [10 things great team leaders do](https://asana.com/resources/team-lead)  
 [Problem solving strategies](https://asana.com/resources/problem-solving-strategies)  
 [Emotional intelligence skills](https://asana.com/resources/emotional-intelligence-skills)  
-[Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow](https://youtu.be/xqT8e6_yzLg)  
-[Using Agile Techniques to Build a More Inclusive Team](https://youtu.be/Atfxtk2Q90k)  
+[Make the Right Thing the Easy Thing: Designing Processes Teams Will Actually Follow (video)](https://youtu.be/xqT8e6_yzLg)  
+[Using Agile Techniques to Build a More Inclusive Team (video)](https://youtu.be/Atfxtk2Q90k)  

@@ -4,8 +4,7 @@ A "small bite" of the language [C++ in 100 seconds](https://youtu.be/MNeX4EGtR5Y
 
 Then it's time to acquire some core concepts and build simple stuff.
 
-I found the websites "ByExample" quite effective for a quick ramp-up because they provide you the classic index of topics to acquire.  
-Only a small snippet of code is showed, forcing the reader to actively retrieve the theory behind.
+I found the websites "ByExample" quite effective for a quick ramp-up because they provide you the classic index of topics to acquire. Only a small snippet of code is showed, forcing the reader to actively retrieve the theory behind.
 
 [C/C++ by example](https://www.cbyexample.com)  
 [Another C++ By Example site](https://cppbyexample.com)

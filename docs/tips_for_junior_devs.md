@@ -1,11 +1,9 @@
 # Tips for Junior Developers
 
-Being a young developer working in a team can be quite challenging and sometimes a lot of the pressure is put not only on tech related topics but also on social relationship.
+Being a young developer working in a team can be quite challenging and sometimes a lot of the pressure is put not only on tech related topics but also on social relationship.  
+Find a good work-life balance. Don't forget to play outside, practice sports.
 
-Find a good work-life balance. Don't forget to play outside, practice sports.  
 In some ways it's more like competing in a long-distance race, sometimes it's ok tu run sprints, but keep steady and balanced for most of the time.
-
-> Do the Right Things, Right!
 
 ## How to survive
 
@@ -49,18 +47,20 @@ Check that you have everything you need:
 
 + Input documentation, task scheduling, sw architecture, coding rules/style.
 + Information about third-party sw libraries, API, communication protocols ...
-+ Grants to access online resources like databases, sharepoints, email accounts, ticketing services ...
-+ Development tools, IDE, virtual machines, sw simulators. Check also their sw license.
++ Grants to access online resources like databases, sharepoints, email accounts, ticketing portals ...
++ Development tools, IDE, virtual machines, sw simulators. Verify also about their sw license.
 + Access to sw repositories (starting version of the sourcecode).
-+ Have a **clear idea of the final goal** desired by stackholders/managers.
++ Have a *clear idea of the final goal* desired by stackholders/managers.
 + Have a schedule of delivery plan (when-what).
 
 As you are working in a team, one nice thing is to plan your holiday months ahead, maybe away from delivery dates or stressful periods, be cool with your team-mates.
 
 ## Basic principles
 
+> Do the Right Things, Right!
+
 + Honor deadlines and inform your team leader if there is the possibilty of delays (do not warn the day before, but almost a week before so managers can re-plan activities)
-+ Test any code change, even a simple one, on every possible scenario (not only the worst one). Check using simulators, test benches, any usefull tool available (and known their limitations).
++ Test any code change, even a simple one, on every possible scenario (not only the worst one). Check using simulators, lab test benches, any usefull tool available (and known their limitations).
 + Share information, issues and update progress status
 + Backup your data, code, doc, test enviroinment (better if on daily basis)
 
@@ -76,9 +76,9 @@ Top five reason that make developers unhappy of their job:
 
 Don't be unhappy, find a way to cope with these things. Ask to your mentor for tips!
 
-Be aware about the [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome).
+Be aware about the [impostor syndrome (video)](https://en.wikipedia.org/wiki/Impostor_syndrome).
 
-## Links
+## References
 
-[Habits of Efficient Developers](https://youtu.be/9-cyC6O81Bk)  
-[Beyond Developer](https://youtu.be/wYEk0y8LYfg)  
+[Habits of Efficient Developers (video)](https://youtu.be/9-cyC6O81Bk)  
+[Beyond Developer (video)](https://youtu.be/wYEk0y8LYfg)  

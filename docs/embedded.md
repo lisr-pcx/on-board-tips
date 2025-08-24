@@ -14,4 +14,4 @@ O’Reilly, 2011
 
 ## Links
 
-[Fundamentals of Embedded Linux, Chris Simmons](https://youtu.be/BdKyq56Cijo?feature=shared)
+[Fundamentals of Embedded Linux, Chris Simmons (video)](https://youtu.be/BdKyq56Cijo?feature=shared)

@@ -27,6 +27,6 @@ A team plan, develop and deploy only one interaction at a time.
 
 ![agile](meta/agile.jpg)
 
-## Links
+## References
 
 [SW dev life cycle on GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc)

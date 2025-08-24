@@ -1,9 +1,14 @@
 # Technical Documentation
 
-Forget the idea "My code is self documented", anyone who use your baseline need a good source of information about logical operations, design choice, guidelines, theory behind .. , troubleshooting, tips and tricks.  
+Forget the idea "My code is self documented", anyone who use your baseline need a good source of information about logical operations, design choice, guidelines, troubleshooting, ...  
 Do not confuse writing clear - and clean - code, with the documentation process, they are both necessary but they have different goal.
 
 Remember that writing documentation is part of the task. Only once documentation is added the activity can be mark as done.
+
+!!! tip
+    Avoid "single points of failure": don't be the silo of information of your team.  
+    If you are the only one able to fix/do some stuff then forget about holidays and relaxing time.  
+    Share knownledge and make everyone confortable to manage the source code.
 
 ## How to write technical documents
 
@@ -22,14 +27,9 @@ Always include a table of contents or summary in your documentation, and keep in
 3. NAVIGATE (links to related topics)
 4. RESULT (short words and more sentences)
 
-Write in simple english, anyone can do that, **just be clear, simple and go straight to the point**. The goal is to provide information (to help people), this is not an essay.
+Write in simple english, anyone can do that, **just be clear, simple and go straight to the point**. The goal is to provide information (to help people) this is not an essay.
 
 Always share your text/draft with other team members and ask for feedbacks/reviews to improve clarity.
-
-!!! tip
-    Avoid "single points of failure": don't be the silo of information of your team.  
-    If you are the only one able to fix/do some stuff then forget about holidays and relaxing time.  
-    Share knownledge and make everyone confortable to manage the source code.
 
 ## Docs as a Code
 
@@ -61,6 +61,6 @@ Another benefit is that your documents are always updated and synchronized with 
 + Make use of automated spelling and grammars tools.
 + Add useful alternative text for images.
 
-## Links
+## References
 
-[Tech Docs, how can I write them better](https://youtu.be/0e22AQJTuOA)  
+[Tech Docs, how can I write them better (video)](https://youtu.be/0e22AQJTuOA)  

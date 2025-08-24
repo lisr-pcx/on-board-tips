@@ -15,8 +15,7 @@ This process is usually done by designing/building an executable computer progra
 
 During that process the program (=the code) is thoroughly checked for errors. Then errors are pointed out and fixed. Debugging is the process of finding and removing errors in a program.
 
-One of the hardest thing about being a software developer may not be related to technical skill, but rather a personality trait.  
-Digital platforms and frameworks are evolving faster than ever before. Also the job market offers different roles/positions following tech trends and world economy.  
+One of the hardest thing about being a software developer may not be related to technical skill, but rather a personality trait. Digital platforms and frameworks are evolving faster than ever before. Also the job market offers different roles/positions following tech trends and world economy.  
 Adaptability is the winning skill, you’ll soon find yourself ready and capable of tackling every challenge thrown on your way.
 
 ## Get started
@@ -66,10 +65,8 @@ Most of the programming language share the same elements (but work differently, 
 - GUI framework
 - working with FILEs
 - working with databases
-- working with TCP/IP stack
-    - UDP socket
-    - TCP socket
-    - HTTP server
+- working with TCP/IP stack (UDP/TCP sockets, HTTP ..)
+- working with specific communication protocols (MQTT, Matter, CAN, )
 - debug and logging
 - test and profiling
 

@@ -4,19 +4,19 @@ Mastering regex can take a lot of your time, especially at the beginning, but yo
 
 ## Overview
 
-A **regular expression** (shortened as **regex** or **regexp**) is a sequence of characters that specifies a search pattern in text.  
-Usually such patterns are used by string-search algorithms for: 
+A **regular expression** (shortened as **regex** or **regexp**) is a sequence of characters that specifies a search pattern in text. Usually such patterns are used by string-search algorithms for: 
 
-+ find and find-replace operations
-+ input validation
-+ log analysis
+- find and find-replace operations
+- input validation
+- log analysis
 
 Most programming languages support regex either natively or via libraries.
 
-A regex *pattern* matches a target *string*.  
-The pattern is composed by a sequence of *atoms*. An atom is a single point within the regex pattern which it tries to match to the target string.
+A regex *pattern* matches a target *string*. The pattern is composed by a sequence of *atoms*. An atom is a single point within the regex pattern which it tries to match to the target string.
 
 A match is made, not when all the atoms of the string are matched, but rather when all the pattern atoms in the regex have matched. The idea is to make a small pattern of characters stand for a large number of possible strings, rather than compiling a large list of all the literal possibilities.
+
+A great portal to experiment is: [regex101, build, test, and debug regex](https://regex101.com/)
 
 ## Syntax
 
@@ -87,16 +87,16 @@ bool ValidateFunction(std::string sample)
 }
 ```
 
-## Links
-
-For a quick overview [Regex by Corey Schafer](https://youtu.be/sa-TUpSx1JA)  
-Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ weekly regex optimization](https://youtu.be/7hfSyxNxFfo)  
-[Regex on Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)  
-[Online checker for regex](https://regex101.com/)  
-
 ## Books
 
 Jeffrey E F Friedl  
 **Mastering Regular Expressions**  
 *O’Reilly*  
+
+## References
+
+For a quick overview [Regex by Corey Schafer](https://youtu.be/sa-TUpSx1JA)  
+Alternative tutorial [C++ weekly regex](https://youtu.be/IOxKjqC1Ozo) and [C++ weekly regex optimization](https://youtu.be/7hfSyxNxFfo)  
+[Regex on Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)  
+[regex101](https://regex101.com/)  
 

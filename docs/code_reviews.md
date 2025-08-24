@@ -8,7 +8,7 @@ Keep in mind that for new developers the code review can be a way to discover an
 
 During a review these aspect shall be considered:
 
-+ coding style (use sw tools for checking)
++ coding style (please use sw tools for checking this part)
 + coding rules
 + safety and defensive code
 + sw requirements
@@ -71,7 +71,7 @@ For the reviewer, it’s important to pay attention to *the way they formulate 
 + It’s fine to say: Everything is good!
 + Don’t forget to praise.
 
-## Links
+## References
 
 [Google code review overview](https://google.github.io/eng-practices/review/)  
 [Guidelines for better, faster pull request reviews](https://github.com/mawrkus/pull-request-review-guide)  

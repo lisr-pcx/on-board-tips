@@ -1,6 +1,7 @@
 # Wireshark
 
-A powerful opensource software for network traffic sniffing and analysis. A similar tool available only for Linux OS is **tcpdump** (explained on next section).
+A powerful opensource software for network traffic sniffing and analysis.  
+A similar tool available only for Linux OS is **tcpdump** (explained on next section).
 
 Download according to your OS release: [https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)  
 (For Windows OS it's highly recommended the *portable* version)

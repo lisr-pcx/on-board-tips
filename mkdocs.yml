@@ -28,7 +28,11 @@ nav:
   - 'Extra':
     - Tips for Junior Devs: tips_for_junior_devs.md
     - Tips for Team Leaders: tips_for_team_leaders.md
-    - More stuff: more_stuff.md
+    - 'More stuff':
+      - Project Aristotle: stuff/project_aristotle.md
+      - SMART: stuff/smart.md
+      - GNU build system: stuff/gnu_build_system.md
+      - Conferences: stuff/conferences.md
     - Podcasts and books: podcasts_books.md
     - About: about.md
 

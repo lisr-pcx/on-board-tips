@@ -86,8 +86,8 @@ Don't analyze everything but isolate and check in a kind of way as binary search
 !!! tip
     Verify which functions and code sections are running before analyze code, have a look (and knownledge) of the call stack.
 
-## Links
+## References
 
-[Bob Steagall, CppCon 2021, Debugging Techniques](https://youtu.be/M7fV-eQwxrY)  
-[Mike Shah, CppCon 2022, Debugging in C++](https://youtu.be/YzIBwqWC6EM)  
+[Bob Steagall, CppCon 2021, Debugging Techniques (video)](https://youtu.be/M7fV-eQwxrY)  
+[Mike Shah, CppCon 2022, Debugging in C++ (video)](https://youtu.be/YzIBwqWC6EM)  
 [Debugging with GDB: the GNU Source-Level Debugger](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)  
