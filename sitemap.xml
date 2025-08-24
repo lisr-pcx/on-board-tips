@@ -2,98 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/about/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/ada_overview/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/code_reviews/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/cpp_conferences/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/cpp_constants/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/cpp_overview/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/debugging/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/defensive_programming/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/embedded/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/empty/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/git_basics/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/linux_fedora/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/linux_os/</loc>
-         <lastmod>2025-08-19</lastmod>
-    </url>
-    <url>
-         <loc>https://lisr-pcx.github.io/on-board-tips/more_stuff/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/podcasts_books/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/regular_expressions/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/rust_overview/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/sdlc_models/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/tdd_workflow/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/technical_documentation/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/tips_for_junior_devs/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/tips_for_team_leaders/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://lisr-pcx.github.io/on-board-tips/wireshark_tcpdump/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-tips/stuff/conferences/</loc>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-tips/stuff/gnu_build_system/</loc>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-tips/stuff/project_aristotle/</loc>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://lisr-pcx.github.io/on-board-tips/stuff/smart/</loc>
+         <lastmod>2025-08-24</lastmod>
     </url>
 </urlset>

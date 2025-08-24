@@ -98,7 +98,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../tips_for_team_leaders/">Tips for Team Leaders</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
+                  <li class="toctree-l1"><a class="reference internal" >More stuff</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/project_aristotle/">Project Aristotle</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/smart/">SMART</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/gnu_build_system/">GNU build system</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/conferences/">Conferences</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
@@ -183,7 +193,7 @@ Abseil Tip of the Week about const: <a href="https://abseil.io/tips/109">link</a
 </code></pre>
 <h2 id="constexpr-constinit-consteval">constexpr, constinit, consteval</h2>
 <p>Google C++ guidelines: <a href="https://google.github.io/styleguide/cppguide.html#Use_of_constexpr">link</a></p>
-<p>Some variables can be declared constexpr to indicate the variables are true constants, i.e., fixed at compilation/link time. Some functions and constructors can be declared constexpr which enables them to be used in defining a constexpr variable. Functions can be declared consteval to restrict their use to compile time.</p>
+<p>Some variables can be declared constexpr to indicate the variables are true constants, fixed at compilation/link time. Some functions and constructors can be declared constexpr which enables them to be used in defining a constexpr variable. Functions can be declared consteval to restrict their use to compile time.</p>
 <p>Use <strong>constexpr</strong> to specify true constants (fixed at compilation time). Also functions can be declared as <strong>constexpr</strong> and if it's not possible to evaluate at compile time they will managed as normal functions at run-time.<br />
 Use <strong>constinit</strong> to ensure constant initialization for non-constant variables.<br />
 Use <strong>consteval</strong> only for compile time.</p>

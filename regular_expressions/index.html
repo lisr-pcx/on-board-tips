@@ -98,7 +98,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../tips_for_team_leaders/">Tips for Team Leaders</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../more_stuff/">More stuff</a>
+                  <li class="toctree-l1"><a class="reference internal" >More stuff</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/project_aristotle/">Project Aristotle</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/smart/">SMART</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/gnu_build_system/">GNU build system</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stuff/conferences/">Conferences</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../podcasts_books/">Podcasts and books</a>
                   </li>
@@ -132,17 +142,16 @@
                 <h1 id="regular-expressions">Regular Expressions</h1>
 <p>Mastering regex can take a lot of your time, especially at the beginning, but you only need to practice. Use them in your code but also inside scripts or directly in your editor (vi or notepad++).</p>
 <h2 id="overview">Overview</h2>
-<p>A <strong>regular expression</strong> (shortened as <strong>regex</strong> or <strong>regexp</strong>) is a sequence of characters that specifies a search pattern in text.<br />
-Usually such patterns are used by string-search algorithms for: </p>
+<p>A <strong>regular expression</strong> (shortened as <strong>regex</strong> or <strong>regexp</strong>) is a sequence of characters that specifies a search pattern in text. Usually such patterns are used by string-search algorithms for: </p>
 <ul>
 <li>find and find-replace operations</li>
 <li>input validation</li>
 <li>log analysis</li>
 </ul>
 <p>Most programming languages support regex either natively or via libraries.</p>
-<p>A regex <em>pattern</em> matches a target <em>string</em>.<br />
-The pattern is composed by a sequence of <em>atoms</em>. An atom is a single point within the regex pattern which it tries to match to the target string.</p>
+<p>A regex <em>pattern</em> matches a target <em>string</em>. The pattern is composed by a sequence of <em>atoms</em>. An atom is a single point within the regex pattern which it tries to match to the target string.</p>
 <p>A match is made, not when all the atoms of the string are matched, but rather when all the pattern atoms in the regex have matched. The idea is to make a small pattern of characters stand for a large number of possible strings, rather than compiling a large list of all the literal possibilities.</p>
+<p>A great portal to experiment is: <a href="https://regex101.com/">regex101, build, test, and debug regex</a></p>
 <h2 id="syntax">Syntax</h2>
 <p>Depending on the regex processor there are about fourteen metacharacters, characters that may or may not have their literal character meaning, depending on context, or whether they are "escaped", i.e. preceded by an escape sequence, in this case, the backslash <code>\</code>.</p>
 <p><img alt="Regex table" src="../meta/regex_table.png" /></p>
@@ -199,15 +208,15 @@ bool ValidateFunction(std::string sample)
   return(ret);
 }
 </code></pre>
-<h2 id="links">Links</h2>
-<p>For a quick overview <a href="https://youtu.be/sa-TUpSx1JA">Regex by Corey Schafer</a><br />
-Alternative tutorial <a href="https://youtu.be/IOxKjqC1Ozo">C++ weekly regex</a> and <a href="https://youtu.be/7hfSyxNxFfo">C++ weekly regex optimization</a><br />
-<a href="https://en.wikipedia.org/wiki/Regular_expression">Regex on Wikipedia</a><br />
-<a href="https://regex101.com/">Online checker for regex</a>  </p>
 <h2 id="books">Books</h2>
 <p>Jeffrey E F Friedl<br />
 <strong>Mastering Regular Expressions</strong><br />
 <em>O’Reilly</em>  </p>
+<h2 id="references">References</h2>
+<p>For a quick overview <a href="https://youtu.be/sa-TUpSx1JA">Regex by Corey Schafer</a><br />
+Alternative tutorial <a href="https://youtu.be/IOxKjqC1Ozo">C++ weekly regex</a> and <a href="https://youtu.be/7hfSyxNxFfo">C++ weekly regex optimization</a><br />
+<a href="https://en.wikipedia.org/wiki/Regular_expression">Regex on Wikipedia</a><br />
+<a href="https://regex101.com/">regex101</a>  </p>
               
             </div>
           </div><footer>
